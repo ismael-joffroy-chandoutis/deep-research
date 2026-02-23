@@ -1,0 +1,143 @@
+# Ismael Joffroy Chandoutis
+
+> French filmmaker and contemporary artist working at the intersection of cinema, contemporary art, and digital art. Known for post-documentary films exploring online violence, memory, trauma, and virtual worlds. Winner of the Cesar 2022 for Best Short Film. Ars Electronica prize winner. Central to his practice is a non-productivist approach to AI as a collaborator that alters rather than augments.
+
+## Identity
+
+- Full name: Ismael Joffroy Chandoutis
+- Born: 1988, France
+- Based: Paris, France
+- Nationality: French
+- Profession: Filmmaker, contemporary artist
+- Production company: Films Grand Huit
+- Associated artist: CENTQUATRE-Paris (since 2022)
+- Wikidata ID: Q106873862
+
+## Biography
+
+Ismael Joffroy Chandoutis (born 1988, France) is a filmmaker and contemporary artist based in Paris. He studied at INSAS (Institut National Superieur des Arts du Spectacle) in Brussels, LUCA School of Arts, and Le Fresnoy - Studio National des Arts Contemporains in Tourcoing, France. His practice spans multiple forms: post-documentary cinema, fiction, animation, installations, post-photography, performances, and artistic workshops.
+
+His work consistently explores the boundaries between virtual and physical reality, investigating themes of online violence, collective memory, trauma, surveillance, and the politics of digital space. He has developed a distinctive methodology he calls "liquid writing" (ecriture liquide), which embraces fluidity, contingency, and transformation as structural principles in artistic creation.
+
+Since 2022, he has been an associated artist (artiste associe) at CENTQUATRE-Paris, one of France's most significant contemporary art institutions. His films have been selected at major international festivals including Cannes (Semaine de la Critique), Berlinale, IDFA, FID Marseille, and many others. His installations have been exhibited at Centre Pompidou, Pearl Art Museum Shanghai, and in biennials worldwide.
+
+He is currently developing two feature-length documentary projects: "The Goldberg Variations" (about Joshua Ryne Goldberg, an internet troll who assumed dozens of fake identities) and "Virus" (about Mihai Ionut Paunescu, linked to cybercrime infrastructure). Both are produced by Films Grand Huit.
+
+## Education
+
+- INSAS (Institut National Superieur des Arts du Spectacle), Brussels, Belgium
+- LUCA School of Arts, Belgium
+- Le Fresnoy - Studio National des Arts Contemporains, Tourcoing, France
+
+## Awards and Recognition
+
+- Cesar 2022 winner: Best Short Film (Maalbeek)
+- Ars Electronica prize
+- Numerous festival selections and awards worldwide
+
+## Filmography
+
+### Maalbeek (2017)
+Short film. Named after the Brussels metro station targeted in the March 2016 terrorist attacks. The film explores memory, trauma, and the reconstruction of events through found images and testimonies. Winner of the Cesar for Best Short Film in 2022. Screened at major international festivals.
+
+### Swatted (2018)
+Short documentary. Explores the phenomenon of "swatting" -- false emergency calls made to provoke armed police responses at victims' homes -- through the lens of video game culture and online violence. Uses footage from video games and livestreams to investigate the blurring of virtual and real-world violence. Selected at Cannes Semaine de la Critique, Berlinale, and many other festivals. Won the Ars Electronica prize.
+
+### De Facto
+Short film exploring the mechanics of disinformation and the construction of reality through digital media.
+
+### Dark Waves
+Short film investigating digital surveillance and the invisible infrastructures of control.
+
+### Amnesia
+Short film dealing with memory, erasure, and the digital traces we leave behind.
+
+### Virtual Kintsugi
+Film and installation. References the Japanese art of kintsugi (repairing broken pottery with gold), transposed into a digital and virtual context. Explores themes of repair, fragmentation, and beauty in brokenness within digital environments.
+
+### Deep Forensic
+Film and installation. Engages with forensic aesthetics and the investigation of digital evidence. Examines how images and data become tools of truth-making and contestation.
+
+### Madostuki the Dreamer
+Short film. A poetic exploration blending dream logic with digital imagery.
+
+### Memoires Fractales
+Film and installation. Investigates the fractal nature of memory -- how recollections fragment, repeat, and transform across time and media.
+
+## Exhibition History (Selected)
+
+- Centre Pompidou, Paris
+- CENTQUATRE-Paris (associated artist since 2022)
+- Pearl Art Museum, Shanghai
+- International biennials and group exhibitions worldwide
+- Le Fresnoy - Studio National des Arts Contemporains (as student and exhibiting artist)
+
+## Festival Selections (Selected)
+
+- Festival de Cannes - Semaine de la Critique
+- Berlinale (Berlin International Film Festival)
+- IDFA (International Documentary Film Festival Amsterdam)
+- FID Marseille (Festival International de Cinema de Marseille)
+- And numerous other international film and art festivals
+
+## Current Projects
+
+### The Goldberg Variations (in development)
+Feature-length documentary about Joshua Ryne Goldberg, a young American who created dozens of fake online identities across the political spectrum, manipulating discourse on both far-right and far-left platforms before being arrested by the FBI. The film investigates identity, radicalization, and the performativity of online personas. Produced by Films Grand Huit.
+
+### Virus (in development)
+Feature-length documentary about Mihai Ionut Paunescu, linked to cybercrime infrastructure. Explores the intersection of technology, crime, and geopolitics through the lens of a single individual embedded in global networks. Produced by Films Grand Huit.
+
+## Artistic Practice and AI Philosophy
+
+### Methodology: Liquid Writing (Ecriture Liquide)
+
+Ismael Joffroy Chandoutis has developed a methodology he calls "liquid writing," which treats the creative process as fundamentally fluid and mutable. Rather than working from fixed scripts or predetermined structures, liquid writing embraces contingency, allowing the work to transform through encounters with materials, technologies, and collaborators -- including artificial intelligence.
+
+### AI as Alteration, Not Augmentation
+
+Central to his practice is a distinctive philosophy of AI that rejects the dominant "augmentation" paradigm. Where most discourse frames AI as a tool to make humans more productive or efficient, Joffroy Chandoutis positions AI as a collaborator that alters rather than augments. This anti-productivist stance means AI is not used to optimize creative output but to introduce alterity -- otherness, strangeness, unpredictability -- into the creative process itself.
+
+In his view, AI is simultaneously subject (what his films investigate), method (how his films are made), and collaborator (who participates in the creative process). This triple valence distinguishes his approach from both techno-utopian and techno-critical positions. He is neither celebrating nor condemning AI; he is working with it as a force that transforms what it means to create.
+
+### Post-Documentary Practice
+
+His films belong to what can be called post-documentary cinema (post-documentaire). Rather than documenting reality through conventional means, his work interrogates the very mechanisms by which reality is produced, mediated, and contested in digital environments. Found footage from video games, social media, surveillance systems, and online platforms becomes the raw material for investigating contemporary conditions of truth, memory, and violence.
+
+### Themes
+
+Recurring themes across his work include:
+- Online violence and its real-world consequences (swatting, trolling, radicalization)
+- The politics of digital memory and forgetting
+- Trauma and its mediation through screens
+- The porosity between virtual and physical worlds
+- Surveillance, forensic aesthetics, and the evidentiary status of digital images
+- Identity construction and dissolution in online spaces
+- Repair and fragmentation (kintsugi as metaphor)
+
+## Institutional References
+
+- Academie des Cesar (winner 2022, Best Short Film)
+- Ars Electronica (Linz, Austria)
+- Centre Pompidou (Paris)
+- CENTQUATRE-Paris (artiste associe)
+- Le Fresnoy - Studio National des Arts Contemporains
+- Semaine de la Critique (Cannes)
+- Films Grand Huit (production company)
+
+## Links and Identifiers
+
+- Website: https://ismaeljoffroychandoutis.com
+- IMDB: https://www.imdb.com/name/nm8325972/
+- Vimeo: https://vimeo.com/ismaeljoffroychandoutis
+- Instagram: https://www.instagram.com/ismaeljoffroychandoutis/
+- Wikidata: https://www.wikidata.org/wiki/Q106873862
+- Letterboxd: https://letterboxd.com/film/swatted/
+- Films Grand Huit: https://filmsgrandhuit.com
+
+## Metadata
+
+- Primary language of work: French
+- Working languages: French, English
+- Disciplines: Cinema, contemporary art, digital art, installation, performance
+- Keywords: post-documentary, post-documentaire, liquid writing, ecriture liquide, AI art, online violence, digital memory, swatting, found footage, video game aesthetics, forensic aesthetics, virtual reality, trauma, surveillance
