@@ -174,6 +174,36 @@ You can combine HP server power supplies with a standard ATX PSU using a dual-PS
 
 ---
 
+## The Energy Question
+
+Someone suggested I look into solar panels to offset the electricity cost. So I did.
+
+### What the rig actually consumes
+
+3× RTX 5090 at ~575W each, plus system overhead: roughly 2 kW under load. At 8 hours per day, that is 16 kWh/day, 480 kWh/month, 5,760 kWh/year. At the French regulated tariff (~€0.195/kWh), that is about €1,150/year or €96/month.
+
+### Solar in Paris: honest numbers
+
+In Île-de-France, 1 kWc of solar panels produces 900-1,050 kWh per year. To offset my GPU consumption entirely, I would need ~6 kWc — a rooftop installation costing €8,000-10,000. Payback: 7-9 years, and only if I actually consume the electricity when the sun shines (autoconsommation rate ~30-40% without battery storage).
+
+Balcony plug-and-play panels (Beem, Sunology) are simpler: €430-700 for 400-500 Wc. But a single kit produces ~475 kWh/year — about €95 of electricity. Four kits on a balcony (1,800 Wc, ~€2,400) cover maybe 30% of the rig's consumption.
+
+Small wind turbines in urban Paris? Fantasy. Wind speed in the city is half that of rural areas, which means eight times less energy (power scales with the cube of velocity). The cost per kWh is 16 times higher than rural wind. Every Parisian experiment (Belleville park, Cité des Sciences) has been a demonstrator, not a solution.
+
+### The nuclear irony
+
+Here is the uncomfortable fact: France's electrical grid emits 19.6 gCO2eq/kWh — a European record, thanks to 70%+ nuclear power. My GPU rig at 5,760 kWh/year emits roughly 113 kg of CO2 annually. That is one Paris-Marseille drive.
+
+Solar panels, by contrast, emit 43 gCO2/kWh in lifecycle analysis (manufacturing, transport, end-of-life). **Plugging my GPUs into the French nuclear grid is already cleaner than powering them with solar panels.** The environmental argument for self-generation does not hold in a country where the grid is already 95% decarbonized.
+
+### The smart move: EDF Tempo
+
+The real optimization is not hardware but tariff. EDF Tempo offers electricity at €0.1288/kWh during off-peak hours on "blue" days (300 days per year), but €0.6586/kWh during peak hours on "red" days (22 days per year).
+
+Strategy: run heavy inference overnight and off-peak (a cron job, not a lifestyle change). Throttle or shut down GPUs during the 22 red days. If 80% of consumption falls in blue off-peak, monthly cost drops from ~€96 to ~€62. That is €400/year saved with zero investment — just a script that checks the RTE calendar.
+
+---
+
 ## What I Am Actually Going to Do
 
 1. **Keep one Claude Max subscription.** For the tasks where nothing else works: long agentic coding sessions, complex multi-file refactors, this exact kind of research and writing. The goal is not to eliminate the API. It is to stop using $600/day of it.
@@ -229,6 +259,13 @@ Even if that machine depends on NVIDIA's cobalt and TSMC's water. At least I can
 - [Electricity Prices in France — EDF Tarif Réglementé 2026](https://www.edf.fr/)
 - [Anthropic API Pricing — Claude Models](https://docs.anthropic.com/en/docs/about-claude/pricing)
 - [GPU Power Consumption Benchmarks 2025-2026](https://www.techpowerup.com/review/)
+
+### Energy & Environment
+- [Hellowatt — EDF Tempo Tarifs 2026](https://www.hellowatt.fr/blog/tarifs-edf-tempo-nouvelle-grille-prix/)
+- [RTE — Eco2mix CO2 Emissions](https://www.rte-france.com/en/data-publications/eco2mix/eco2-emissions)
+- [SFEN — Emissions Carbone du Nucléaire Français](https://www.sfen.org/rgn/les-emissions-carbone-du-nucleaire-francais-37g-de-co2-le-kwh/)
+- [TotalEnergies — Panneau Solaire Île-de-France](https://www.totalenergies.fr/particuliers/nos-services/autoconsommation-solaire/installation-panneau-solaire/panneau-solaire-ile-de-france)
+- [Beem Energy — Kits Plug and Play](https://beemenergy.fr/collections/panneaux-solaires-plug-and-play)
 
 ### Political Economy
 - [Crawford, Kate — *Atlas of AI* (2021)](https://yalebooks.yale.edu/book/9780300264630/atlas-of-ai/)
