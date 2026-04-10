@@ -68,9 +68,9 @@ The AI brain I'm building is an extension of this method into memory itself.
 
 When Claude Code can search across five years of research by meaning — not by folder, not by filename, not by keyword — liquid writing becomes possible at a scale it couldn't reach before.
 
-Query: *"What do I know about characters who fabricate their own myth and are eventually destroyed by it?"*
+Query: *"What do I know about the relationship between physical space and psychological state in confined environments?"*
 
-The system returns: chunks from my research archive, a fragment of a Pessoa essay I saved in 2021, three frames from a reference film I described in a note, a voice memo I recorded walking in Lyon, a section of a legal document.
+The system returns: chunks from a research archive, a fragment of a Bachelard essay I saved years ago, three frames from a reference film I described in a note, a voice memo I recorded walking in a city, an architectural diagram.
 
 None of these contain the same words. All of them belong to the same question.
 
@@ -157,7 +157,7 @@ The universal assistant the industry is racing to build for everyday life — th
 - [ ] Custom MCP server exposing semantic search to Claude Code
 - [ ] Auto-sync: new or modified files trigger re-embedding
 
-**Concrete use case:** During a writing session, ask: *"What do I know about online identity performance and self-destruction?"* — returns relevant chunks from tens of thousands of archived posts, interview transcripts, academic papers, and my own notes. Without me leaving the terminal.
+**Concrete use case:** During a writing session, ask: *"What do I know about the gap between public persona and private reality?"* — returns relevant chunks from archived research material, interview transcripts, academic papers, and personal notes. Without me leaving the terminal.
 
 ### Phase 2 — Image RAG
 *Visual memory. Film stills, reference images, moodboards, scanned documents.*

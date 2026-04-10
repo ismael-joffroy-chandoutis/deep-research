@@ -482,10 +482,9 @@ Goldberg représente une manifestation pre-algorithmique de ce que l'IA généra
 ### Méthodologie et dispositif
 
 Pour aborder cette figure insaisissable, j'ai développé une méthodologie hybride qui reflète la complexité du sujet :
-1. Constitution d'une archive massive : J'ai rassemblé des dizaines de milliers de posts publiés par ses différentes identités, constituant une base de données de ses multiples expressions.
-2. Entretiens et correspondance : J'ai établi une correspondance avec le sujet, recueillant un volume considérable de témoignages directs, créant ainsi un dialogue entre la personne réelle et ses avatars.
-3. Utilisation critique du deepfake : Plutôt que d'utiliser cette technologie pour créer une illusion parfaite, je l'emploie précisément pour questionner la notion même d'identité stable. Le deepfake devient un outil pour explorer les interstices identitaires plutôt que pour simuler une authenticité illusoire.
-4. Cartographie visuelle des réseaux d'identités : L'installation propose une visualisation interactive de la constellation formée par les milliers de posts et leurs connexions, permettant au spectateur d'explorer physiquement cet espace latent d'identités.
+1. Constitution d'une archive : Rassemblement de matériaux issus des différentes identités en ligne, constituant un corpus de ses multiples expressions.
+2. Utilisation critique du deepfake : Plutôt que d'utiliser cette technologie pour créer une illusion parfaite, je l'emploie précisément pour questionner la notion même d'identité stable. Le deepfake devient un outil pour explorer les interstices identitaires plutôt que pour simuler une authenticité illusoire.
+3. Cartographie visuelle des réseaux d'identités : L'installation propose une visualisation interactive de la constellation formée par les posts et leurs connexions, permettant au spectateur d'explorer physiquement cet espace latent d'identités.
 
 ### Dépassement dialectique
 

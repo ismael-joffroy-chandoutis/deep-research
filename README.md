@@ -1,6 +1,6 @@
 # deep-research
 
-Investigations into the tools, systems, and ideas shaping AI-native creative practice.
+Research notes from a filmmaker working with computational instruments.
 
 By [Ismaël Joffroy Chandoutis](https://music.apple.com/artist/isma%C3%ABl-joffroy-chandoutis/1578091885) — filmmaker, digital artist, Paris.
 
@@ -35,23 +35,7 @@ The case for a local, AI-native knowledge base for cinema production. Semantic s
 ### 07. [Nine AI Methods for Auteur Cinema](07-nine-ai-methods-cinema/)
 Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA custom training, latent drift animation, LLM corpus avatar, and more. Nine methods developed through practice.
 
-### 08. Spectre: Claude Code as Personal OS *(coming soon)*
-One intelligence, one memory, all the nodes. How a filmmaker turned a CLI tool into an operating system across three machines and two continents.
-
-### 09. Six Modes of AI-Assisted Documentary *(coming soon)*
-Research, Writing, Consolidation, Brainstorm, Fact-Check, Funding. A decision tree for when to use which AI mode, with temperature and thinking parameters.
-
-### 10. An Artist's TELOS *(coming soon)*
-Liquid writing. Alteration versus augmentation. Post-documentary. The operating system behind the operating system.
-
-### 11. Liquid Writing *(coming soon)*
-Dissolving the boundaries between research, writing, shooting, and editing. When the process becomes the work.
-
-### 12. Multi-Machine Orchestration on a Filmmaker's Budget *(coming soon)*
-Three machines, two continents, one mesh. Tailscale, Ollama, Claude Code, and the personal cluster.
-
-### 13. Max Plan vs API: Real Cost Data *(coming soon)*
-What a heavy Claude Code user actually spends. Numbers, not estimates.
+*More essays in progress. Some will be published after the films are finished.*
 
 ---
 
