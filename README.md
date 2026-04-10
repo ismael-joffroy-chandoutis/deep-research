@@ -35,6 +35,9 @@ The case for a local, AI-native knowledge base for cinema production. Semantic s
 ### 07. [Nine AI Methods for Auteur Cinema](07-nine-ai-methods-cinema/)
 Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA custom training, latent drift animation, LLM corpus avatar, and more. Nine methods developed through practice.
 
+### 08. [The Persona Factory](08-persona-factory/)
+*April 2026* — My subject created a hundred online personas. I have created more. The mirror between a documentary filmmaker building hundreds of AI agent personas and the person he is filming. On summoning the dead, dissolved sleep cycles, and the compulsion to multiply.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
