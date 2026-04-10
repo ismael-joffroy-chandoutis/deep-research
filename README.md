@@ -17,7 +17,10 @@ These essays are the research I do along the way. Not tutorials. Not product rev
 ### 01. [The OS of Tomorrow: A Filmmaker's Investigation](01-os-of-tomorrow/)
 *April 2026* — What is the operating system of tomorrow when AI is the interface and the machine is substrate? A comparative analysis of macOS, Windows, NixOS, Docker, and immutable Linux through the lens of a multi-machine creative practice. With Karpathy, Torvalds, and the reproducibility crisis.
 
-### 02. Agentic Engineering Is Mise en Scène *(coming soon)*
+### 02. [The Sovereignty Machine: On Building Local AI Infrastructure](02-sovereignty-machine/)
+*April 2026* — Can a filmmaker build a local GPU rig that replaces Claude Code? The real costs, the real performance gap, the real politics. Hardware specs meet supply chain critique. With a Deep Research thread correction, honest VRAM math, and the question no one wants to ask: what does the machine produce, and for whom?
+
+### 03. Agentic Engineering Is Mise en Scène *(coming soon)*
 The editing room emptied when NLE arrived. Now the code editor empties. A filmmaker's perspective on the AI coding revolution, Kuleshov at scale, and agentic engineering as directing.
 
 ### 03. L'IA & l'artiste : un cadre critique *(coming soon)*
