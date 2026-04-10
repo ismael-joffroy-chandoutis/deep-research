@@ -74,7 +74,7 @@ Intrigué, je suis entré en contact avec lui alors qu'il purgeait une peine de 
 
 J'ai commencé par une installation pour la Biennale d'art numérique Nemo (Paris, 2023), qui plongeait le spectateur dans sa chambre, avec une vidéo se concentrant sur sa persona djihadiste, laquelle a mené à son arrestation en 2015 pour projet d'attentat terroriste. En 2024, j'ai présenté une autre installation au Port des créateurs (Toulon), incluant une série de photos générées par IA inspirées de nos échanges, ainsi qu'une datavisualisation produite à partir d'une base de données construite en récupérant toutes les traces laissées par Joshua sur le web 2.0 : des milliers de contributions sur IMDb (c'est un grand cinéphile), des centaines d'entrées sur Wikipedia et Reddit (certaines de ses personas géraient la modération de 150 subreddits).
 
-> **Note de mise à jour (2026)** : En février 2026, je me rends à Jacksonville, en Floride, pour rencontrer Joshua Ryne Goldberg et sa famille — une première rencontre physique qui marque une étape décisive dans le développement de *The Goldberg Variations*. Un contrat de droits est en cours de finalisation.
+> *Note : le projet continue d'évoluer.*
 
 La prochaine version du projet sera constituée d'une installation avec une vidéo générative, un journal intime sous la forme d'un deepfake qui se transforme sous nos yeux, de façon à insister sur son caractère insaisissable. Le projet aboutira sur une dernière œuvre : un long métrage linéaire.
 
