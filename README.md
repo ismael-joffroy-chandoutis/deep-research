@@ -20,41 +20,44 @@ These essays are the research I do along the way. Not tutorials. Not product rev
 ### 02. [The Sovereignty Machine: On Building Local AI Infrastructure](02-sovereignty-machine/)
 *April 2026* — Can a filmmaker build a local GPU rig that replaces Claude Code? The real costs, the real performance gap, the real politics. Hardware specs meet supply chain critique. With a Deep Research thread correction, honest VRAM math, and the question no one wants to ask: what does the machine produce, and for whom?
 
-### 03. Agentic Engineering Is Mise en Scène *(coming soon)*
-The editing room emptied when NLE arrived. Now the code editor empties. A filmmaker's perspective on the AI coding revolution, Kuleshov at scale, and agentic engineering as directing.
+### 03. [Agentic Engineering Is Mise en Scène](03-agentic-engineering/)
+*February 2026* — The editing room emptied when NLE arrived. Now the code editor empties. A filmmaker's perspective on the AI coding revolution, Kuleshov at scale, and agentic engineering as directing.
 
-### 03. L'IA & l'artiste : un cadre critique *(coming soon)*
-12,000 words. Delegation of power, neocolonialism of AI, Lacanian reading, copyright ecology, gameplay artistique, the documentary gaze versus the prompt.
+### 04. [L'IA & l'artiste : un cadre critique](04-ia-artiste-cadre-critique/)
+*2025-2026* — 12,000 words (French). Delegation of power, neocolonialism of AI, Lacanian reading, copyright ecology, gameplay artistique, the documentary gaze versus the prompt.
 
-### 04. The Filmmaker's AI Brain *(coming soon)*
-The case for a local, AI-native knowledge base for cinema production. Semantic search versus keyword search for creative work. Data sovereignty as artistic practice.
+### 05. [L'IA et la dissolution des frontières médiatiques](05-dissolution-frontieres/)
+*2024* — On inhabiting generated worlds, hyper-immediacy, the dissolution of media boundaries. When Decart, Runway, and real-time world generation change what "filming" means.
 
-### 05. Spectre: Claude Code as Personal OS *(coming soon)*
+### 06. [The Filmmaker's AI Brain](06-filmmakers-ai-brain/)
+The case for a local, AI-native knowledge base for cinema production. Semantic search versus keyword search for creative work. Data sovereignty as artistic practice. Architecture, philosophy, roadmap.
+
+### 07. [Nine AI Methods for Auteur Cinema](07-nine-ai-methods-cinema/)
+Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA custom training, latent drift animation, LLM corpus avatar, and more. Nine methods developed through practice.
+
+### 08. Spectre: Claude Code as Personal OS *(coming soon)*
 One intelligence, one memory, all the nodes. How a filmmaker turned a CLI tool into an operating system across three machines and two continents.
 
-### 06. Nine AI Methods for Auteur Cinema *(coming soon)*
-Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA custom training, latent drift animation, LLM corpus avatar, and more.
-
-### 07. Six Modes of AI-Assisted Documentary *(coming soon)*
+### 09. Six Modes of AI-Assisted Documentary *(coming soon)*
 Research, Writing, Consolidation, Brainstorm, Fact-Check, Funding. A decision tree for when to use which AI mode, with temperature and thinking parameters.
 
-### 08. An Artist's TELOS *(coming soon)*
+### 10. An Artist's TELOS *(coming soon)*
 Liquid writing. Alteration versus augmentation. Post-documentary. The operating system behind the operating system.
 
-### 09. Liquid Writing *(coming soon)*
+### 11. Liquid Writing *(coming soon)*
 Dissolving the boundaries between research, writing, shooting, and editing. When the process becomes the work.
 
-### 10. Multi-Machine Orchestration on a Filmmaker's Budget *(coming soon)*
+### 12. Multi-Machine Orchestration on a Filmmaker's Budget *(coming soon)*
 Three machines, two continents, one mesh. Tailscale, Ollama, Claude Code, and the personal cluster.
 
-### 11. Max Plan vs API: Real Cost Data *(coming soon)*
+### 13. Max Plan vs API: Real Cost Data *(coming soon)*
 What a heavy Claude Code user actually spends. Numbers, not estimates.
 
 ---
 
 ## About
 
-I am a documentary filmmaker and digital artist. My films include *Entropic* (2019), *Familiar Touch* (2024), and the ongoing *The Goldberg Variations*. I work at the intersection of cinema, AI, and systems thinking.
+I am a documentary filmmaker and digital artist. My films have been shown at Cannes, Berlinale, IDFA, and Centre Pompidou. César 2022. I work at the intersection of cinema, AI, and systems thinking.
 
 This repository exists because I believe artists should share their technical research, not just their finished work. The tools we choose shape the art we make. Understanding those tools is part of the practice.
 
