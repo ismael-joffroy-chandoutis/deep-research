@@ -38,6 +38,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 08. [The Persona Factory](08-persona-factory/)
 *April 2026* — My subject created a hundred online personas. I have created more. The mirror between a documentary filmmaker building hundreds of AI agent personas and the person he is filming. On summoning the dead, dissolved sleep cycles, and the compulsion to multiply.
 
+### 09. [Voice Cloning & Audio Analysis Pipeline for Documentary Cinema](09-voice-cloning-pipeline/)
+*April 2026* — A ten-phase pipeline built on a laptop and an RTX 5090 to triage, clean, diarize, and reconstruct voices from hundreds of hours of raw documentary audio. Gemini 3 Flash as the content-plus-prosody classifier, noisereduce as the pragmatic fallback when DeepFilterNet breaks on Windows, pyannote 4.0 working around torchcodec, and the honest answer to whether an open-source tool can replace iZotope RX 11. Design decisions, cost numbers, and the hallucination that eats silent channels.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
