@@ -41,6 +41,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 09. [Voice Cloning & Audio Analysis Pipeline for Documentary Cinema](09-voice-cloning-pipeline/)
 *April 2026* — A ten-phase pipeline built on a laptop and an RTX 5090 to triage, clean, diarize, and reconstruct voices from hundreds of hours of raw documentary audio. Gemini 3 Flash as the content-plus-prosody classifier, noisereduce as the pragmatic fallback when DeepFilterNet breaks on Windows, pyannote 4.0 working around torchcodec, and the honest answer to whether an open-source tool can replace iZotope RX 11. Design decisions, cost numbers, and the hallucination that eats silent channels.
 
+### 10. [Le timeline devient lisible](10-le-timeline-devient-lisible/)
+*April 2026* (French) — Final Cut Pro is now programmable from the inside: a dylib injected into FCP's process exposes 78,000 ObjC classes via JSON-RPC, turning the timeline into a readable, writable data structure. What changes when an AI agent can call `blade_at_times()`, `get_transcript()`, `detect_scene_changes()` in real time? FCP, Resolve, Blender, ComfyUI become nodes in a single agentic pipeline. The liquid timeline for a film about liquid identity. With Farocki on operational images, Adam Curtis on the system that captures, Deleuze on the time-image.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
