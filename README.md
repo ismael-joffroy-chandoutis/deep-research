@@ -44,6 +44,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 10. [Le timeline devient lisible](10-le-timeline-devient-lisible/)
 *April 2026* (French) — Final Cut Pro is now programmable from the inside: a dylib injected into FCP's process exposes 78,000 ObjC classes via JSON-RPC, turning the timeline into a readable, writable data structure. What changes when an AI agent can call `blade_at_times()`, `get_transcript()`, `detect_scene_changes()` in real time? FCP, Resolve, Blender, ComfyUI become nodes in a single agentic pipeline. The liquid timeline for a film about liquid identity. With Farocki on operational images, Adam Curtis on the system that captures, Deleuze on the time-image.
 
+### 11. [La carte du montage en 2026](11-carte-du-montage-2026/)
+*April 2026* (French) — A benchmark and a compass. Thirty years of editing from Steenbeck to Claude Code, mapped against the real contenders of 2026: FCP 12.2, Resolve 20, Premiere 25.6, Avid, Blender VSE, CapCut. Engineering versus creativity. Collaboration gaps. The agentic paradigm shift via SpliceKit. A decision matrix by project type, and three summoned voices — Kirk Baxter, Thelma Schoonmaker, Walter Murch — on latency, hands, and what an agent does that a NLE never did. Central thesis: there is no universal answer. The right tool depends on the project.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
