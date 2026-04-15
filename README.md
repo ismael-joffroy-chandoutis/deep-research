@@ -23,10 +23,10 @@ These essays are the research I do along the way. Not tutorials. Not product rev
 ### 03. [Agentic Engineering Is Mise en Scène](03-agentic-engineering/)
 *February 2026* — The editing room emptied when NLE arrived. Now the code editor empties. A filmmaker's perspective on the AI coding revolution, Kuleshov at scale, and agentic engineering as directing.
 
-### 04. [L'IA & l'artiste : un cadre critique](04-ia-artiste-cadre-critique/)
-*2025-2026* — 12,000 words (French). Delegation of power, neocolonialism of AI, Lacanian reading, copyright ecology, gameplay artistique, the documentary gaze versus the prompt.
+### 04. [AI & The Artist: A Critical Framework](04-ai-and-the-artist-critical-framework/)
+*2025-2026* — 7800 words. Delegation of power, neocolonialism of AI, a Lacanian reading, copyright ecology, artistic gameplay, the documentary gaze versus the prompt. A philosophical essay on the place of AI in artistic practice.
 
-### 05. [L'IA et la dissolution des frontières médiatiques](05-dissolution-frontieres/)
+### 05. [AI and the Dissolution of Media Boundaries](05-dissolution-of-media-boundaries/)
 *2024* — On inhabiting generated worlds, hyper-immediacy, the dissolution of media boundaries. When Decart, Runway, and real-time world generation change what "filming" means.
 
 ### 06. [The Filmmaker's AI Brain](06-filmmakers-ai-brain/)
