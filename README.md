@@ -47,6 +47,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 11. [The 2026 Editing Map](11-the-2026-editing-map/)
 *April 2026* — A benchmark and a compass. Thirty years of editing from Steenbeck to Claude Code, mapped against the real contenders of 2026: FCP 12.2, Resolve 20, Premiere 25.6, Avid, Blender VSE, CapCut, plus the AI-native outliers (LTX Studio, Runway, Sora, Firefly, Krea). Engineering versus creativity. Collaboration gaps. The agentic paradigm shift via SpliceKit. A decision matrix by project type, and three summoned voices — Kirk Baxter, Thelma Schoonmaker, Walter Murch — on latency, hands, and what an agent does that a NLE never did. Central thesis: there is no universal answer. The right tool depends on the project.
 
+### 12. [Danny Wolfers / Legowelt — Deep Research](12-legowelt-danny-wolfers/)
+*April 2026* — Exhaustive research on Danny Wolfers (Legowelt), Dutch electronic musician from Scheveningen. 45+ confirmed aliases, two labels (Strange Life Records, Nightwind Records), philosophy of sonic fiction, Shadow Wolf Cyberzine, free sample packs, Den Haag underground. The figure who has spent thirty years building fictional worlds through music — each alias its own hardware, era-constraint, and imaginary backstory. Research conducted via 5 parallel subagents across 50+ sources. Includes: complete alias list with corrections of common misattributions, voice & style analysis, studio documentation, and a reading of how his model of multiplied identity differs from and illuminates the Goldberg question.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
