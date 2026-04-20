@@ -1,235 +1,235 @@
 # Danny Wolfers / Legowelt, Deep Research
 
-_Autoresearch, 2026-04-20, 5 agents parallèles, 50+ sources consultées_
+_Autoresearch, 2026-04-20, 5 parallel agents, 50+ sources_
 
 ---
 
-## Résumé exécutif
+## Executive Summary
 
-Danny Wolfers est un musicien électronique néerlandais de Scheveningen (Den Haag), actif depuis le début des années 1990 sous plus de 45 aliases confirmés. Sa figure centrale est **Legowelt**, nom inventé pour un flyer en 1997, signifiant littéralement "World of Lego" en allemand, choisi parce que ça sonnait "techno, comme Kraftwerk's Computerwelt." Il a sorti son premier vinyl "Pimpshifter" sur Bunker Records en 1999. "Disco Rout" a été élu track de l'année par le magazine allemand Groove en 2002, une track que Wolfers lui-même jugeait "pas assez bien" pour son album.
+Danny Wolfers is a Dutch electronic musician from Scheveningen (Den Haag), active since the early 1990s under more than 45 confirmed aliases. His central figure is **Legowelt**, a name invented for a flyer in 1997, literally meaning "World of Lego" in German, chosen because it sounded "techno, like Kraftwerk's Computerwelt." He released his vinyl debut "Pimpshifter" on Bunker Records in 1999. "Disco Rout" was voted track of the year by German magazine Groove in 2002, a track Wolfers himself considered "not good enough" for his album.
 
-Il dirige deux labels : Strange Life Records (2004-2010, plus de 30 releases en CD-R abordable) et Nightwind Records (2014-ongoing, vinyle + cassette + comics + zines). Il distribue gratuitement des sample packs de ses synthétiseurs depuis 2013. Sa philosophie centrale : **la musique comme sonic fiction**, chaque alias est un monde fictionnel distinct avec son propre hardware, son propre espace-temps, son propre backstory imaginaire.
+He runs two labels: Strange Life Records (2004-2010, 30+ releases on affordable CD-R) and Nightwind Records (2014-ongoing, vinyl + cassette + comics + zines). He has been giving away free synthesizer sample packs on his website since 2013. His central philosophy: **music as sonic fiction**, each alias a distinct fictional world with its own hardware, its own era, its own imaginary backstory.
 
 ---
 
-## Biographie & origines
+## Biography & Origins
 
 ### Den Haag / Scheveningen
 
-Né à Scheveningen, quartier côtier de La Haye sur la Mer du Nord. Date exacte de naissance non publique, Wolfers ne diffuse pas ses données biographiques personnelles. Actif musicalement depuis le début des années 90. Scolarisé dans un lycée de La Haye où ses pairs écoutaient Weezer et Soundgarden tandis qu'il s'obsédait pour le techno de Detroit et le house de Chicago, découverts via les émissions nationales de radio et les disquaires.
+Born in Scheveningen, a coastal district of The Hague on the North Sea. Exact birthdate not public. Wolfers does not circulate personal biographical data. Musically active since the early 1990s. As a high school student in The Hague, his peers listened to Weezer and Soundgarden while he obsessed over Detroit techno and Chicago house, discovered through national radio broadcasts and record stores.
 
-Le moment décisif : entendre **Unit Moebius** à la radio nationale, des tracks lo-fi brutes façon Chicago produites depuis La Haye même, et réaliser que la musique qu'il aimait pouvait être faite localement. "You could also make that music if you were from The Hague... you didn't have to be from the ghetto." Il se présente au bureau de Bunker Records. Il est pris en charge par **I-F (Ferenc van der Sluijs)** et **Melvin White (Pametex)** qui l'initient à l'électro et au "disco italien obscur pré-1983 dont les secrets de production furent minutieusement étudiés."
+The decisive moment: hearing **Unit Moebius** on national radio, raw lo-fi Chicago-style tracks made in The Hague itself, and realizing that the music he loved could be made locally. "You could also make that music if you were from The Hague... you didn't have to be from the ghetto." He walked into the Bunker Records office. He was mentored by **I-F (Ferenc van der Sluijs)** and **Melvin White (Pametex)**, who introduced him to electro and "the obscure pre-1983 Italian disco whose production secrets were closely studied."
 
-### La scène Den Haag
+### The Den Haag Scene
 
-L'écosystème qui a formé Legowelt :
-- **Bunker Records** (Guy Tavares), son premier label, le cœur de la scène
-- **Viewlexx / Intergalactic FM** (I-F / Ferenc van der Sluijs), radio pirate, distrib, mentor
-- **Crème Organization** (DJ TLR)
-- **Clone Records** (Rotterdam), distributeur central de toute la scène
-- Nées des raves "Acid Planet" dans La Haye au début des années 90, sessions de 12h+ dans des bâtiments désaffectés
+The ecosystem that shaped Legowelt:
+- **Bunker Records** (Guy Tavares), his first label, the core of the scene
+- **Viewlexx / Intergalactic FM** (I-F / Ferenc van der Sluijs), pirate radio, distribution, mentor
+- **Creme Organization** (DJ TLR)
+- **Clone Records** (Rotterdam), central distributor for the entire scene
+- Born from the "Acid Planet" raves in The Hague in the early 1990s, 12+ hour sessions in disused buildings
 
-L'éthos Bunker, articulé par I-F : _"We couldn't handle having commercial hands involved in our stuff, because then we would end up playing by other people's rules. We can do whatever the fuck we want, and we still do."_
+The Bunker ethos, as articulated by I-F: _"We couldn't handle having commercial hands involved in our stuff, because then we would end up playing by other people's rules. We can do whatever the fuck we want, and we still do."_
 
-### Discographie clé
+### Key Discography
 
-| Année | Release | Label | Note |
-|-------|---------|-------|------|
+| Year | Release | Label | Note |
+|------|---------|-------|------|
 | 1999 | *Pimpshifter* | Bunker Records | Vinyl debut |
-| 2002 | "Disco Rout" | Ghostly Int. / Cocoon | Track de l'année Groove 2002 |
-| 2011 | *Sark Island Acid* | L.I.E.S. 005 | EP de référence |
-| 2011 | *TEAC Life* | Free DL / Nightwind NW012 | Techno forest, one-take Juno/RM1X |
-| 2012 | *The Paranormal Soul* | Clone Jack For Daze | Chef d'oeuvre reconnu |
-| 2014 | *Crystal Cult 2080* | Crème Organization | Enregistré à La Haye + LA + Tokyo + désert californien |
+| 2002 | "Disco Rout" | Ghostly Int. / Cocoon | Groove track of the year 2002 |
+| 2011 | *Sark Island Acid* | L.I.E.S. 005 | Reference EP |
+| 2011 | *TEAC Life* | Free DL / Nightwind NW012 | Forest techno, one-take Juno/RM1X |
+| 2012 | *The Paranormal Soul* | Clone Jack For Daze | Recognized masterwork |
+| 2014 | *Crystal Cult 2080* | Creme Organization | Recorded in The Hague + LA + Tokyo + Californian desert |
 | 2017 | *Legendary Freaks In The Trash Of Time* | Clone West Coast Series | Double LP |
-| 2024 | *The Sad Life of an Instagram DJ* | Selvamancer | Titre = position politique |
-| 2024-2025 | Série *Hermit in a Rave Cave* | Bandcamp | En cours |
+| 2024 | *The Sad Life of an Instagram DJ* | Selvamancer | Title = political position |
+| 2024-2025 | *Hermit in a Rave Cave* series | Bandcamp | Ongoing |
 
 ---
 
-## Liste exhaustive des aliases (45+)
+## Complete Alias List (45+)
 
-### Aliases solos confirmés
+### Confirmed Solo Aliases
 
-| Alias | Style | Label principal | Note |
-|-------|-------|-----------------|------|
-| **Legowelt** | Acid techno, deep house, électro, ambient | Bunker / Clone / Nightwind | Principal |
-| **Danny Wolfers** | Ambient, new age, soundtrack graphique | Nightwind Records | Nom propre pour oeuvres perso |
-| **Smackos** | House, acid lo-fi, John Carpenter | Strange Life / Nightwind | Alias de radio : Astro Unicorn sur Intergalactic FM |
-| **Franz Falckenhaus** | Ambient guerre froide, cinématique | Strange Life | "Dark smudgy ultra melancholical cold war soundtracks" |
-| **Klaus Weltman** | Électronique | Strange Life | |
-| **Gladio** | Électro gréco-romain, Amiga exclusivement | L.I.E.S. | "Très sale, produit salement, avec des paroles explicites" |
-| **Polarius** | Chicago house essence, Amiga | Auto-produit | "Deeper stuff, from the soul, more emotional" |
-| **Occult Orientated Crime** | Ambient psychédélique | Nightwind Records (NW001) | "Ritualistic neuroscience music" |
-| **Squadra Blanco** | Space age électro / horror film | Holosynthesis Records | Hommage Goblin + Carpenter |
-| **Nomad Ninja** | Expérimental cassette | Nightwind NW006 | |
-| **Phalangius** | Soundtrack horror/spy | Strange Life | |
-| **The Psychic Stewardess** | Cinématique / mystère | Strange Life | "Stewardesse à mi-temps et psychique de Palm Springs" |
-| **Florenza Mavelli** | Électronique cinématique | Strange Life | Personnage féminin fictif |
-| **House Of Jezebel** | Chicago house | Rush Hour | "Collision de DJ Pierre et First Choice" |
-| **Nacho Patrol** | Électronique influencé Afrique | - | "Mostly African-influenced stuff" |
+| Alias | Style | Primary Label | Note |
+|-------|-------|---------------|------|
+| **Legowelt** | Acid techno, deep house, electro, ambient | Bunker / Clone / Nightwind | Primary alias |
+| **Danny Wolfers** | Ambient, new age, graphic novel soundtracks | Nightwind Records | Own name for personal works |
+| **Smackos** | House, lo-fi acid, John Carpenter | Strange Life / Nightwind | Radio alias: Astro Unicorn on Intergalactic FM |
+| **Franz Falckenhaus** | Cold War ambient, cinematic | Strange Life | "Dark smudgy ultra melancholical cold war soundtracks" |
+| **Klaus Weltman** | Electronic | Strange Life | |
+| **Gladio** | Greco-Roman electro, Amiga exclusively | L.I.E.S. | "Very dirty music, very dirtily produced, with explicit lyrics" |
+| **Polarius** | Chicago house essence, Amiga | Self-released | "Deeper stuff, from the soul, more emotional" |
+| **Occult Orientated Crime** | Psychedelic ambient | Nightwind Records (NW001) | "Ritualistic neuroscience music" |
+| **Squadra Blanco** | Space age electro / horror film | Holosynthesis Records | Homage to Goblin + Carpenter |
+| **Nomad Ninja** | Experimental cassette | Nightwind NW006 | |
+| **Phalangius** | Horror/spy soundtrack | Strange Life | |
+| **The Psychic Stewardess** | Cinematic / mystery | Strange Life | "A part-time stewardess and psychic from Palm Springs" |
+| **Florenza Mavelli** | Cinematic electronic | Strange Life | Fictional female character |
+| **House Of Jezebel** | Chicago house | Rush Hour | "Collision of DJ Pierre and First Choice" |
+| **Nacho Patrol** | African-influenced electronic | - | "Mostly African-influenced stuff" |
 | **Raheem Hershel** | Jacking ghetto techno/house | - | |
 | **Seaside Houz Boyz** | Lo-fi house | - | |
 | **Trackman Lafonte & Bonquiqui** | "Surfer house" | - | |
-| **Alchemulator** | Électronique | Bandcamp | |
-| **Bontempi 666** | Lo-fi one-take | Nightwind NW015 | Enregistré sur un Bontempi BT805 un lundi pluvieux 2017 |
-| **Calimex Mental Implant Corp.** | Électronique | - | |
-| **Commanding The Beast** | Électronique | - | |
-| **Coverti World** | Électronique | - | |
-| **Dickie Smabers & Moerwijk Crew** | Électronique / humour | - | |
-| **Lords Of Midnite** | Électronique | - | |
-| **Ray Escortienda** | Électronique | - | |
-| **Rising Sun Systems** | Électronique | - | |
-| **Saab Knutson** | Électronique / acid | Discogs confirmé | |
-| **Jackmaster Corky** | Électronique | - | |
-| **Salamandos** | Électronique | - | |
-| **Sammy Osmo** | Électronique | Discogs confirmé | |
-| **Satomi Taniyama** | Électronique | Discogs confirmé | Alias japonais |
-| **Star Shepherd** | Électronique | - | |
-| **Tandy Ogmo** | Électronique | - | |
-| **Twilight Moose** | Électronique | - | |
-| **Ufocus** | Électronique | - | |
-| **Venom 18** | Électronique | - | |
-| **Westside Box Savants** | Électronique | - | |
-| **Africa Jet Band** | Électronique afro | - | |
-| **Zorlok Compressor** | Électronique | Nightwind / Bandcamp | |
-| **Hermit In A Rave Cave** | Électronique | Bandcamp | 2024-ongoing |
-| **Audiosport 8** | Électronique | - | |
-| **Legopel** | Électronique | - | Variante |
-| **Alpenmarmot** | Électronique | - | |
+| **Alchemulator** | Electronic | Bandcamp | |
+| **Bontempi 666** | Lo-fi one-take | Nightwind NW015 | Recorded on a crappy Bontempi BT805, one take, rainy Monday 2017 |
+| **Calimex Mental Implant Corp.** | Electronic | - | |
+| **Commanding The Beast** | Electronic | - | |
+| **Coverti World** | Electronic | - | |
+| **Dickie Smabers & Moerwijk Crew** | Electronic / character-based | - | |
+| **Lords Of Midnite** | Electronic | - | |
+| **Ray Escortienda** | Electronic | - | |
+| **Rising Sun Systems** | Electronic | - | |
+| **Saab Knutson** | Electronic / acid | Discogs confirmed | |
+| **Jackmaster Corky** | Electronic | - | |
+| **Salamandos** | Electronic | - | |
+| **Sammy Osmo** | Electronic | Discogs confirmed | |
+| **Satomi Taniyama** | Electronic | Discogs confirmed | Japanese-named alias |
+| **Star Shepherd** | Electronic | - | |
+| **Tandy Ogmo** | Electronic | - | |
+| **Twilight Moose** | Electronic | - | |
+| **Ufocus** | Electronic | - | |
+| **Venom 18** | Electronic | - | |
+| **Westside Box Savants** | Electronic | - | |
+| **Africa Jet Band** | Afro-electronic | - | |
+| **Zorlok Compressor** | Electronic | Nightwind / Bandcamp | |
+| **Hermit In A Rave Cave** | Electronic | Bandcamp | 2024-ongoing |
+| **Audiosport 8** | Electronic | - | |
+| **Legopel** | Electronic | - | Variant spelling |
+| **Alpenmarmot** | Electronic | - | |
 
-### Projets collaboratifs confirmés
+### Confirmed Collaborative Projects
 
-| Projet | Avec | Style | Label |
-|--------|------|-------|-------|
+| Project | With | Style | Label |
+|---------|------|-------|-------|
 | **Catnip** | Luke Eargoggle | Dutch disco funk | Clone Records |
 | **The Chicago Shags** | Orgue Electronique | Chicago house | - |
-| **Los Hermanos Rodriguez** | Guy Tavares (Unit Moebius) | Électronique | Discogs confirmé |
-| **Smackulator** | William Burnett / Grackle | Électronique | Discogs confirmé |
-| **Zandvoort & Uilenbal** | Jimi Helinga (musique médiévale) | "Para-académique" | WeMe Records (Clone) |
-| **Mr. Clavio** | TLR | Électronique | - |
-| **Macho Cat Garage** | Orgue Electronique | Électronique | - |
-| **XAMIGA** | - | Électronique | Discogs |
+| **Los Hermanos Rodriguez** | Guy Tavares (Unit Moebius) | Electronic | Discogs confirmed |
+| **Smackulator** | William Burnett / Grackle | Electronic | Discogs confirmed |
+| **Zandvoort & Uilenbal** | Jimi Helinga (medieval music) | "Para-academic" | WeMe Records (Clone) |
+| **Mr. Clavio** | TLR | Electronic | - |
+| **Macho Cat Garage** | Orgue Electronique | Electronic | - |
+| **XAMIGA** | - | Electronic | Discogs |
 
-### Aliases NON confirmés comme Wolfers (correction)
+### Aliases NOT Confirmed as Wolfers (Corrections)
 
-Les aliases suivants NE SONT PAS Danny Wolfers malgré des attributions erronées en circulation :
-- **Boriqua Tribez** = alias d'**Uncertain** (confirmé par Juno Download, Facebook/Codex, Discogs)
-- **Phuture Doom** = artiste brostep/EDM sans rapport (formé 2013)
-- **Jodey Kendrick** = artiste séparé sur WeMe Records (son propre album *Grace* 2007)
-- **Le Chocolate Donuts**, **TXL**, **Rude Boy Complex**, **Chestnut Computers** = non retrouvés dans aucune source
+The following aliases are NOT Danny Wolfers despite erroneous attributions circulating online:
+- **Boriqua Tribez** = alias of **Uncertain** (confirmed by Juno Download, Facebook/Codex, Discogs)
+- **Phuture Doom** = unrelated brostep/EDM artist (formed 2013)
+- **Jodey Kendrick** = separate artist on WeMe Records (his own album *Grace* 2007)
+- **Le Chocolate Donuts**, **TXL**, **Rude Boy Complex**, **Chestnut Computers** = not found in any source
 
 ---
 
-## Philosophie esthétique
+## Aesthetic Philosophy
 
-### "Sonic fiction", la musique comme bande-son imaginaire
+### Sonic Fiction: Music as Imaginary Soundtrack
 
-_"Fake soundtracking essentially gives music a narrative. It gives it a little backstory that's more interesting than just pointless techno track number 10000000 called 'megadoculus cybertrance'."_, Fact Magazine, 2009
+_"Fake soundtracking essentially gives music a narrative. It gives it a little backstory that's more interesting than just pointless techno track number 10000000 called 'megadoculus cybertrance'."_ (Fact Magazine, 2009)
 
-Chaque release Strange Life est accompagnée d'un "backstory lâche et d'une artwork évocatrice." Le projet Smackos "Computer Day" (2007) est la bande-son synthétique d'une histoire sur un développeur de jeu vidéo et une série de disparitions dans une petite ville américaine. Occult Orientated Crime est "vingt ans de formation et recherche musicale sur l'effet de la musique sur le cerveau." La Psychic Stewardess est un personnage fictif complet avec son propre univers sonore.
+Every Strange Life release came with a "loose backstory and evocative artwork." The Smackos project "Computer Day" (2007) is the synthetic soundtrack to a story about a game programmer and a series of disappearances in small-town USA. Occult Orientated Crime represents "twenty years of musical training and research on the effect of music on the brain." The Psychic Stewardess is a fully realized fictional character with her own sonic world.
 
-_"Melodies, notes & sounds always emit a world, so these stories and narratives emerge very easily. In a sense the music is a language, a code to project other worlds."_, Psychedelic Baby Magazine, 2021
+_"Melodies, notes & sounds always emit a world, so these stories and narratives emerge very easily. In a sense the music is a language, a code to project other worlds."_ (Psychedelic Baby Magazine, 2021)
 
-Strange Life Records est comparé par Fact Magazine à **Ghost Box UK** (Belbury Poly, etc.) pour ce "pairing de musique synthétiseur inquiétante avec des backstories fictionnelles vivantes."
+Fact Magazine compared Strange Life Records to **Ghost Box UK** (Belbury Poly, etc.) for this "pairing of creepy synthesizer music with vivid fictional backstories."
 
-### L'imagination futuriste morte, et vivante dans les circuits
+### The Futuristic Imagination: Dead, But Living in Old Circuits
 
-Sa phrase la plus révélatrice sur son worldview : le Polder Techno (le techno ambient néerlandais des années 90) était "the last vision of a future in a futuristic sense before any future collapsed." Il ne dit pas que le futur est mauvais. Il dit que l'imagination futuriste elle-même s'est éteinte à un moment. C'est pour ça que les vieilles machines comptent : elles portent encore cette imagination dans leurs circuits. La mélancolie est portée légèrement, sans nostalgie, sans grief.
+His most revealing statement about his worldview: Polder Techno (the dreamy Dutch ambient techno of the 1990s) was "the last vision of a future in a futuristic sense before any future collapsed." He does not say the future is bad. He says the futuristic imagination itself ended at some point. That is why old machines matter: they still carry that imagination in their circuits. The melancholy is held lightly, without nostalgia, without grievance.
 
-### Anti-plateforme : pratique, pas théorie
+### Anti-Platform: Practice, Not Theory
 
-- Pas de Twitter/X : "one foul mess of frustrated sad people"
-- Son site est la source canonique, maintenu quotidiennement
-- Le titre de son album 2024 (*The Sad Life of an Instagram DJ*) est sa position
-- Shadow Wolf Cyberzine (depuis 2014) : e-zine annuel anti-corporate en ASCII hacker style, devenu print à partir du numéro 11
+- No Twitter/X: "one foul mess of frustrated sad people"
+- His website is the canonical source, updated daily
+- The title of his 2024 album (*The Sad Life of an Instagram DJ*) is his position statement
+- Shadow Wolf Cyberzine (since 2014): annual anti-corporate e-zine in ASCII hacker style, turned print from issue 11
 - _"CYBERSPACE is not facebook, twitter, LinkedIn or your google+ prison which scans every fart you make to sell you more useless stuff."_
 
-### Sample packs gratuits : "sonic karma"
+### Free Sample Packs: Sonic Karma
 
-18+ packs disponibles sur legowelt.org depuis 2013. Synthés samplés : Prophet 600 (386 samples, décembre 2025), Jupiter 8 (500), Minimoog (223, "including all the noise, dust, crackle, unstableness and sheer uncorrupted walnut-wooden sensuality"), JD-800 (350), JV2080 (322), Mono/Poly (300), Juno-106 (250), Kawai K4 (385)... Philosophie : gratuit toujours, pas de revente, donations bienvenues "pour le karma."
+18+ packs available on legowelt.org since 2013. Synthesizers sampled: Prophet 600 (386 samples, December 2025), Jupiter 8 (500), Minimoog (223, "including all the noise, dust, crackle, unstableness and sheer uncorrupted walnut-wooden sensuality"), JD-800 (350), JV2080 (322), Mono/Poly (300), Juno-106 (250), Kawai K4 (385)... Philosophy: always free, no resale, donations welcome "for karma."
 
 ---
 
-## Voix et style d'écriture
+## Voice & Writing Style
 
-Son style d'écriture est la preuve principale de son caractère. Extraits des ses writeups de synthétiseurs et de son blog :
+His writing is the primary evidence of his character. Extracted from his synthesizer writeups and blog:
 
-**Caractéristiques vocales :**
-- CAPS LOCK soudain pour ce qui l'excite ou l'agace : "Pure SUCCULENT SYNTHESIZER SYRUP" / "Probably the most influential drummachine everrrrrrrr.."
-- Exclamations multiples, jamais une seule : "OUT NOW!!!!!!!!!!!!!"
-- Voyelles étirées : "everrrrrr" / "realllly scary" / "Funky basssss"
-- Rires inline : "ha ;p" (jamais LOL, jamais XD)
-- Digressions parenthétiques : "(I almost forgot to tell)" / "(Yes it sais THE before Source)"
-- Mises à jour appended sans supprimer l'original : "UPDATE: I got rid of this many many years ago (probably 2008?)"
-- Fautes "naturelles" non corrigées : "beautifull," "adventerous," "afficinado," "tearjearking"
-- Métaphores son-météo : "warm stormy fall / winter sound"
-- Destinations poétiques : "gateway to a netherworld"
-- L'histoire d'acquisition du synthé vaut autant que sa description sonore
+**Vocal signatures:**
+- Sudden CAPS LOCK for things that excite or annoy him: "Pure SUCCULENT SYNTHESIZER SYRUP" / "Probably the most influential drummachine everrrrrrrr.."
+- Multiple exclamation marks, never just one: "OUT NOW!!!!!!!!!!!!!"
+- Stretched vowels for intensity: "everrrrrr" / "realllly scary" / "Funky basssss"
+- Inline laugh: "ha ;p" (never LOL, never XD)
+- Parenthetical digressions: "(I almost forgot to tell)" / "(Yes it sais THE before Source)"
+- Appended updates without deleting the original: "UPDATE: I got rid of this many many years ago (probably 2008?)"
+- Intentional misspellings left uncorrected: "beautifull," "adventerous," "afficinado," "tearjearking"
+- Weather-to-sound metaphors: "warm stormy fall / winter sound"
+- Destination metaphors: "gateway to a netherworld"
+- The gear acquisition story matters as much as the sound description
 
-**Vocabulaire distinctif :**
+**Characteristic vocabulary:**
 - "Synthesizer archeology"
-- "Drexcian superweapon" (éloge max pour une basse électro)
-- "Lush," "juicy," "buttery," "succulent" pour les sons qu'il aime
-- "Business techno" (péjoratif), "sterile beats"
-- "Polder techno" (héritage néerlandais 90s)
-- "The fire within" (urgence créative authentique)
+- "Drexcian superweapon" (highest praise for an electro bass sound)
+- "Lush," "juicy," "buttery," "succulent" for sounds he loves
+- "Business techno" (pejorative), "sterile beats"
+- "Polder techno" (Dutch 90s ambient techno heritage)
+- "The fire within" (creative urgency, authenticity)
 - "Techno feudalism," "neo feudalist accelerated capitalist society"
-- "Sentient synthesizer being" (son instrument circuit-bent Star Shepherd)
+- "Sentient synthesizer being" (his circuit-bent Star Shepherd instrument)
 - "Running in a dusty corner of cyberspace since the dawn of internet"
-- "A shady deal behind [lieu]" (acquisition de synthés)
-- "Wooo" (excitation casual dans les posts)
+- "A shady deal behind [location]" (synth acquisition stories)
+- "Wooo" (casual excitement in blog posts)
 
 ---
 
-## Studio et hardware
+## Studio & Hardware
 
-Setup documenté (actuel/récent) :
-Sequential Prophet 600, Prophet 5, Pro One / Roland Jupiter 8, Jupiter 4, TR808, JD800, JV2080, Kiwi 106, SH101 / Moog Minimoog, Moog Muse / Oberheim OB6, Matrix 1000 / Novation Summit, Supernova / Yamaha DX7, DX5, CS30, SY35, Reface DX / Korg MS10, MS20, Mono/Poly / Akai X7000 Sampler, S900 / EMU Emax II, Vintage Pro / Commodore Amiga 1200 (début de carrière, puis revendu) / D&R 700 mixer / Ableton Live / Suite plugins SMACKOS (sa propre création) / **Star Shepherd**, instrument circuit-bent fait de pédales de guitare, boîtes EQ, une radio AM et un Casio 403 de 1981 qui "sometimes starts doing its own thing like some sentient synthesizer being that is alive."
-
----
-
-## Points de désaccord / tensions dans les sources
-
-1. **Birthdate** : Aucune source n'a pu confirmer la date exacte de naissance. Wolfers la garde délibérément privée.
-2. **"Pong EP" et "Woodland Rave"** : Ces titres n'ont pas surfacé dans les indexes web. Possibles releases très obscures ou d'un alias non indexé.
-3. **Amiga = "8-bit"** : Il corrige systématiquement ce raccourci, l'Amiga 1200 est une machine 32-bit, pas un "truc rétro 8-bit."
-4. **Aliases inventés en circulation** : De nombreuses attributions fausses circulent en ligne (Boriqua Tribez, Phuture Doom, etc.), voir section ci-dessus.
+Documented setup (current / recent):
+Sequential Prophet 600, Prophet 5, Pro One / Roland Jupiter 8, Jupiter 4, TR808, JD800, JV2080, Kiwi 106, SH101 / Moog Minimoog, Moog Muse / Oberheim OB6, Matrix 1000 / Novation Summit, Supernova / Yamaha DX7, DX5, CS30, SY35, Reface DX / Korg MS10, MS20, Mono/Poly / Akai X7000 Sampler, S900 / EMU Emax II, Vintage Pro / Commodore Amiga 1200 (early career, later sold) / D&R 700 mixer / Ableton Live / SMACKOS plugin suite (self-built) / **Star Shepherd**, a circuit-bent instrument made from guitar pedals, EQ boxes, an AM radio, and a 1981 Casio 403 keyboard that "sometimes starts doing its own thing like some sentient synthesizer being that is alive."
 
 ---
 
-## Implications pour un travail créatif
+## Points of Disagreement / Tensions in Sources
 
-**Pour Ismaël / The Goldberg Variations :**
+1. **Birthdate**: No source could confirm it. Wolfers keeps it deliberately private.
+2. **"Pong EP" and "Woodland Rave"**: These titles did not surface in any indexed source. Possibly very obscure releases or alias EPs not indexed online.
+3. **Amiga = "8-bit"**: He consistently corrects this shorthand. The Amiga 1200 is a 32-bit machine, not a "retro 8-bit thing."
+4. **Aliases circulating online**: Many false attributions circulate. See correction section above.
 
-La figure de Wolfers résonne directement avec la question centrale du projet : **les personas multiples comme architecture, pas comme tromperie.** Sa formule est précise, chaque alias a son propre hardware, sa propre contrainte d'époque, son propre monde fictionnel. Les identités ne sont pas des masques pour cacher quelque chose : ce sont des contenants fonctionnels pour des territoires soniques distincts. C'est une économie de l'identité différente de celle de Joshua Goldberg, mais qui partage la même question centrale : qu'est-ce qu'un moi qui se multiplie ?
+---
 
-Ce qui distingue Wolfers de Goldberg : la multiplication de Wolfers est **créative et productive**, elle génère des oeuvres qui existent dans le monde. La multiplication de Goldberg était **parasitique et destructrice**, elle consommait des identités réelles pour en faire des instruments. Mais l'architecture de base, un individu habitant simultanément plusieurs noms, genres, tons, est comparable. Et l'explication de Wolfers ("it would be weird to release them under one name") est probablement l'explication la plus simple et la plus honnête de pourquoi des humains se multiplient.
+## Implications for Creative Work
 
-**Pour la musique :** La philosophie de Wolfers sur les sample packs (gratuits, avec les défauts intégrés, "the noise, dust, crackle, unstableness") et ses outils librement distribués sont une direction possible pour le registre sonore du film. Le Shadow Wolf Cyberzine comme format, ASCII, hacker, anti-plateforme, dialogue avec la culture internet de l'époque Goldberg (2010-2016).
+**For The Goldberg Variations:**
 
-**Pour la pratique créative en général :** Le principe "don't hypothesize too much at first, the semiotic deeper ideas come late, first it is just the fire within" s'applique à tout processus de liquid writing.
+Wolfers resonates directly with the central question of the project: **multiple personas as architecture, not deception.** His formula is precise: each alias has its own hardware, its own era-constraint, its own fictional world. The identities are not masks concealing something: they are functional containers for distinct sonic territories. This is a different economy of identity from Joshua Goldberg's, but it shares the same central question: what is a self that multiplies?
+
+What distinguishes Wolfers from Goldberg: Wolfers' multiplication is **creative and productive**, it generates works that exist in the world. Goldberg's was **parasitic and destructive**, it consumed real identities to use them as instruments. But the base architecture, one individual simultaneously inhabiting multiple names, genres, tones, is comparable. And Wolfers' simplest explanation ("it would be weird to release them under one name") is probably the most honest account of why humans multiply.
+
+**For sound:** His philosophy on sample packs (free, with defects built in, "the noise, dust, crackle, unstableness") and his freely distributed tools point toward a possible sonic register for the film. The Shadow Wolf Cyberzine as format, ASCII, hacker, anti-platform, speaks to the internet culture of the Goldberg era (2010-2016).
+
+**For creative practice generally:** The principle "don't hypothesize too much at first, the semiotic deeper ideas come late, first it is just the fire within" applies to any liquid writing process.
 
 ---
 
 ## Sources
 
-Sources primaires :
-- [legowelt.org](https://legowelt.org), site officiel (blog, synths, cyberzine, samples)
-- [legowelt.bandcamp.com](https://legowelt.bandcamp.com), Bandcamp officiel
-- [cannibalradio.com, "The underground will always bubble up"](https://cannibalradio.com/news/legowelt-the-underground-will-always-bubble-up-one-way-or-another-if-you-have-a-vision-and-the-fire-something-will-happen), interview 2025
-- [axumisia.net, Legowelt 2025](https://www.axumisia.net/2025-legowelt-interview), album Synths Below Sea Level
+Primary:
+- [legowelt.org](https://legowelt.org) : official site (blog, synths, cyberzine, samples)
+- [legowelt.bandcamp.com](https://legowelt.bandcamp.com) : official Bandcamp
+- [cannibalradio.com : "The underground will always bubble up"](https://cannibalradio.com/news/legowelt-the-underground-will-always-bubble-up-one-way-or-another-if-you-have-a-vision-and-the-fire-something-will-happen) : 2025 interview
+- [axumisia.net : Legowelt 2025](https://www.axumisia.net/2025-legowelt-interview) : Synths Below Sea Level album
 - [RBMA lecture Seattle 2005](https://www.redbullmusicacademy.com/lectures/legowelt-building-bricks/)
 - [RBMA interview 2013](https://daily.redbullmusicacademy.com/2013/12/legowelt-interview-2013/)
 - [Fact Magazine 2009](https://www.factmag.com/2009/09/16/interview-legowelt/)
-- [The Skinny, Crystal Cult 2080](https://www.theskinny.co.uk/clubs/interviews/studio-rat-danny-wolfers-bares-crystal-cult-2080)
+- [The Skinny : Crystal Cult 2080](https://www.theskinny.co.uk/clubs/interviews/studio-rat-danny-wolfers-bares-crystal-cult-2080)
 - [Inverted Audio feature](https://inverted-audio.com/feature/legowelt/)
 - [Psychedelic Baby Magazine 2021](https://www.psychedelicbabymag.com/2021/01/legowelt-interview.html)
-- [XLR8R, Bunker Records feature](https://xlr8r.com/features/bunker-records-the-west-coast-sound-of-holland/)
-- [Crack Magazine, Talking Film with Legowelt](https://crackmagazine.net/article/lists/talking-film-with-legowelt/)
+- [XLR8R : Bunker Records feature](https://xlr8r.com/features/bunker-records-the-west-coast-sound-of-holland/)
+- [Crack Magazine : Talking Film with Legowelt](https://crackmagazine.net/article/lists/talking-film-with-legowelt/)
 - [glamcult.com](https://www.glamcult.com/articles/in-conversation-with-legowelt/)
 
-Bases de données :
+Databases:
 - [Wikipedia](https://en.wikipedia.org/wiki/Legowelt)
 - [Discogs artist/12828](https://www.discogs.com/artist/12828-Legowelt)
 - [MusicBrainz](https://musicbrainz.org/artist/764eb299-d4a6-4a9d-af8b-d0dcf7b3d3ca)
@@ -238,10 +238,9 @@ Bases de données :
 
 ---
 
-## Métadonnées
+## Metadata
 
-- **Agents utilisés** : 5 subagents parallèles
-- **Sources consultées** : 50+
-- **Durée** : ~15 minutes (parallélisme)
-- **Date** : 2026-04-20
-- **Fichiers intermédiaires** : `/tmp/autoresearch-danny-{1-5}.md`
+- **Agents**: 5 parallel subagents
+- **Sources**: 50+
+- **Duration**: ~15 minutes (parallel execution)
+- **Date**: 2026-04-20
