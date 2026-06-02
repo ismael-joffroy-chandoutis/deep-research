@@ -1,6 +1,6 @@
 # deep-research
 
-Research notes from a filmmaker working with computational instruments.
+Investigations into the tools, systems, and ideas shaping AI-native creative practice.
 
 By [Ismaël Joffroy Chandoutis](https://music.apple.com/artist/isma%C3%ABl-joffroy-chandoutis/1578091885) — filmmaker, digital artist, Paris.
 
@@ -59,7 +59,7 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 
 ## About
 
-I am a documentary filmmaker and digital artist. My films have been shown at Cannes, Berlinale, IDFA, and Centre Pompidou. César 2022. I work at the intersection of cinema, AI, and systems thinking.
+I am a documentary filmmaker and digital artist. I work at the intersection of cinema, AI, and systems thinking.
 
 This repository exists because I believe artists should share their technical research, not just their finished work. The tools we choose shape the art we make. Understanding those tools is part of the practice.
 
