@@ -50,6 +50,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 12. [Danny Wolfers / Legowelt — Deep Research](12-legowelt-danny-wolfers/)
 *April 2026* — Exhaustive research on Danny Wolfers (Legowelt), Dutch electronic musician from Scheveningen. 45+ confirmed aliases, two labels (Strange Life Records, Nightwind Records), philosophy of sonic fiction, Shadow Wolf Cyberzine, free sample packs, Den Haag underground. The figure who has spent thirty years building fictional worlds through music — each alias its own hardware, era-constraint, and imaginary backstory. Research conducted via 5 parallel subagents across 50+ sources. Includes: complete alias list with corrections of common misattributions, voice & style analysis, studio documentation, and a reading of how his model of multiplied identity differs from and illuminates the Goldberg question.
 
+### 13. [Deux amours, deux images / Two Loves, Two Images](13-deux-amours-deux-images/)
+*June 2026.* Bilingual (French original, English version). A filmmaker who works with generative AI reads Leo XIV's first encyclical on AI and the human person, *Magnifica Humanitas* (15 May 2026). Neither enemy nor ally. The face the machine cannot give back, the blind spot where fiction appears only as a totalitarian symptom, the *différend* between the incarnate face and the latent one, and a conversation I never had that I am about to fabricate. Written in two voices: mine, and the instrument's, contradicting me in the margin.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
