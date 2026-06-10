@@ -53,6 +53,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 13. [Deux amours, deux images / Two Loves, Two Images](13-deux-amours-deux-images/)
 *June 2026.* Bilingual (French original, English version). A filmmaker who works with generative AI reads Leo XIV's first encyclical on AI and the human person, *Magnifica Humanitas* (15 May 2026). Neither enemy nor ally. The face the machine cannot give back, the blind spot where fiction appears only as a totalitarian symptom, the *différend* between the incarnate face and the latent one, and a conversation I never had that I am about to fabricate. Written in two voices: mine, and the instrument's, contradicting me in the margin.
 
+### 14. [Le chapitre manquant / The Missing Chapter](14-le-chapitre-manquant/)
+*June 2026.* Bilingual (French original, English version). A close reading of Dario Amodei's *Policy on the AI Exponential* from inside a practice that uses his company's tools daily. What the program gets right (the candor about state capture, the right to an equivalent AI against the state), what does not hold (the regulatory moat, the bloc logic, the unquestioned premise), and the chapter the text names as most important then leaves empty: meaning. Three functions only culture fulfills in Amodei's own scenario — making the exponential perceptible, holding exteriority to the race, prototyping post-employment life.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
