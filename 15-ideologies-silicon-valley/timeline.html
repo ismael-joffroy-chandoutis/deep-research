@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chronologie : capital, compute et pouvoir, 2021–2026</title>
+<style>
+  :root{ --bg:#0d1117; --panel:#161b22; --line:#2b3340; --text:#e6edf3; --muted:#9da7b3; --accent:#58a6ff;
+    --ideo:#f0883e; --money:#3fb950; --power:#e3b341; --material:#56d4dd; --counter:#9ee87d; }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  #wrap{max-width:860px;margin:0 auto;padding:20px 18px 60px}
+  h1{font-size:18px;font-weight:650;margin:.2em 0}
+  .sub{color:var(--muted);font-size:12.5px;margin:.3em 0 1em;max-width:60em}
+  .legend{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0 18px;font-size:12px;color:var(--muted)}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+  .tl{position:relative;margin-left:8px;padding-left:26px;border-left:2px solid var(--line)}
+  .yr{font-size:15px;font-weight:700;color:var(--accent);margin:22px 0 8px;position:relative}
+  .yr::before{content:'';position:absolute;left:-34px;top:3px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:2px solid var(--bg)}
+  .ev{position:relative;margin:0 0 11px}
+  .ev::before{content:'';position:absolute;left:-31px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--m,#9da7b3)}
+  .ev .date{color:var(--muted);font-size:12px;font-weight:600}
+  .ev .what{font-size:13.5px}
+  .ev .vol{color:var(--muted);font-size:11.5px;font-style:italic}
+  .foot{margin-top:24px;font-size:11.5px;color:var(--muted);font-style:italic;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>Chronologie : capital, compute et pouvoir, 2021–2026</h1>
+  <div class="sub">La chronologie du dossier, éclatée dans une dizaine de volets, rassemblée ici. Couleur par registre : idéologie, argent, pouvoir d'État, matière/énergie, contre-pouvoir.</div>
+  <div class="legend">
+    <span><i class="dot" style="background:var(--ideo)"></i>idéologie</span>
+    <span><i class="dot" style="background:var(--money)"></i>argent / marché</span>
+    <span><i class="dot" style="background:var(--power)"></i>pouvoir d'État</span>
+    <span><i class="dot" style="background:var(--material)"></i>matière / énergie</span>
+    <span><i class="dot" style="background:var(--counter)"></i>contre-pouvoir</span>
+  </div>
+  <div class="tl" id="tl"></div>
+  <div class="foot">Dates vérifiées dans les volets correspondants. Quelques entrées antérieures à 2021 sont rappelées pour la généalogie. Document autonome, hors-ligne. Juin 2026.</div>
+</div>
+<script>
+const EV = [
+  {y:'Sources', items:[
+    {d:'1909 / 1919', t:"Manifeste futuriste puis fasciste de Marinetti, ancêtre esthétique de l'accélérationnisme", v:'volet 6', c:'ideo'},
+    {d:'1997', t:"Douguine, « Fondements de la géopolitique » : eurasisme, multipolarité, anti-libéralisme", v:'volet 27', c:'ideo'},
+    {d:'2002', t:"Bostrom, « Existential Risks » : les « pressions dysgéniques » entrent dans le canon x-risk", v:'volet 28', c:'ideo'},
+    {d:'2009-2014', t:"LessWrong (Yudkowsky) ; Thiel : « liberté et démocratie ne sont plus compatibles »", v:'volets 2, 11', c:'ideo'},
+  ]},
+  {y:'2021-2023', items:[
+    {d:'jan. 2021', t:"Fondation d'Anthropic par sept dissidents d'OpenAI", v:'volet 20', c:'money'},
+    {d:'2021-2022', t:"OpenAI/Sama : annotateurs kényans à 1,32 $/h pour rendre ChatGPT « safe »", v:'volet 16', c:'material'},
+    {d:'oct. 2023', t:"Manifeste techno-optimiste d'Andreessen", v:'volet 1', c:'ideo'},
+    {d:'2023', t:"Première conférence Manifest à Lighthaven : le filon HBD platformé", v:'volet 28', c:'ideo'},
+    {d:'nov. 2024', t:"Palantir + AWS : Claude vendu à la défense (IL6)", v:'volets 20, 26', c:'power'},
+  ]},
+  {y:'2024', items:[
+    {d:'oct. 2024', t:"Amodei, « Machines of Loving Grace » : un « pays de génies dans un datacenter »", v:'volet 18', c:'ideo'},
+    {d:'30 avril 2024', t:"Tucker Carlson interviewe Douguine : le pont vers le mainstream américain", v:'volet 27', c:'ideo'},
+    {d:'sept. 2024', t:"Microsoft / Three Mile Island : PPA 20 ans (1,6 Md$) pour relancer la centrale", v:'volet 22', c:'material'},
+  ]},
+  {y:"2025 — l'accélération", items:[
+    {d:'jan. 2025', t:"Le moment DeepSeek : R1 open-weights pulvérise le récit de la suprématie par le compute", v:'volet 15', c:'material'},
+    {d:'fév. 2025', t:"Sommet IA de Paris (109 Md€) ; contre-sommet Sadin ; Mélenchon : « colonie numérique »", v:'volet 21', c:'counter'},
+    {d:'avril 2025', t:"ICE attribue à Palantir le contrat ImmigrationOS (30 M$)", v:'volet 26', c:'power'},
+    {d:'mai 2025', t:"Stargate UAE et HUMAIN saoudien : les pétrodollars deviennent du « trusted compute »", v:'volet 16', c:'material'},
+    {d:'mai 2025', t:"Flock : 404 Media révèle l'accès indirect d'ICE à 40 000 caméras de plaques", v:'volet 26', c:'power'},
+    {d:'mai 2025', t:"Amodei : l'IA pourrait éliminer 50 % des emplois de bureau débutants", v:'volet 18', c:'money'},
+    {d:'4 juillet 2025', t:"« Big Beautiful Bill » : monopole de fait d'Anduril sur les tours frontalières", v:'volet 26', c:'power'},
+    {d:'juillet 2025', t:"Le Sénat retire le moratoire fédéral sur les lois d'États par 99 voix contre 1", v:'volets 17, 21', c:'counter'},
+    {d:'juillet 2025', t:"Mémo Slack fuité d'Amodei sur l'argent du Golfe (« easily $100B or more »)", v:'volet 20', c:'money'},
+    {d:'sept. 2025', t:"La CAC interdit aux plateformes chinoises d'acheter NVIDIA", v:'volet 23', c:'power'},
+    {d:'17 sept. 2025', t:"Amodei : p(doom) à 25 %. NVIDIA annonce « jusqu'à 100 Md$ » dans OpenAI (jamais finalisé)", v:'volets 20, 23', c:'money'},
+    {d:'oct. 2025', t:"David Sacks accuse Anthropic de « regulatory capture based on fear-mongering »", v:'volet 20', c:'power'},
+    {d:'nov. 2025', t:"Burry : « once again there is a Cisco… Its name is Nvidia ». LeCun quitte Meta", v:'volets 18, 23', c:'money'},
+    {d:'11 déc. 2025', t:"EO de préemption de Trump : « AI Litigation Task Force » contre les lois d'États", v:'volet 21', c:'power'},
+  ]},
+  {y:'2026 — le tournant', items:[
+    {d:'jan. 2026', t:"Amodei, « The Adolescence of Technology » ; ELITE (Palantir) et les données Medicaid", v:'volets 20, 26', c:'power'},
+    {d:'fév. 2026', t:"Anthropic abandonne l'engagement de pause de sa RSP. Série G à 380 Md$", v:'volet 20', c:'money'},
+    {d:'fév. 2026', t:"International AI Safety Report 2026 (Bengio) : un chapitre « concentration of power »", v:'volet 18', c:'counter'},
+    {d:'24-27 fév. 2026', t:"Ultimatum Hegseth, rupture Pentagone, Anthropic désignée « supply-chain risk »", v:'volets 17, 20', c:'power'},
+    {d:'mars 2026', t:"L'US Army signe un contrat-cadre jusqu'à 20 Md$ avec Anduril", v:'volet 26', c:'power'},
+    {d:'26 mars 2026', t:"La juge Lin bloque la désignation d'Anthropic (« Orwellian notion »)", v:'volets 17, 20', c:'counter'},
+    {d:'avril 2026', t:"La NAACP poursuit xAI à Memphis (Clean Air Act). 30 parlementaires interpellent ICE sur Palantir", v:'volets 16, 26', c:'counter'},
+    {d:'mai 2026', t:"Anduril lève 5 Md$ à 61 Md$. Huang : NVIDIA a « évacué » le marché chinois (Huawei)", v:'volet 23', c:'money'},
+    {d:'28 mai 2026', t:"Série H : Anthropic à 965 Md$, dépasse OpenAI. Sortie de Claude Opus 4.8", v:'volet 20', c:'money'},
+    {d:'1er juin 2026', t:"Anthropic dépose son IPO (S-1 confidentiel)", v:'volet 20', c:'money'},
+    {d:'4 juin 2026', t:"Anthropic appelle à préserver « l'option » d'une pause mondiale, trois jours après l'IPO", v:'volet 20', c:'ideo'},
+  ]},
+];
+const tl = document.getElementById('tl');
+EV.forEach(grp=>{
+  const y=document.createElement('div'); y.className='yr'; y.textContent=grp.y; tl.appendChild(y);
+  grp.items.forEach(it=>{
+    const e=document.createElement('div'); e.className='ev'; e.style.setProperty('--m','var(--'+it.c+')');
+    const d=document.createElement('span'); d.className='date'; d.textContent=it.d+' — ';
+    const w=document.createElement('span'); w.className='what'; w.textContent=it.t+' ';
+    const v=document.createElement('span'); v.className='vol'; v.textContent='('+it.v+')';
+    e.appendChild(d); e.appendChild(w); e.appendChild(v); tl.appendChild(e);
+  });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capital, compute et pouvoir, c. 2021–2026 — d'après Mark Lombardi</title>
+<style>
+  :root{
+    --paper:#f5f1e6; --ink:#2b2620; --faint:#8a8070; --red:#a03020; --accent:#5a4a30;
+  }
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);
+    font-family:Georgia,'Times New Roman',serif;}
+  #wrap{max-width:1700px;margin:0 auto;padding:24px 16px 60px;}
+  h1{font-weight:normal;font-size:1.5rem;letter-spacing:.04em;margin:.2em 0 0;}
+  h1 .v{font-style:italic;color:var(--faint);font-size:.8em;}
+  .sub{font-style:italic;color:var(--faint);margin:.3em 0 1em;font-size:.95rem;max-width:70em;}
+  svg{width:100%;height:auto;display:block;background:var(--paper);}
+  .node circle{fill:var(--paper);stroke:var(--ink);stroke-width:1.1;}
+  .node text{font-size:11.5px;fill:var(--ink);font-family:Georgia,serif;}
+  .node .role{font-size:9px;fill:var(--faint);font-style:italic;}
+  .edge{fill:none;stroke:var(--ink);stroke-width:.9;opacity:.75;}
+  .edge.flux{stroke-dasharray:5 4;}
+  .edge.pol{stroke-dasharray:1.5 3;stroke-width:1;}
+  .edge.rupture{stroke:var(--red);stroke-width:1.1;}
+  .edge.dim, .node.dim{opacity:.12;}
+  .edge.hi{opacity:1;stroke-width:1.8;}
+  .node.hi circle{stroke-width:2;}
+  .edgelabel{font-size:9px;fill:var(--accent);font-style:italic;}
+  .edgelabel.dim{opacity:.08;}
+  #legend{display:flex;flex-wrap:wrap;gap:1.4em;margin:10px 0 4px;font-size:.85rem;font-style:italic;color:var(--accent);}
+  #legend svg{width:46px;height:12px;display:inline-block;vertical-align:middle;background:none;}
+  #info{min-height:3.2em;border-top:1px solid #d8d0bc;margin-top:10px;padding-top:8px;
+    font-size:.92rem;max-width:75em;}
+  #info b{font-weight:normal;border-bottom:1px solid var(--ink);}
+  .foot{margin-top:18px;font-size:.8rem;color:var(--faint);font-style:italic;max-width:75em;line-height:1.5;}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>Capital, compute et pouvoir, c. 2021–2026 <span class="v">(1<sup>re</sup> version)</span></h1>
+  <div class="sub">D'après les « narrative structures » de Mark Lombardi (1951–2000). Chaque trait est documenté dans le dossier
+    (volets 1–25). Survoler un nœud pour isoler ses fils ; cliquer pour la note. Les montants sont ceux rapportés par la presse ou les documents officiels cités.</div>
+  <div id="legend">
+    <span><svg><line x1="2" y1="6" x2="44" y2="6" stroke="#2b2620" stroke-width="1"/></svg> participation / capital</span>
+    <span><svg><line x1="2" y1="6" x2="44" y2="6" stroke="#2b2620" stroke-width="1" stroke-dasharray="5 4"/></svg> flux : achats, loyers, compute (circularité)</span>
+    <span><svg><line x1="2" y1="6" x2="44" y2="6" stroke="#2b2620" stroke-width="1" stroke-dasharray="1.5 3"/></svg> politique : nomination, don, lobbying</span>
+    <span><svg><line x1="2" y1="6" x2="44" y2="6" stroke="#a03020" stroke-width="1.2"/></svg> rupture : procès, interdiction, ultimatum</span>
+  </div>
+  <svg id="map" viewBox="0 0 1700 1150" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div id="info"><i>Survolez la carte. Les régions : en haut, l'État américain capturé ; à gauche, l'empire Musk et le Thielverse ;
+  au centre, la circulation NVIDIA ; à droite, les labs et l'argent du Golfe ; en bas, la Chine, le silicium et l'argent de la « safety ».</i></div>
+  <div class="foot">
+    Méthode Lombardi : rien que des faits publics, un seul plan, des arcs de cercle, pas de hiérarchie — la structure narrative émerge de la densité des liens.
+    Sources : volets du dossier <i>research/</i> (notamment 2, 8, 16, 17, 18, 20, 22, 23, 25). Les liens « rapportés » (presse, non confirmés par les parties)
+    sont signalés dans les notes. Document autonome, hors-ligne. Juin 2026.
+  </div>
+</div>
+<script>
+const N = {
+  // --- État américain (haut centre) ---
+  trump:    {x:850, y:90,  l:"Donald Trump",        r:"président",            note:"EO préemption (déc. 2025), deal 15 % NVIDIA-H20, megabill. Volets 9, 17, 21."},
+  sacks:    {x:700, y:140, l:"David Sacks",          r:"AI czar",              note:"Accuse Anthropic de « regulatory capture based on fear-mongering » (oct. 2025). Ex-PayPal mafia. Volets 2, 20."},
+  vance:    {x:990, y:140, l:"J.D. Vance",           r:"vice-président",       note:"Créature politique de Thiel (15 M$ pour le Sénat 2022). Discours de Paris contre la « régulation excessive ». Volets 2, 9, 17."},
+  hegseth:  {x:1130,y:100, l:"Pete Hegseth",         r:"SecDef",               note:"Ultimatum à Amodei (fév. 2026), désignation « supply-chain risk ». Volets 17, 20."},
+  doj:      {x:560, y:95,  l:"DOJ / FTC",            r:"antitrust",            note:"Subpoenas NVIDIA rapportés (2024), AI Litigation Task Force contre les lois d'États (2026). Volets 21, 23."},
+  // --- Thielverse (gauche haut) ---
+  thiel:    {x:240, y:200, l:"Peter Thiel",          r:"investisseur",         note:"A vendu TOUTES ses actions NVIDIA au Q3 2025. Mentor de Vance et Sacks. Volets 2, 23."},
+  palantir: {x:130, y:290, l:"Palantir",             r:"surveillance",         note:"Partenaire d'Anthropic pour la défense (IL6) — et pilier du natsec. Volets 2, 17, 20."},
+  ff:       {x:330, y:290, l:"Founders Fund",        r:"VC",                   note:"Fonds de Thiel — co-lead de la Série G d'Anthropic (fév. 2026) : le Thielverse au capital du lab « safety ». Volet 20."},
+  musk:     {x:180, y:430, l:"Elon Musk",            r:"xAI / SpaceX",         note:"« No one set off my evil detector » (sur Anthropic, locataire de Colossus). Rupture avec Trump. Volets 9, 16."},
+  xai:      {x:300, y:520, l:"xAI / Colossus",       r:"Memphis",              note:"220 000+ GPU, turbines à gaz sans permis (NO2 +79 % à Boxtown), procès NAACP. Volets 16, 21, 22."},
+  naacp:    {x:170, y:640, l:"NAACP / SELC",         r:"litige",               note:"Procès Clean Air Act contre xAI (avril 2026) — le contre-pouvoir par le terrain. Volets 21, 22, 25."},
+  // --- NVIDIA, circulation centrale ---
+  nvidia:   {x:760, y:430, l:"NVIDIA",               r:"5 000 Md$",            note:"4 clients = 61 % du CA. 40 Md$+ d'equity IA en 4 mois (2026). Le banquier central privé. Volet 23."},
+  coreweave:{x:600, y:560, l:"CoreWeave",            r:"neocloud",             note:"21,6 Md$ de dette adossée GPU ; NVIDIA garantit 6,3 Md$ de capacité invendue jusqu'en 2032. Volet 23."},
+  groq:     {x:880, y:560, l:"Groq",                 r:"absorbé",              note:"~20 Md$ (rapporté) via licence non-exclusive, sans revue antitrust — « the fiction of competition ». Volet 23."},
+  burry:    {x:560, y:380, l:"M. Burry",             r:"short",                note:">1 Md$ de puts NVIDIA/Palantir (nov. 2025) : « once again there is a Cisco… Its name is Nvidia. » Volet 23."},
+  lenders:  {x:480, y:640, l:"BlackRock · PIMCO · Carlyle", r:"dette GPU",     note:">20 Md$ de prêts collatéralisés par des GPU ; premier ABS GPU (Lambda). Volet 23."},
+  // --- Labs (droite centre) ---
+  openai:   {x:1060,y:380, l:"OpenAI",               r:"852 Md$",              note:"Tour de 110 Md$ (mars 2026). NVIDIA ~30 Md$ d'equity (rapporté). IPO en préparation. Volets 9, 23."},
+  msft:     {x:1230,y:300, l:"Microsoft",            r:"hyperscaler",          note:"13 Md$ dans OpenAI ; PPA Three Mile Island (1,6 Md$ Constellation) ; PPA fusion Helion ; partenariat AFL-CIO. Volets 21, 22."},
+  anthropic:{x:1180,y:480, l:"Anthropic",            r:"965 Md$",              note:"IPO déposée le 1er juin 2026, appel à « l'option de pause » le 4. Le double discours incarné. Volet 20."},
+  amodei:   {x:1310,y:420, l:"D. Amodei",            r:"CEO",                  note:"p(doom) 25 % + IPO à 965 Md$. Mémo du Golfe : « a pretty difficult principle to run a business on ». Volets 18, 20."},
+  amazon:   {x:1330,y:560, l:"Amazon",               r:"AWS",                  note:"8 Md$ dans Anthropic + Project Rainier (500k Trainium2) ; engagement >100 Md$/10 ans. Volet 20."},
+  google:   {x:1100,y:610, l:"Google",               r:"hyperscaler",          note:"Jusqu'à 1 M de TPU pour Anthropic ; émissions +50 % en 5 ans (location-based). Volets 20, 22."},
+  meta:     {x:1480,y:300, l:"Meta",                 r:"hyperscaler",          note:"14,3 Md$ dans Scale AI (49 % non-votant) ; capex 66-72 Md$ ; 6,6 GW nucléaire. Volets 18, 22."},
+  scale:    {x:1590,y:380, l:"Scale AI / Wang",      r:"acqui-hire",           note:"Alexandr Wang devient Chief AI Officer de Meta — le contournement antitrust type. Volets 18, 21."},
+  golfe:    {x:1500,y:540, l:"MGX · QIA",            r:"Golfe",                note:"MGX (Abu Dhabi) co-lead Série G d'Anthropic, investisseur Série H ; « easily $100B or more ». Volet 20."},
+  softbank: {x:1430,y:180, l:"SoftBank",             r:"Son",                  note:"A vendu toute sa position NVIDIA (5,83 Md$) pour financer OpenAI : sortir du fournisseur, entrer dans le client. Volet 23."},
+  energy:   {x:1240,y:680, l:"Constellation · Oklo · Helion", r:"énergie",     note:"Redémarrages, SMR, fusion : les PPA nucléaires comme récit — le gaz comme réalité. Volet 22."},
+  // --- Chine / silicium (bas gauche-centre) ---
+  tsmc:     {x:620, y:790, l:"TSMC",                 r:"fonderie",             note:"Grave les puces des deux empires ; 1 Md$ d'amende pour les dies Huawei via Sophgo. Volets 16, 23."},
+  asml:     {x:480, y:870, l:"ASML",                 r:"lithographie",         note:"Monopole EUV ; lead investor de Mistral (1,3 Md€) — le hardware européen au capital du soft. Volets 16, 18."},
+  huawei:   {x:850, y:850, l:"Huawei",               r:"full-stack",           note:"CloudMatrix 384 (force brute, 4× les watts), HarmonyOS, CANN open-sourcé contre CUDA. Volet 23."},
+  pekin:    {x:1010,y:780, l:"Pékin (CAC)",          r:"État-parti",           note:"Interdit l'achat de NVIDIA (sept. 2025), crée le marché captif de Huawei, régule ses plateformes plus durement que Washington. Volets 15, 23."},
+  smic:     {x:700, y:920, l:"SMIC",                 r:"7nm sans EUV",         note:"Mate 60 Pro (2023) : le camouflet aux sanctions, pendant la visite de Raimondo. Volet 23."},
+  mistral:  {x:380, y:760, l:"Mistral",              r:"UE, 11,7 Md€",         note:"Décacorne française ; ~40 % du capital US ; la souveraineté en question. Volet 18."},
+  // --- Safety money (bas droite) ---
+  moskovitz:{x:1480,y:790, l:"Moskovitz / Coefficient", r:"ex-Open Phil",      note:"~60 % du financement externe de la safety (2024). Le robinet commun de la prudence et de l'accélération « responsable ». Volet 18."},
+  tallinn:  {x:1360,y:870, l:"Jaan Tallinn",         r:"SFF",                  note:"150 M$+ ; a mené la Série A d'Anthropic ET finance LawZero. Volet 18."},
+  bengio:   {x:1180,y:830, l:"Bengio / LawZero",     r:"contre-pouvoir",       note:"Scientist AI non-agentique ; chapitre « concentration of power » du Safety Report 2026. Volet 18."},
+  karnofsky:{x:1560,y:680, l:"H. Karnofsky",         r:"Open Phil → Anthropic",note:"Cofondateur d'Open Philanthropy, marié à Daniela Amodei, entré chez Anthropic (2025). La plomberie EA. Volets 11, 18."},
+  // --- Politique de l'argent (haut, entre State et labs) ---
+  ltf:      {x:480, y:200, l:"Leading the Future",   r:"super PAC",            note:">125 M$ pro-dérégulation : Brockman (OpenAI), a16z, Lonsdale. Volet 20."},
+  a16z:     {x:380, y:120, l:"Andreessen (a16z)",    r:"VC",                   note:"Le Manifeste (volet 1), 25 M$ dans Leading the Future, anti-SB 53. Volets 1, 20."},
+  pfa:      {x:1290,y:200, l:"Public First Action",  r:"501(c)(4)",            note:"20 M$ d'Anthropic, pro-régulation : les deux labs financent des camps opposés. Volet 20."},
+};
+const E = [
+  // Thielverse / politique
+  ["thiel","vance","pol","15 M$ + mentorat"],
+  ["thiel","sacks","pol","PayPal mafia"],
+  ["thiel","palantir","cap",""],
+  ["thiel","ff","cap",""],
+  ["ff","anthropic","cap","co-lead Série G"],
+  ["thiel","nvidia","rupture","vend tout, Q3 2025"],
+  ["a16z","ltf","pol","25 M$"],
+  ["openai","ltf","pol","Brockman, 25 M$"],
+  ["ltf","trump","pol","dérégulation"],
+  ["anthropic","pfa","pol","20 M$"],
+  ["pfa","doj","pol","pro-lois d'États"],
+  ["sacks","anthropic","rupture","« fear-mongering »"],
+  ["trump","nvidia","flux","15 % du revenu H20"],
+  ["hegseth","anthropic","rupture","« supply-chain risk »"],
+  ["doj","nvidia","rupture","subpoenas rapportés"],
+  ["trump","doj","pol","Litigation Task Force"],
+  ["vance","trump","pol",""],
+  // Musk
+  ["musk","xai","cap",""],
+  ["musk","trump","rupture","alliance puis rupture"],
+  ["naacp","xai","rupture","Clean Air Act"],
+  ["anthropic","xai","flux","loyer Colossus ~15 Md$/an"],
+  ["nvidia","xai","cap","~2 Md$ via SPV"],
+  // NVIDIA circulation
+  ["nvidia","openai","cap","~30 Md$ (rapporté)"],
+  ["openai","nvidia","flux","achats GPU, 10 GW visés"],
+  ["nvidia","coreweave","cap","2 Md$ + backstop 6,3 Md$"],
+  ["coreweave","nvidia","flux","achats GPU"],
+  ["lenders","coreweave","cap","dette GPU 21,6 Md$"],
+  ["nvidia","groq","cap","~20 Md$, licence"],
+  ["burry","nvidia","rupture",">1 Md$ de puts"],
+  ["nvidia","mistral","cap",""],
+  ["tsmc","nvidia","flux","gravure"],
+  ["asml","tsmc","flux","EUV"],
+  // Labs / hyperscalers
+  ["msft","openai","cap","13 Md$"],
+  ["softbank","openai","cap","tour de 110 Md$"],
+  ["softbank","nvidia","rupture","vend tout (5,83 Md$)"],
+  ["amazon","anthropic","cap","8 Md$ + Série H"],
+  ["anthropic","amazon","flux",">100 Md$ / 10 ans (Trainium)"],
+  ["google","anthropic","flux","1 M de TPU"],
+  ["golfe","anthropic","cap","Série G & H"],
+  ["golfe","openai","cap","MGX"],
+  ["meta","scale","cap","14,3 Md$, 49 %"],
+  ["amodei","anthropic","cap",""],
+  ["karnofsky","anthropic","pol","board → staff"],
+  ["moskovitz","karnofsky","pol","Open Philanthropy"],
+  ["msft","energy","flux","PPA TMI + Helion"],
+  ["meta","energy","flux","6,6 GW nucléaire"],
+  ["google","energy","flux","Kairos SMR"],
+  ["openai","energy","cap","Altman : Oklo, Helion"],
+  // Chine
+  ["pekin","huawei","pol","marché captif"],
+  ["pekin","nvidia","rupture","CAC : interdit (sept. 2025)"],
+  ["smic","huawei","flux","7nm DUV"],
+  ["tsmc","huawei","rupture","dies via Sophgo, 1 Md$ d'amende"],
+  ["huawei","golfe","flux","diplomatie Ascend (NEOM)"],
+  ["asml","mistral","cap","lead 1,3 Md€"],
+  // Safety money
+  ["moskovitz","bengio","cap","LawZero"],
+  ["tallinn","bengio","cap","LawZero"],
+  ["tallinn","anthropic","cap","Série A"],
+  ["bengio","pekin","pol","Safety Report, 30+ pays"],
+];
+const svg = document.getElementById('map');
+const NS = "http://www.w3.org/2000/svg";
+const infoEl = document.getElementById('info');
+// arrow markers — built with DOM methods (static content)
+function makeMarker(id, color){
+  const m=document.createElementNS(NS,'marker');
+  m.setAttribute('id',id);
+  m.setAttribute('markerWidth','7'); m.setAttribute('markerHeight','7');
+  m.setAttribute('refX','6'); m.setAttribute('refY','3');
+  m.setAttribute('orient','auto'); m.setAttribute('markerUnits','userSpaceOnUse');
+  m.setAttribute('viewBox','0 0 7 7');
+  const mp=document.createElementNS(NS,'path');
+  mp.setAttribute('d','M0,0.5 L6,3 L0,5.5');
+  mp.setAttribute('fill','none'); mp.setAttribute('stroke',color); mp.setAttribute('stroke-width','0.9');
+  m.appendChild(mp);
+  return m;
+}
+const defs=document.createElementNS(NS,'defs');
+defs.appendChild(makeMarker('arr','#2b2620'));
+defs.appendChild(makeMarker('arrR','#a03020'));
+svg.appendChild(defs);
+const adj = {};
+Object.keys(N).forEach(k=>adj[k]=new Set());
+const edgeEls = [];
+E.forEach(([a,b,type,label],i)=>{
+  const A=N[a], B=N[b];
+  adj[a].add(b); adj[b].add(a);
+  const dx=B.x-A.x, dy=B.y-A.y, d=Math.hypot(dx,dy);
+  const curve = Math.min(0.32, 60/d + 0.10) * d * (i%2? 1:-1);
+  const mx=(A.x+B.x)/2 - dy/d*curve, my=(A.y+B.y)/2 + dx/d*curve;
+  const p=document.createElementNS(NS,'path');
+  p.setAttribute('d',`M ${A.x} ${A.y} Q ${mx} ${my} ${B.x} ${B.y}`);
+  p.setAttribute('class','edge '+(type==='flux'?'flux':type==='pol'?'pol':type==='rupture'?'rupture':''));
+  if(type!=='pol'){ p.setAttribute('marker-end',`url(#arr${type==='rupture'?'R':''})`); }
+  svg.appendChild(p);
+  let t=null;
+  if(label){
+    t=document.createElementNS(NS,'text');
+    t.setAttribute('class','edgelabel');
+    const lx=(A.x+B.x)/2 - dy/d*curve*0.55, ly=(A.y+B.y)/2 + dx/d*curve*0.55;
+    t.setAttribute('x',lx); t.setAttribute('y',ly-3); t.setAttribute('text-anchor','middle');
+    t.textContent=label;
+    svg.appendChild(t);
+  }
+  edgeEls.push({a,b,p,t});
+});
+const nodeEls={};
+Object.entries(N).forEach(([k,n])=>{
+  const g=document.createElementNS(NS,'g');
+  g.setAttribute('class','node'); g.style.cursor='pointer';
+  const c=document.createElementNS(NS,'circle');
+  c.setAttribute('cx',n.x); c.setAttribute('cy',n.y); c.setAttribute('r',7);
+  g.appendChild(c);
+  const t=document.createElementNS(NS,'text');
+  t.setAttribute('x',n.x); t.setAttribute('y',n.y-13); t.setAttribute('text-anchor','middle');
+  t.textContent=n.l; g.appendChild(t);
+  const r=document.createElementNS(NS,'text');
+  r.setAttribute('class','role'); r.setAttribute('x',n.x); r.setAttribute('y',n.y+22); r.setAttribute('text-anchor','middle');
+  r.textContent=n.r; g.appendChild(r);
+  svg.appendChild(g);
+  nodeEls[k]=g;
+  g.addEventListener('mouseenter',()=>focus(k));
+  g.addEventListener('mouseleave',unfocus);
+  g.addEventListener('click',()=>{
+    infoEl.textContent='';
+    const bEl=document.createElement('b'); bEl.textContent=n.l;
+    infoEl.appendChild(bEl);
+    infoEl.appendChild(document.createTextNode(' — '+n.note));
+  });
+});
+function focus(k){
+  Object.entries(nodeEls).forEach(([id,g])=>{
+    g.classList.toggle('dim', !(id===k||adj[k].has(id)));
+    g.classList.toggle('hi', id===k);
+  });
+  edgeEls.forEach(e=>{
+    const on = e.a===k||e.b===k;
+    e.p.classList.toggle('dim',!on); e.p.classList.toggle('hi',on);
+    if(e.t) e.t.classList.toggle('dim',!on);
+  });
+}
+function unfocus(){
+  Object.values(nodeEls).forEach(g=>{g.classList.remove('dim','hi');});
+  edgeEls.forEach(e=>{e.p.classList.remove('dim','hi'); if(e.t)e.t.classList.remove('dim');});
+}
+</script>
+</body>
+</html>

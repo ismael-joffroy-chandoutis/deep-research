@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map of radical tech — Andreessen, Thiel & co.</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --line:#2b3340; --text:#e6edf3; --muted:#9da7b3;
+    --eacc:#f0883e; --nrx:#d2596e; --crypto:#3fb950; --ea:#58a6ff; --idea:#bc8cff; --power:#e3b341; --infra:#56d4dd;
+    --labs:#ff9bce; --chine:#f85149; --gauche:#9ee87d;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+  header h1{font-size:16px;margin:0;font-weight:650}
+  header .sub{color:var(--muted);font-size:12px}
+  .wrap{display:flex;height:calc(100% - 56px)}
+  #stage{flex:1;position:relative;overflow:hidden;cursor:grab}
+  #stage:active{cursor:grabbing}
+  svg{width:100%;height:100%;display:block}
+  .edge{stroke:var(--line);stroke-width:1.2}
+  .edge.dashed{stroke-dasharray:4 4;opacity:.7}
+  .node circle{cursor:pointer;stroke:#0d1117;stroke-width:1.5;transition:r .15s}
+  .node text{pointer-events:none;fill:var(--text);font-size:11px;font-weight:600;text-anchor:middle}
+  .node.dim{opacity:.12}
+  .edge.dim{opacity:.04}
+  aside{width:330px;background:var(--panel);border-left:1px solid var(--line);padding:16px;overflow:auto}
+  aside h2{font-size:15px;margin:.2em 0 .1em}
+  aside .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;color:#0d1117;font-weight:700;margin-bottom:8px}
+  aside p{color:var(--muted);font-size:13px}
+  .legend{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{cursor:pointer;user-select:none;font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#0d1117;color:var(--text)}
+  .chip.off{opacity:.35;text-decoration:line-through}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle}
+  .hint{color:var(--muted);font-size:12px;margin-top:10px}
+  a{color:var(--ea)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🗺️ Map of radical tech</h1>
+  <span class="sub">Actors &amp; ideas — Andreessen · Thiel · Musk · labs · NVIDIA · China · doomers · left · open source (Parts 1-30)</span>
+  <div class="legend" id="legend" style="margin-left:auto"></div>
+</header>
+<div class="wrap">
+  <div id="stage"><svg id="svg"></svg></div>
+  <aside id="panel">
+    <h2>Click a node</h2>
+    <p>Interactive map of people, institutions, ideas, and levers of power. Filter by faction via the chips at the top right; hover to isolate links; drag the background to pan.</p>
+    <p class="hint">Detailed reports: <a href="./cartographie-prospective.md">cartographie-prospective.md</a> and the related parts.</p>
+  </aside>
+</div>
+<script>
+const FACTIONS={
+  eacc:{label:"Techno-optimists / e/acc",c:getComputedStyle(document.documentElement).getPropertyValue('--eacc').trim()},
+  nrx:{label:"Neo-reaction / monarchism",c:getComputedStyle(document.documentElement).getPropertyValue('--nrx').trim()},
+  crypto:{label:"Crypto / sovereigntists",c:getComputedStyle(document.documentElement).getPropertyValue('--crypto').trim()},
+  ea:{label:"Cautious / longtermists (EA)",c:getComputedStyle(document.documentElement).getPropertyValue('--ea').trim()},
+  idea:{label:"Philo / SF sources",c:getComputedStyle(document.documentElement).getPropertyValue('--idea').trim()},
+  power:{label:"State power (2025-26)",c:getComputedStyle(document.documentElement).getPropertyValue('--power').trim()},
+  infra:{label:"Infrastructure",c:getComputedStyle(document.documentElement).getPropertyValue('--infra').trim()},
+  labs:{label:"Model masters",c:getComputedStyle(document.documentElement).getPropertyValue('--labs').trim()},
+  chine:{label:"China",c:getComputedStyle(document.documentElement).getPropertyValue('--chine').trim()},
+  gauche:{label:"Critics / left / third ways",c:getComputedStyle(document.documentElement).getPropertyValue('--gauche').trim()},
+};
+const NODES=[
+  {id:"andreessen",label:"Marc Andreessen",f:"eacc",r:24,x:300,y:250,d:"Co-founder of Netscape (Mosaic), a16z partner. Author of the Techno-Optimist Manifesto (2023) and of \"Software is eating the world.\" Mainstream mouthpiece of e/acc. Adviser, appointed to PCAST (2026)."},
+  {id:"thiel",label:"Peter Thiel",f:"nrx",r:26,x:560,y:240,d:"Co-founder of PayPal, Palantir, Founders Fund; first investor in Facebook. Ideological node of the milieu (Girard, Strauss, Schmitt). \"Freedom and democracy are no longer compatible\" (2009)."},
+  {id:"musk",label:"Elon Musk",f:"eacc",r:24,x:430,y:120,d:"Out of X.com/PayPal. Tesla, SpaceX, xAI, the Twitter/X takeover. Ran DOGE. A fan of Iain M. Banks (the Culture) and Asimov (Foundation)."},
+  {id:"sacks",label:"David Sacks",f:"eacc",r:18,x:480,y:360,d:"PayPal Mafia, Craft Ventures. White House AI & crypto \"czar\" (2025)."},
+  {id:"vance",label:"JD Vance",f:"power",r:20,x:650,y:380,d:"Former VC (Narya Capital, funded by Thiel & Andreessen). Vice-president. Ideas drawn from Yarvin."},
+  {id:"karp",label:"Alex Karp",f:"eacc",r:16,x:680,y:140,d:"CEO of Palantir, co-founded with Thiel. A reader of Strauss / the Frankfurt School."},
+  {id:"hoffman",label:"Reid Hoffman",f:"ea",r:15,x:250,y:120,d:"PayPal Mafia, LinkedIn, Greylock. The Democratic wing of the network, funds the opposite camp."},
+  {id:"balaji",label:"Balaji Srinivasan",f:"crypto",r:18,x:760,y:520,d:"Former CTO of Coinbase / a16z. \"The Network State\" (2022): voice vs exit, opt-in communities backed by the blockchain."},
+  {id:"yarvin",label:"Curtis Yarvin",f:"nrx",r:18,x:760,y:300,d:"Alias Mencius Moldbug. \"Court philosopher\" of the Thielverse. Neo-reaction: replace democracy with the corporate-state (CEO-king)."},
+  {id:"land",label:"Nick Land",f:"nrx",r:16,x:860,y:230,d:"Theorist of accelerationism and the Dark Enlightenment. \"Democracy tends toward fascism\" (inverted into praise)."},
+  {id:"bostrom",label:"Nick Bostrom",f:"ea",r:16,x:180,y:470,d:"Superintelligence (2014), existential risk. Co-founder of longtermism. The \"caution\" camp."},
+  {id:"yud",label:"E. Yudkowsky",f:"ea",r:15,x:120,y:360,d:"Rationalism (LessWrong), AI safety. Calls to slow down strongly."},
+  {id:"kurzweil",label:"Ray Kurzweil",f:"idea",r:14,x:120,y:560,d:"\"The Singularity Is Near\": human/AI fusion around 2045. Singularity University."},
+  {id:"more",label:"Max More",f:"idea",r:13,x:200,y:620,d:"Extropianism (1988-92): libertarian transhumanism, the root of the movement."},
+  {id:"hayek",label:"Hayek / Mises",f:"idea",r:14,x:330,y:680,d:"Austrian School: the market as a \"discovery machine,\" anti-planning. Substitutes wealth for birth."},
+  {id:"nietzsche",label:"Nietzsche",f:"idea",r:14,x:470,y:700,d:"Overman, will to power, \"aristocratic radicalism.\" The matrix of \"Becoming Technological Supermen.\""},
+  {id:"rand",label:"Ayn Rand",f:"idea",r:13,x:250,y:730,d:"Objectivism; John Galt is the manifesto's \"patron saint.\" The heroic creator vs the parasitic mass."},
+  {id:"marinetti",label:"Marinetti",f:"idea",r:14,x:400,y:560,d:"Futurism (1909), paraphrased by Andreessen. Co-signatory of the Fascist Manifesto (1919), a controversial reference."},
+  {id:"girard",label:"Girard / Strauss / Schmitt",f:"idea",r:15,x:600,y:640,d:"Mimetic desire (Girard) toward anti-competition monopoly; esoteric reading (Strauss); friend/enemy (Schmitt). The base of Thiel's thought."},
+  {id:"sovereign",label:"The Sovereign Individual",f:"idea",r:15,x:760,y:680,d:"Davidson & Rees-Mogg (1997). The bridge text: the powerful individual \"exits\" the nation-state. A cult object for Thiel, Srinivasan, Andreessen."},
+  {id:"snowcrash",label:"Snow Crash / cyberpunk",f:"idea",r:13,x:900,y:560,d:"Stephenson (1992): coins \"metaverse\" & \"avatar.\" A dystopia read as a roadmap."},
+  {id:"culture",label:"Iain M. Banks — Culture",f:"idea",r:13,x:430,y:40,d:"A post-scarcity utopia run by AIs (socialist!). Cited by Musk & Bezos, often misread."},
+  {id:"tolkien",label:"Tolkien",f:"idea",r:13,x:880,y:120,d:"Source of the names Palantir, Anduril, Mithril, Erebor. Yet in Tolkien the palantír corrupts and the Ring must be destroyed."},
+  {id:"cypherpunks",label:"Cypherpunks",f:"crypto",r:14,x:900,y:430,d:"May, Hughes, Gilmore (1992). Szabo, Finney, Dai toward the precursors of Bitcoin. A common root with the extropians."},
+  {id:"a16z",label:"a16z",f:"eacc",r:18,x:280,y:360,d:"Andreessen Horowitz. A mega-fund: crypto + AI + American Dynamism (defense)."},
+  {id:"ff",label:"Founders Fund",f:"nrx",r:16,x:600,y:430,d:"Thiel's fund: SpaceX, Palantir, Anduril, Stripe."},
+  {id:"palantir",label:"Palantir",f:"infra",r:18,x:720,y:60,d:"Data/surveillance for intelligence, police, military. US Army contract ~$10B (2025)."},
+  {id:"anduril",label:"Anduril",f:"infra",r:15,x:820,y:360,d:"Drones/defense (Palmer Luckey), funded by Founders Fund."},
+  {id:"ai",label:"OpenAI / xAI",f:"infra",r:16,x:300,y:560,d:"Frontier AI, ultra-centralized (compute, data, capital), in tension with the decentralized crypto ethos."},
+  {id:"state",label:"US state 2025-26",f:"power",r:20,x:560,y:520,d:"Partial fusion of tech capital and the state apparatus: Vance (VP), Musk (DOGE), Sacks (AI/crypto), Andreessen (PCAST), 10+ Thiel associates. \"Authoritarian Stack.\""},
+  {id:"nvidia",label:"NVIDIA / Huang",f:"infra",r:22,x:1050,y:300,d:"~90% of AI accelerators, $5T market cap. Circular financing (OpenAI ~$30B, CoreWeave, xAI), backstops, GPU debt: the private central banker of AI. \"Evacuated\" the Chinese market (May 2026). Part 23."},
+  {id:"tsmc",label:"TSMC / ASML",f:"infra",r:16,x:1050,y:430,d:"The two physical global chokepoints: the foundry (Taiwan) and EUV lithography (Netherlands). ASML is also lead investor in Mistral. Parts 16, 23."},
+  {id:"anthropic",label:"Anthropic / Amodei",f:"labs",r:20,x:80,y:120,d:"The \"doomer who accelerates\": p(doom) 25%, $965B IPO filed June 1, 2026, call for the \"pause option\" on the 4th. RSP abandoned (Feb. 2026), real Pentagon red lines. Parts 18, 20."},
+  {id:"lecun",label:"Yann LeCun",f:"labs",r:16,x:62,y:250,d:"The \"fourth position\": anti-doom (\"complete B.S.\") AND anti-Trump AND European sovereigntist (AMI Labs, $1.03B). Breaks the techno-optimist = Trumpist equation. Part 18."},
+  {id:"bengio",label:"Yoshua Bengio",f:"ea",r:16,x:62,y:430,d:"LawZero (non-agentic Scientist AI), International AI Safety Report 2026 with its \"concentration of power\" chapter. The most solid counter-power of the caution camp. Part 18."},
+  {id:"hinton",label:"Geoffrey Hinton",f:"ea",r:15,x:62,y:550,d:"p(doom) 10-20%, \"maternal AI,\" and the solution in one word: \"Socialism.\" The only godfather who links AI risk and the critique of capital. Part 18."},
+  {id:"safetymoney",label:"Moskovitz / Tallinn",f:"ea",r:14,x:130,y:650,d:"Coefficient Giving (ex-Open Philanthropy) + Survival and Flourishing Fund: ~60% of external safety funding. The same tap funds LawZero AND Anthropic's Series A. Part 18."},
+  {id:"aschenbrenner",label:"L. Aschenbrenner",f:"power",r:15,x:990,y:170,d:"\"Situational Awareness\" (2024): the doomer turned hawk turned hedge fund ($1.5B). The bridge between existential fear and the race against Beijing. Part 17."},
+  {id:"golfe",label:"MGX / QIA (Gulf)",f:"power",r:16,x:990,y:640,d:"Sovereign money from Abu Dhabi and Qatar in the capital of Anthropic (Series G/H) and OpenAI. \"There is a truly giant amount of capital in the Middle East\" (Amodei, leaked memo). Parts 16, 20."},
+  {id:"buterin",label:"Vitalik Buterin",f:"crypto",r:15,x:990,y:520,d:"d/acc: defensive, decentralized acceleration, the third way born of crypto, against e/acc AND doom. Part 19."},
+  {id:"pekin",label:"Beijing (CAC)",f:"chine",r:18,x:950,y:790,d:"The party-state: regulates its platforms more harshly than Washington, bans buying NVIDIA (Sept. 2025), creates Huawei's captive market. State techno-authoritarianism vs oligarchic techno-fascism. Part 15."},
+  {id:"huawei",label:"Huawei",f:"chine",r:18,x:1060,y:860,d:"The full-stack champion: chip (Ascend), memory, framework (CANN open-sourced against CUDA), models (Pangu), OS (HarmonyOS), cloud, telecoms. Brute force: 4x the watts. Part 23."},
+  {id:"deepseek",label:"DeepSeek",f:"chine",r:15,x:850,y:860,d:"January 2025: open-weights R1 shatters the narrative that \"US compute guarantees supremacy\" (-$589B for NVIDIA in one day). Part 15."},
+  {id:"sanders",label:"Sanders / US left",f:"gauche",r:16,x:90,y:800,d:"Robot tax, 32-hour week, codetermination, datacenter moratorium (with AOC). And the union front: SAG-AFTRA, Teamsters, NAACP in Memphis. Part 21."},
+  {id:"hao",label:"Karen Hao",f:"gauche",r:15,x:215,y:845,d:"\"Empire of AI\" (2025): AI as colonial empire, civilizing mission, extraction, labor of the Global South. Part 16."},
+  {id:"mcquillan",label:"Dan McQuillan",f:"gauche",r:14,x:95,y:905,d:"\"Resisting AI: An Anti-Fascist Approach\": fascization through AI (sorting, exclusion, algorithmic states of exception); \"decomputing.\" Part 19."},
+  {id:"wark",label:"McKenzie Wark",f:"gauche",r:14,x:340,y:855,d:"The vectorialist class (A Hacker Manifesto, 2004; Capital is Dead, 2019): those who own the vectors of information now own the capitalists themselves. Part 24."},
+  {id:"chatonsky",label:"G. Chatonsky",f:"gauche",r:15,x:470,y:895,d:"Vectofascism: not the fascists who use technology, but the properties of vector spaces that reconfigure the political. Personalized enemies, the industrialized differend, the aesthetics of the grotesque. Part 24."},
+  {id:"yukhui",label:"Yuk Hui",f:"gauche",r:14,x:600,y:860,d:"Cosmotechnics and technodiversity: exiting the Valley/Beijing standoff, acceleration and deceleration are the same dead end. Part 19."},
+  {id:"hf",label:"Hugging Face",f:"gauche",r:16,x:730,y:945,d:"The \"GitHub of AI\": a million open-source models. Delangue/Wolf: decentralize against concentration, anti-AGI-cult. But funded by Google/NVIDIA/Amazon, and the upstream (compute) stays concentrated. Open weights is not open source (OSAID). Part 30."},
+];
+const EDGES=[
+  ["musk","andreessen"],["andreessen","a16z"],["thiel","ff"],["thiel","karp"],["thiel","palantir"],
+  ["ff","palantir"],["ff","anduril"],["a16z","ai"],["andreessen","sacks","d"],["musk","sacks","d"],
+  ["thiel","vance","d"],["andreessen","vance","d"],["yarvin","vance","d"],["land","yarvin","d"],
+  ["balaji","sacks","d"],["girard","thiel"],["sovereign","thiel","d"],["sovereign","balaji","d"],
+  ["sovereign","andreessen","d"],["cypherpunks","balaji"],["more","kurzweil"],["kurzweil","bostrom","d"],
+  ["bostrom","yud"],["more","cypherpunks","d"],["hayek","andreessen","d"],["nietzsche","andreessen","d"],
+  ["nietzsche","thiel","d"],["rand","andreessen","d"],["marinetti","andreessen","d"],["tolkien","palantir","d"],
+  ["tolkien","anduril","d"],["culture","musk","d"],["snowcrash","balaji","d"],["karp","palantir"],
+  ["vance","state"],["sacks","state"],["musk","state"],["andreessen","state","d"],["palantir","state","d"],
+  ["anduril","state","d"],["thiel","state","d"],["yarvin","land"],["bostrom","yud"],["a16z","andreessen"],
+  ["ff","thiel"],["hoffman","musk","d"],
+  ["nvidia","ai"],["nvidia","state","d"],["tsmc","nvidia"],["tsmc","huawei","d"],["nvidia","huawei","d"],
+  ["anthropic","ai","d"],["anthropic","state","d"],["ff","anthropic"],["anthropic","golfe"],["golfe","ai","d"],
+  ["safetymoney","anthropic","d"],["safetymoney","bengio"],["bengio","hinton","d"],["bengio","lecun","d"],
+  ["lecun","yud","d"],["yud","anthropic","d"],["hinton","yud","d"],
+  ["aschenbrenner","state","d"],["aschenbrenner","yud","d"],["aschenbrenner","palantir","d"],
+  ["buterin","cypherpunks","d"],["buterin","balaji","d"],
+  ["pekin","huawei"],["pekin","deepseek"],["deepseek","ai","d"],["pekin","state","d"],["pekin","nvidia","d"],
+  ["sanders","state","d"],["hao","ai","d"],["wark","chatonsky","d"],["chatonsky","land","d"],
+  ["yukhui","land","d"],["mcquillan","state","d"],["hao","golfe","d"],["sanders","ai","d"],
+  ["hf","lecun","d"],["hf","buterin","d"],["hf","ai","d"],["nvidia","hf","d"],["hf","huawei","d"],
+];
+const svg=document.getElementById('svg');
+svg.setAttribute('viewBox','0 0 1150 1000');
+const NS='http://www.w3.org/2000/svg';
+const byId=Object.fromEntries(NODES.map(n=>[n.id,n]));
+const active=new Set(Object.keys(FACTIONS));
+let edgeEls=[], nodeEls={};
+
+function draw(){
+  while(svg.firstChild) svg.removeChild(svg.firstChild);
+  edgeEls=[];
+  EDGES.forEach(e=>{
+    const a=byId[e[0]],b=byId[e[1]];
+    const l=document.createElementNS(NS,'line');
+    l.setAttribute('x1',a.x);l.setAttribute('y1',a.y);l.setAttribute('x2',b.x);l.setAttribute('y2',b.y);
+    l.setAttribute('class','edge'+(e[2]?' dashed':''));
+    l.dataset.a=e[0];l.dataset.b=e[1];
+    svg.appendChild(l);edgeEls.push(l);
+  });
+  NODES.forEach(n=>{
+    const g=document.createElementNS(NS,'g');
+    g.setAttribute('class','node');g.setAttribute('transform',`translate(${n.x},${n.y})`);
+    const c=document.createElementNS(NS,'circle');
+    c.setAttribute('r',n.r);c.setAttribute('fill',FACTIONS[n.f].c);
+    const t=document.createElementNS(NS,'text');
+    t.setAttribute('y',n.r+13);t.textContent=n.label;
+    g.appendChild(c);g.appendChild(t);
+    g.addEventListener('click',()=>select(n));
+    g.addEventListener('mouseenter',()=>highlight(n.id));
+    g.addEventListener('mouseleave',clearHighlight);
+    svg.appendChild(g);nodeEls[n.id]=g;
+  });
+  applyFilter();
+}
+function select(n){
+  const p=document.getElementById('panel');
+  while(p.firstChild) p.removeChild(p.firstChild);
+  const tag=document.createElement('span');tag.className='tag';tag.style.background=FACTIONS[n.f].c;tag.textContent=FACTIONS[n.f].label;
+  const h=document.createElement('h2');h.textContent=n.label;
+  const body=document.createElement('p');body.textContent=n.d;
+  const hint=document.createElement('p');hint.className='hint';
+  hint.appendChild(document.createTextNode('See the reports: '));
+  const a=document.createElement('a');a.href='./cartographie-prospective.md';a.textContent='synthesis';
+  hint.appendChild(a);hint.appendChild(document.createTextNode('.'));
+  p.appendChild(tag);p.appendChild(h);p.appendChild(body);p.appendChild(hint);
+}
+function highlight(id){
+  const keep=new Set([id]);
+  EDGES.forEach(e=>{if(e[0]===id)keep.add(e[1]);if(e[1]===id)keep.add(e[0]);});
+  NODES.forEach(n=>nodeEls[n.id].classList.toggle('dim',!keep.has(n.id)&&active.has(n.f)));
+  edgeEls.forEach(l=>l.classList.toggle('dim',!(l.dataset.a===id||l.dataset.b===id)));
+}
+function clearHighlight(){NODES.forEach(n=>nodeEls[n.id].classList.remove('dim'));edgeEls.forEach(l=>l.classList.remove('dim'));applyFilter();}
+function applyFilter(){
+  NODES.forEach(n=>nodeEls[n.id].style.display=active.has(n.f)?'':'none');
+  edgeEls.forEach(l=>{const ok=active.has(byId[l.dataset.a].f)&&active.has(byId[l.dataset.b].f);l.style.display=ok?'':'none';});
+}
+const legend=document.getElementById('legend');
+Object.entries(FACTIONS).forEach(([k,v])=>{
+  const c=document.createElement('span');c.className='chip';
+  const dot=document.createElement('span');dot.className='dot';dot.style.background=v.c;
+  c.appendChild(dot);c.appendChild(document.createTextNode(v.label));
+  c.onclick=()=>{if(active.has(k)){active.delete(k);c.classList.add('off');}else{active.add(k);c.classList.remove('off');}applyFilter();};
+  legend.appendChild(c);
+});
+let panX=0,panY=0,sx,sy,dragging=false;
+const stage=document.getElementById('stage');
+function setView(){svg.setAttribute('viewBox',`${-panX} ${-panY} 1150 1000`);}
+stage.addEventListener('mousedown',e=>{if(e.target.closest('.node'))return;dragging=true;sx=e.clientX;sy=e.clientY;});
+window.addEventListener('mousemove',e=>{if(!dragging)return;const k=1000/stage.clientWidth;panX+=(e.clientX-sx)*k;panY+=(e.clientY-sy)*k;sx=e.clientX;sy=e.clientY;setView();});
+window.addEventListener('mouseup',()=>dragging=false);
+draw();
+</script>
+</body>
+</html>

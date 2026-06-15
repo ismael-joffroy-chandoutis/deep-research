@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map of the radical tech right — Andreessen, Thiel & co.</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --line:#2b3340; --text:#e6edf3; --muted:#9da7b3;
+    --eacc:#f0883e; --nrx:#d2596e; --crypto:#3fb950; --ea:#58a6ff; --idea:#bc8cff; --power:#e3b341; --infra:#56d4dd;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  header{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+  header h1{font-size:16px;margin:0;font-weight:650}
+  header .sub{color:var(--muted);font-size:12px}
+  .wrap{display:flex;height:calc(100% - 56px)}
+  #stage{flex:1;position:relative;overflow:hidden;cursor:grab}
+  #stage:active{cursor:grabbing}
+  svg{width:100%;height:100%;display:block}
+  .edge{stroke:var(--line);stroke-width:1.2}
+  .edge.dashed{stroke-dasharray:4 4;opacity:.7}
+  .node circle{cursor:pointer;stroke:#0d1117;stroke-width:1.5;transition:r .15s}
+  .node text{pointer-events:none;fill:var(--text);font-size:11px;font-weight:600;text-anchor:middle}
+  .node.dim{opacity:.12}
+  .edge.dim{opacity:.04}
+  aside{width:330px;background:var(--panel);border-left:1px solid var(--line);padding:16px;overflow:auto}
+  aside h2{font-size:15px;margin:.2em 0 .1em}
+  aside .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;color:#0d1117;font-weight:700;margin-bottom:8px}
+  aside p{color:var(--muted);font-size:13px}
+  .legend{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{cursor:pointer;user-select:none;font-size:11px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#0d1117;color:var(--text)}
+  .chip.off{opacity:.35;text-decoration:line-through}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:middle}
+  .hint{color:var(--muted);font-size:12px;margin-top:10px}
+  a{color:var(--ea)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🗺️ Map of the radical tech right</h1>
+  <span class="sub">Actors &amp; ideas — Andreessen · Thiel · Musk · e/acc · neoreaction · crypto · transhumanism</span>
+  <div class="legend" id="legend" style="margin-left:auto"></div>
+</header>
+<div class="wrap">
+  <div id="stage"><svg id="svg"></svg></div>
+  <aside id="panel">
+    <h2>Click a node</h2>
+    <p>Interactive map of the people, institutions, ideas and levers of power. Filter by faction with the pills at the top right; hover to isolate links; drag the background to pan.</p>
+    <p class="hint">Detailed reports: <a href="./cartographie-prospective.md">cartographie-prospective.md</a> and the related parts.</p>
+  </aside>
+</div>
+<script>
+const FACTIONS={
+  eacc:{label:"Techno-optimists / e/acc",c:getComputedStyle(document.documentElement).getPropertyValue('--eacc').trim()},
+  nrx:{label:"Neoreaction / monarchism",c:getComputedStyle(document.documentElement).getPropertyValue('--nrx').trim()},
+  crypto:{label:"Crypto / sovereigntists",c:getComputedStyle(document.documentElement).getPropertyValue('--crypto').trim()},
+  ea:{label:"Cautious / longtermists (EA)",c:getComputedStyle(document.documentElement).getPropertyValue('--ea').trim()},
+  idea:{label:"Philo / sci-fi sources",c:getComputedStyle(document.documentElement).getPropertyValue('--idea').trim()},
+  power:{label:"State power (2025-26)",c:getComputedStyle(document.documentElement).getPropertyValue('--power').trim()},
+  infra:{label:"Infrastructure",c:getComputedStyle(document.documentElement).getPropertyValue('--infra').trim()},
+};
+// x,y in logical coordinates 0..1000 (viewBox)
+const NODES=[
+  {id:"andreessen",label:"Marc Andreessen",f:"eacc",r:24,x:300,y:250,d:"Co-founder of Netscape (Mosaic), partner at a16z. Author of the <b>Techno-Optimist Manifesto</b> (2023) and of \"Software is eating the world\". Mainstream voice of e/acc. Adviser, appointed to PCAST (2026)."},
+  {id:"thiel",label:"Peter Thiel",f:"nrx",r:26,x:560,y:240,d:"Co-founder of PayPal, Palantir, Founders Fund; first investor in Facebook. Ideological hub of the milieu (Girard, Strauss, Schmitt). \"I no longer believe that freedom and democracy are compatible\" (2009)."},
+  {id:"musk",label:"Elon Musk",f:"eacc",r:24,x:430,y:120,d:"Came from X.com/PayPal. Tesla, SpaceX, Neuralink, xAI, Twitter/X buyout. Ran DOGE. Fan of Iain M. Banks (the Culture) and Asimov (Foundation)."},
+  {id:"sacks",label:"David Sacks",f:"eacc",r:18,x:480,y:360,d:"PayPal Mafia, Craft Ventures. White House \"czar\" for AI & crypto (2025)."},
+  {id:"vance",label:"JD Vance",f:"power",r:20,x:650,y:380,d:"Former VC (Narya Capital, funded by Thiel & Andreessen). Vice President. Ideas drawn from Yarvin."},
+  {id:"karp",label:"Alex Karp",f:"eacc",r:16,x:680,y:140,d:"CEO of Palantir, co-founded with Thiel. PhD under Habermas; reads Strauss / Frankfurt School."},
+  {id:"hoffman",label:"Reid Hoffman",f:"ea",r:15,x:250,y:120,d:"PayPal Mafia, LinkedIn, Greylock. Democratic wing of the network — funds the opposing camp."},
+  {id:"balaji",label:"Balaji Srinivasan",f:"crypto",r:18,x:760,y:520,d:"Ex-CTO of Coinbase / a16z. \"The Network State\" (2022): voice vs exit, opt-in digital communities backed by blockchain."},
+  {id:"yarvin",label:"Curtis Yarvin",f:"nrx",r:18,x:760,y:300,d:"Alias Mencius Moldbug. \"Court philosopher\" of the Thielverse. Neoreaction: replace democracy with the corporate state (CEO-king)."},
+  {id:"land",label:"Nick Land",f:"nrx",r:16,x:860,y:230,d:"Theorist of accelerationism and the Dark Enlightenment. \"Democracy tends to fascism\" (turned into praise)."},
+  {id:"bostrom",label:"Nick Bostrom",f:"ea",r:16,x:180,y:470,d:"Superintelligence (2014), existential risk. Co-founder of longtermism. \"Caution\" camp."},
+  {id:"yud",label:"E. Yudkowsky",f:"ea",r:15,x:120,y:360,d:"Rationalism (LessWrong), AI safety. Calls to slow down sharply."},
+  {id:"kurzweil",label:"Ray Kurzweil",f:"idea",r:14,x:120,y:560,d:"\"The Singularity Is Near\" — human/AI merger around 2045. Singularity University."},
+  {id:"more",label:"Max More",f:"idea",r:13,x:200,y:620,d:"Extropianism (1988-92): libertarian transhumanism, root of the movement."},
+  {id:"hayek",label:"Hayek / Mises",f:"idea",r:14,x:330,y:680,d:"Austrian school: market as a \"discovery machine\", anti-planning. Substitutes wealth for birth."},
+  {id:"nietzsche",label:"Nietzsche",f:"idea",r:14,x:470,y:700,d:"Overman, will to power, \"aristocratic radicalism\". Matrix of \"Becoming Technological Supermen\"."},
+  {id:"rand",label:"Ayn Rand",f:"idea",r:13,x:250,y:730,d:"Objectivism; John Galt is a \"patron saint\" of the manifesto. Heroic creator vs parasitic masses."},
+  {id:"marinetti",label:"Marinetti",f:"idea",r:14,x:400,y:560,d:"Futurism (1909), paraphrased by Andreessen. Co-author of the Fascist Manifesto (1919) — controversial reference."},
+  {id:"girard",label:"Girard / Strauss / Schmitt",f:"idea",r:15,x:600,y:640,d:"Mimetic desire (Girard) → anti-competition monopoly; esoteric reading (Strauss); friend/enemy (Schmitt). Bedrock of Thiel's thought."},
+  {id:"sovereign",label:"The Sovereign Individual",f:"idea",r:15,x:760,y:680,d:"Davidson & Rees-Mogg (1997). Bridge text: the powerful individual \"exits\" the nation-state. Cult book of Thiel, Srinivasan, Andreessen."},
+  {id:"snowcrash",label:"Snow Crash / cyberpunk",f:"idea",r:13,x:900,y:560,d:"Stephenson (1992): coins \"metaverse\" & \"avatar\". A dystopia read as a roadmap."},
+  {id:"culture",label:"Iain M. Banks — Culture",f:"idea",r:13,x:430,y:40,d:"Post-scarcity utopia run by AIs (socialist!). Cited by Musk & Bezos — often misread."},
+  {id:"tolkien",label:"Tolkien",f:"idea",r:13,x:880,y:120,d:"Source of the names Palantir, Anduril, Mithril, Erebor. Yet in Tolkien the palantír corrupts and the Ring must be destroyed."},
+  {id:"cypherpunks",label:"Cypherpunks",f:"crypto",r:14,x:900,y:430,d:"May, Hughes, Gilmore (1992). Szabo, Finney, Dai → precursors of Bitcoin. Shared root with the extropians."},
+  {id:"a16z",label:"a16z",f:"eacc",r:18,x:280,y:360,d:"Andreessen Horowitz. Mega-fund in crypto + AI + American Dynamism (defense)."},
+  {id:"ff",label:"Founders Fund",f:"nrx",r:16,x:600,y:430,d:"Thiel's fund: SpaceX, Palantir, Anduril, Stripe."},
+  {id:"palantir",label:"Palantir",f:"infra",r:18,x:720,y:60,d:"Mass-data analytics for intelligence, police, military, finance. ~$10B US Army contract (2025)."},
+  {id:"anduril",label:"Anduril",f:"infra",r:15,x:820,y:360,d:"Drones/defense (Palmer Luckey), funded by Founders Fund."},
+  {id:"ai",label:"OpenAI / xAI",f:"infra",r:16,x:300,y:560,d:"Frontier AI — highly centralized (compute, data, capital), in tension with crypto's decentralized ethos."},
+  {id:"state",label:"US State 2025-26",f:"power",r:20,x:560,y:520,d:"Partial fusion of tech capital / state apparatus: Vance (VP), Musk (DOGE), Sacks (AI/crypto), Andreessen (PCAST), ≥10 Thiel associates. \"Authoritarian Stack\"."},
+];
+const EDGES=[
+  ["musk","andreessen"],["andreessen","a16z"],["thiel","ff"],["thiel","karp"],["thiel","palantir"],
+  ["ff","palantir"],["ff","anduril"],["a16z","ai"],["andreessen","sacks","d"],["musk","sacks","d"],
+  ["thiel","vance","d"],["andreessen","vance","d"],["yarvin","vance","d"],["land","yarvin","d"],
+  ["balaji","sacks","d"],["girard","thiel"],["sovereign","thiel","d"],["sovereign","balaji","d"],
+  ["sovereign","andreessen","d"],["cypherpunks","balaji"],["more","kurzweil"],["kurzweil","bostrom","d"],
+  ["bostrom","yud"],["more","cypherpunks","d"],["hayek","andreessen","d"],["nietzsche","andreessen","d"],
+  ["nietzsche","thiel","d"],["rand","andreessen","d"],["marinetti","andreessen","d"],["tolkien","palantir","d"],
+  ["tolkien","anduril","d"],["culture","musk","d"],["snowcrash","balaji","d"],["karp","palantir"],
+  ["vance","state"],["sacks","state"],["musk","state"],["andreessen","state","d"],["palantir","state","d"],
+  ["anduril","state","d"],["thiel","state","d"],["yarvin","land"],["bostrom","yud"],["a16z","andreessen"],
+  ["ff","thiel"],["hoffman","musk","d"],
+];
+const svg=document.getElementById('svg');
+svg.setAttribute('viewBox','0 0 1000 780');
+const NS='http://www.w3.org/2000/svg';
+const byId=Object.fromEntries(NODES.map(n=>[n.id,n]));
+const active=new Set(Object.keys(FACTIONS));
+let edgeEls=[], nodeEls={};
+
+function draw(){
+  svg.innerHTML='';
+  edgeEls=[];
+  EDGES.forEach(e=>{
+    const a=byId[e[0]],b=byId[e[1]];
+    const l=document.createElementNS(NS,'line');
+    l.setAttribute('x1',a.x);l.setAttribute('y1',a.y);l.setAttribute('x2',b.x);l.setAttribute('y2',b.y);
+    l.setAttribute('class','edge'+(e[2]?' dashed':''));
+    l.dataset.a=e[0];l.dataset.b=e[1];
+    svg.appendChild(l);edgeEls.push(l);
+  });
+  NODES.forEach(n=>{
+    const g=document.createElementNS(NS,'g');
+    g.setAttribute('class','node');g.setAttribute('transform',`translate(${n.x},${n.y})`);
+    const c=document.createElementNS(NS,'circle');
+    c.setAttribute('r',n.r);c.setAttribute('fill',FACTIONS[n.f].c);
+    const t=document.createElementNS(NS,'text');
+    t.setAttribute('y',n.r+13);t.textContent=n.label;
+    g.appendChild(c);g.appendChild(t);
+    g.addEventListener('click',()=>select(n));
+    g.addEventListener('mouseenter',()=>highlight(n.id));
+    g.addEventListener('mouseleave',clearHighlight);
+    svg.appendChild(g);nodeEls[n.id]=g;
+  });
+  applyFilter();
+}
+function select(n){
+  const p=document.getElementById('panel');
+  p.innerHTML=`<span class="tag" style="background:${FACTIONS[n.f].c}">${FACTIONS[n.f].label}</span>
+    <h2>${n.label}</h2><p>${n.d}</p>
+    <p class="hint">See the reports: <a href="./cartographie-prospective.md">synthesis</a>.</p>`;
+}
+function highlight(id){
+  const keep=new Set([id]);
+  EDGES.forEach(e=>{if(e[0]===id)keep.add(e[1]);if(e[1]===id)keep.add(e[0]);});
+  NODES.forEach(n=>nodeEls[n.id].classList.toggle('dim',!keep.has(n.id)&&active.has(n.f)));
+  edgeEls.forEach(l=>l.classList.toggle('dim',!(l.dataset.a===id||l.dataset.b===id)));
+}
+function clearHighlight(){NODES.forEach(n=>nodeEls[n.id].classList.remove('dim'));edgeEls.forEach(l=>l.classList.remove('dim'));applyFilter();}
+function applyFilter(){
+  NODES.forEach(n=>nodeEls[n.id].style.display=active.has(n.f)?'':'none');
+  edgeEls.forEach(l=>{const ok=active.has(byId[l.dataset.a].f)&&active.has(byId[l.dataset.b].f);l.style.display=ok?'':'none';});
+}
+const legend=document.getElementById('legend');
+Object.entries(FACTIONS).forEach(([k,v])=>{
+  const c=document.createElement('span');c.className='chip';
+  c.innerHTML=`<span class="dot" style="background:${v.c}"></span>${v.label}`;
+  c.onclick=()=>{if(active.has(k)){active.delete(k);c.classList.add('off');}else{active.add(k);c.classList.remove('off');}applyFilter();};
+  legend.appendChild(c);
+});
+let panX=0,panY=0,sx,sy,dragging=false;
+const stage=document.getElementById('stage');
+function setView(){svg.setAttribute('viewBox',`${-panX} ${-panY} 1000 780`);}
+stage.addEventListener('mousedown',e=>{if(e.target.closest('.node'))return;dragging=true;sx=e.clientX;sy=e.clientY;});
+window.addEventListener('mousemove',e=>{if(!dragging)return;const k=1000/stage.clientWidth;panX+=(e.clientX-sx)*k;panY+=(e.clientY-sy)*k;sx=e.clientX;sy=e.clientY;setView();});
+window.addEventListener('mouseup',()=>dragging=false);
+draw();
+</script>
+</body>
+</html>

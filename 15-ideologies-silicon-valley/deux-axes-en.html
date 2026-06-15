@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The two-axes map: accelerate ↔ slow down / concentrate ↔ democratize</title>
+<style>
+  :root{ --bg:#0d1117; --panel:#161b22; --line:#2b3340; --text:#e6edf3; --muted:#9da7b3;
+    --eacc:#f0883e; --nrx:#d2596e; --crypto:#3fb950; --ea:#58a6ff; --power:#e3b341; --infra:#56d4dd; --labs:#ff9bce; --chine:#f85149; --gauche:#9ee87d; }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  #wrap{max-width:1100px;margin:0 auto;padding:18px 16px 50px}
+  h1{font-size:17px;font-weight:650;margin:.2em 0}
+  .sub{color:var(--muted);font-size:12.5px;margin:.3em 0 1em;max-width:60em}
+  svg{width:100%;height:auto;display:block;background:var(--bg)}
+  .axis{stroke:var(--line);stroke-width:1.2}
+  .quad{fill:var(--muted);font-size:12px;font-style:italic;opacity:.65}
+  .axlbl{fill:var(--text);font-size:12px;font-weight:600}
+  .dot{cursor:pointer;stroke:#0d1117;stroke-width:1.3}
+  .nlabel{font-size:10.5px;fill:var(--text);pointer-events:none}
+  #info{min-height:2.6em;border-top:1px solid var(--line);margin-top:8px;padding-top:8px;font-size:13px;max-width:70em}
+  #info b{font-weight:650}
+  .foot{margin-top:14px;font-size:11.5px;color:var(--muted);font-style:italic;max-width:70em;line-height:1.5}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>The two-axes map</h1>
+  <div class="sub">Each actor placed on the dossier's two axes. Horizontal: slow down ↔ accelerate (speed). Vertical: concentrate ↔ democratize (power). The dossier's thesis can be read at a glance: the bottom-right quadrant (accelerate + concentrate) is saturated with powerful actors; the genuine counter-powers are top-left; and the doomer camp (Yudkowsky) is bottom-left, slowing down but without democracy. The top-right (accelerate + democratize) is left accelerationism's lost wager (Fisher, l-acc, Bastani): the emancipatory speed the right captured (Part 31). Hover over a point.</div>
+  <svg id="plot" viewBox="0 0 1000 720" xmlns="http://www.w3.org/2000/svg"></svg>
+  <div id="info"><i>Hover over a point for the note. Placements are indicative, drawn from the verdicts of Parts 11, 15, 18, 19, 23, 26, 31.</i></div>
+  <div class="foot">Qualitative placements, not measurements. Color by camp. Source: dossier parts. Self-contained, offline. June 2026.</div>
+</div>
+<script>
+const C = {eacc:'--eacc',nrx:'--nrx',crypto:'--crypto',ea:'--ea',power:'--power',infra:'--infra',labs:'--labs',chine:'--chine',gauche:'--gauche'};
+const css = k => getComputedStyle(document.documentElement).getPropertyValue(C[k]).trim();
+// ax = accelerate (0 slow down .. 100 accelerate) ; dem = democratize (0 concentrate .. 100 democratize)
+const A = [
+  {n:'Andreessen / e-acc', ax:90, dem:15, c:'eacc', d:"Accelerate at full throttle, concentration embraced. The manifesto (Part 1). Bottom-right quadrant."},
+  {n:'Thiel', ax:68, dem:8, c:'nrx', d:"\"Freedom and democracy are no longer compatible.\" Maximal concentration (Part 2)."},
+  {n:'Musk / xAI', ax:88, dem:18, c:'eacc', d:"Accelerate, concentrate, pronatalism. Memphis without permits (Parts 9, 16)."},
+  {n:'Altman / OpenAI', ax:88, dem:22, c:'infra', d:"The race to AGI, $852B, state capture (Parts 9, 23)."},
+  {n:'Amodei / Anthropic', ax:72, dem:32, c:'labs', d:"\"Steering the bus\": accelerates while alarming. $965B but real red lines (Part 20)."},
+  {n:'Hassabis', ax:70, dem:46, c:'labs', d:"Accelerate prudently, \"a CERN for AI\": governance by scientists (Part 18)."},
+  {n:'Zuckerberg / Wang', ax:85, dem:20, c:'labs', d:"Massive capex, \"personal superintelligence,\" the Scale acqui-hire (Part 18)."},
+  {n:'Sutskever / SSI', ax:80, dem:25, c:'labs', d:"\"Straight-shot to superintelligence,\" opaque (Part 18)."},
+  {n:'Murati', ax:82, dem:28, c:'labs', d:"Thinking Machines, extreme founder control (Part 18)."},
+  {n:'LeCun / AMI', ax:85, dem:62, c:'labs', d:"The fourth position: anti-doom AND pro-open-source AND anti-Trump (Part 18)."},
+  {n:'Yudkowsky', ax:8, dem:26, c:'ea', d:"Stop everything, but by expert decision: slow down without democracy. Bottom-left (Part 14)."},
+  {n:'Bostrom', ax:30, dem:24, c:'ea', d:"Longtermism, elitist, the dysgenic seam in the x-risk canon (Parts 11, 28)."},
+  {n:'Bengio / LawZero', ax:30, dem:78, c:'ea', d:"Slow down + multilateral democracy + public AI. The most solid counter-power (Part 18)."},
+  {n:'Hinton', ax:25, dem:74, c:'ea', d:"Slow down + critique of capital (\"socialism\"). A bridge to the left (Part 18)."},
+  {n:'Buterin / d-acc', ax:68, dem:72, c:'crypto', d:"Defensive, decentralized acceleration. Exiting the binary (Part 19)."},
+  {n:'Hugging Face', ax:78, dem:76, c:'gauche', d:"The open-source \"GitHub of AI,\" the missing \"democratize\" pole. Anti-AGI-cult (Delangue, Wolf), but funded by Google/NVIDIA and the upstream (compute) stays concentrated (Part 30)."},
+  {n:'McQuillan', ax:15, dem:88, c:'gauche', d:"Decomputing, an anti-fascist approach to AI. Maximal democracy (Part 19)."},
+  {n:'Sanders / US left', ax:22, dem:82, c:'gauche', d:"Datacenter moratorium, robot tax, codetermination (Part 21)."},
+  {n:'EU / AI Act', ax:36, dem:80, c:'power', d:"Risk-based regulation, algorithmic labor law (Parts 10, 21)."},
+  {n:'Beijing / party-state', ax:80, dem:10, c:'chine', d:"State techno-authoritarianism: accelerate, maximal state concentration (Part 15)."},
+  {n:'Huawei', ax:82, dem:12, c:'chine', d:"Full-stack state champion, captive market (Part 23)."},
+  {n:'NVIDIA / Huang', ax:85, dem:12, c:'infra', d:"The physical bottleneck, circular financing, de facto banker (Part 23)."},
+  {n:'Palantir / Karp', ax:80, dem:6, c:'infra', d:"ImmigrationOS, voting trust, maximal concentration (Part 26)."},
+  {n:'Anduril / Luckey', ax:85, dem:12, c:'infra', d:"Autonomous towers, legislative monopoly, defense empire (Part 26)."},
+  {n:'Mistral', ax:80, dem:48, c:'labs', d:"European sovereignty, real or cosmetic? (Part 18)."},
+  {n:'Yuk Hui', ax:30, dem:70, c:'gauche', d:"Cosmotechnics, technodiversity: exiting the Valley/Beijing standoff (Part 19)."},
+  {n:'Vance / US state', ax:75, dem:12, c:'power', d:"Capture of the state by the tech-right (Parts 9, 17)."},
+  {n:'Mark Fisher', ax:58, dem:82, c:'gauche', d:"Capitalist realism, hauntology: he names the disease (\"no alternative\"). The left branch of the CCRU, facing Land (Part 31)."},
+  {n:'l-acc (Srnicek & Williams)', ax:74, dem:70, c:'gauche', d:"Accelerate technology toward post-work, but on the democratize side. The lost wager: the right captured speed by owning the compute (Part 31)."},
+  {n:'Bastani / FALC', ax:88, dem:84, c:'gauche', d:"Fully automated luxury communism: acceleration plus abundance for all. Post-scarcity utopia (Part 31)."},
+  {n:'Land / r-acc', ax:94, dem:5, c:'nrx', d:"The other branch of the CCRU: capital-machine beyond the human, Dark Enlightenment. The fork, facing Fisher (Parts 7, 31)."},
+  {n:'Degrowth (Hickel, Saito)', ax:9, dem:66, c:'gauche', d:"The other left: slow down, make a limit opposable. The brake against acceleration (Parts 22, 31)."},
+];
+const svg = document.getElementById('plot'), NS='http://www.w3.org/2000/svg';
+const info = document.getElementById('info');
+const W=1000,H=720, m={l:120,r:60,t:60,b:70};
+const px = ax => m.l + (ax/100)*(W-m.l-m.r);
+const py = dem => m.t + ((100-dem)/100)*(H-m.t-m.b);
+const cx = px(50), cy = py(50);
+function line(x1,y1,x2,y2){const l=document.createElementNS(NS,'line');l.setAttribute('x1',x1);l.setAttribute('y1',y1);l.setAttribute('x2',x2);l.setAttribute('y2',y2);l.setAttribute('class','axis');svg.appendChild(l);}
+function txt(x,y,s,cls,anchor){const t=document.createElementNS(NS,'text');t.setAttribute('x',x);t.setAttribute('y',y);t.setAttribute('class',cls);if(anchor)t.setAttribute('text-anchor',anchor);t.textContent=s;svg.appendChild(t);return t;}
+line(m.l,cy,W-m.r,cy); line(cx,m.t,cx,H-m.b);
+txt(m.l-8,cy+4,'slow down','axlbl','end');
+txt(W-m.r+8,cy+4,'accelerate','axlbl','start');
+txt(cx,m.t-16,'democratize','axlbl','middle');
+txt(cx,H-m.b+30,'concentrate','axlbl','middle');
+txt(m.l+10,m.t+18,'democratic counter-power','quad','start');
+txt(W-m.r-10,m.t+18,'open acceleration','quad','end');
+txt(m.l+10,H-m.b-8,'technocratic caution','quad','start');
+txt(W-m.r-10,H-m.b-8,'accelerationist concentration','quad','end');
+A.forEach(a=>{
+  const g=document.createElementNS(NS,'g');
+  const c=document.createElementNS(NS,'circle');
+  c.setAttribute('cx',px(a.ax));c.setAttribute('cy',py(a.dem));c.setAttribute('r',7);
+  c.setAttribute('fill',css(a.c));c.setAttribute('class','dot');
+  const t=document.createElementNS(NS,'text');
+  t.setAttribute('x',px(a.ax)+10);t.setAttribute('y',py(a.dem)+3.5);t.setAttribute('class','nlabel');
+  t.textContent=a.n;
+  g.appendChild(c);g.appendChild(t);svg.appendChild(g);
+  const show=()=>{info.textContent='';const b=document.createElement('b');b.textContent=a.n;info.appendChild(b);info.appendChild(document.createTextNode(' — '+a.d));};
+  g.addEventListener('mouseenter',show); g.addEventListener('click',show);
+});
+</script>
+</body>
+</html>

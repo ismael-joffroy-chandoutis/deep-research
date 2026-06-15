@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you cite or quote this work, please credit it as below."
+title: "deep-research: Investigations into the tools, systems, and ideas shaping AI-native creative practice"
+abstract: "A series of research essays and dossiers by a documentary filmmaker working with AI as material: generation, analysis, reconstruction, memory."
+type: dataset
+authors:
+  - given-names: "Ismaël"
+    family-names: "Joffroy Chandoutis"
+    website: "https://github.com/12georgiadis"
+repository-code: "https://github.com/12georgiadis/deep-research"
+url: "https://github.com/12georgiadis/deep-research"
+license: CC-BY-NC-ND-4.0

@@ -56,6 +56,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 14. [Le chapitre manquant / The Missing Chapter](14-le-chapitre-manquant/)
 *June 2026.* Bilingual (French original, English version). A close reading of Dario Amodei's *Policy on the AI Exponential* from inside a practice that uses his company's tools daily. What the program gets right (the candor about state capture, the right to an equivalent AI against the state), what does not hold (the regulatory moat, the bloc logic, the unquestioned premise), and the chapter the text names as most important then leaves empty: meaning. Three functions only culture fulfills in Amodei's own scenario — making the exponential perceptible, holding exteriority to the race, prototyping post-employment life.
 
+### 15. [Silicon Valley Ideologies: From Techno-Optimism to Techno-Fascism](15-ideologies-silicon-valley/)
+*June 2026.* Bilingual (French original, English version). 31 parts of sourced deep research on the ideologies, actors, and trajectories of radical tech: Andreessen's techno-optimist manifesto, Thiel and the PayPal mafia, Nick Land and the Dark Enlightenment, the fascist genealogy (Marinetti, Dugin, eugenics/TESCREAL) and its left counter-genealogy (the CCRU fork: Fisher, l/acc), the AI-safety debate, the material empire (NVIDIA/Huawei, Palantir/Anduril), and the anatomy of the word "techno-fascism." With four interactive maps, and a method note on writing about the AI industry with one of its own instruments.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
@@ -68,6 +71,11 @@ This repository exists because I believe artists should share their technical re
 
 ---
 
-## License
+## License & citation
 
-Content is released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Share, adapt, attribute.
+© Ismaël Joffroy Chandoutis. Content is released under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): free to read and to cite with credit, no commercial use, no derivatives or repackaging without permission. Quotation for research, commentary, criticism, and teaching remains permitted.
+
+**How to cite:** use GitHub's "Cite this repository" button (powered by [`CITATION.cff`](./CITATION.cff)), or:
+Ismaël Joffroy Chandoutis, *deep-research*, 2026, https://github.com/12georgiadis/deep-research
+
+For commercial use, translation, or adaptation, please contact me.
