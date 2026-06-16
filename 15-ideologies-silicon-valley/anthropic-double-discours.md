@@ -130,6 +130,22 @@ Sur les deux axes du dossier (1 : accélérer ↔ ralentir ; 2 : concentration �
 
 ---
 
+## Addendum, 16 juin 2026 : la face vie privée du double discours
+
+En juin 2026, Anthropic a notifié une mise à jour de sa politique de confidentialité, effective le 8 juillet 2026, pour les comptes grand public (Claude Free, Pro, Max). Elle montre le double discours à son niveau le plus concret, celui des données.
+
+La vitrine rassure, et c'est formulé comme tel : « We don't sell your data, Claude remains ad-free, and you can control whether your conversations are used to improve Anthropic's AI models. » Trois promesses qui occupent le titre.
+
+Le fond est une extension de la surface de données, et elle arrive exactement au moment du tournant agentique. Le résumé officiel ajoute des règles sur les « apps connectées » et les tâches multi-étapes (« ce qui est partagé avec un tiers quand vous connectez un service, et ce que nous recevons en retour »), une catégorie « Verification Data » (confirmer âge ou identité), la participation aux études, la personnalisation marketing, et « plus de clarté sur les cas de partage à des tiers » et « les bases légales ». Selon les analyses de la politique complète par la presse (ThePrint, CybersecurityNews), cette vérification d'identité peut impliquer une pièce d'identité gouvernementale, une photo ou vidéo, et un gabarit de géométrie faciale, c'est-à-dire de la biométrie.
+
+C'est la même structure que le reste du volet. Anthropic tient une ligne rouge vers l'extérieur (refus de la surveillance de masse d'État, volet 26) pendant qu'elle élargit, vers l'intérieur, la collecte sur ses propres utilisateurs grand public, biométrie comprise, au moment précis où Claude devient agentique et touche leurs applications tierces. « On ne vend pas vos données » reste vrai et ne dit rien de tout ce qui se collecte et se partage sans être vendu.
+
+Note réflexive : ce dossier a été écrit avec cet instrument-là. La politique qui élargit la surface de données est la politique du modèle qui écrit cette critique. C'est, à la lettre, l'objet de la [note de méthode](./note-autorat-ia.md).
+
+*Sources : [Anthropic, Updates to our Privacy Policy](https://privacy.claude.com/en/articles/10301952-updates-to-our-privacy-policy) (effective 8 juillet 2026) · [ThePrint, govt IDs & facial scans](https://theprint.in/tech/claude-maker-anthropic-to-ask-some-users-for-govt-issued-ids-facial-scans-under-new-privacy-rules/2960516/) · [CybersecurityNews](https://cybersecuritynews.com/anthropic-updated-privacy-policy/)*
+
+---
+
 ## 9. Sources
 
 **L'appel du 4 juin et la semaine IPO**

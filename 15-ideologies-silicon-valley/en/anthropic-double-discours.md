@@ -130,6 +130,22 @@ On the dossier's two axes (1: accelerate ↔ slow down; 2: concentration ↔ dem
 
 ---
 
+## Addendum, 16 June 2026: the privacy face of the double discourse
+
+In June 2026, Anthropic notified an update to its Privacy Policy, effective 8 July 2026, for consumer accounts (Claude Free, Pro, Max). It shows the double discourse at its most concrete level, data.
+
+The shop window reassures, and is worded as such: "We don't sell your data, Claude remains ad-free, and you can control whether your conversations are used to improve Anthropic's AI models." Three promises that occupy the headline.
+
+The substance is an expansion of the data surface, and it arrives exactly at the agentic turn. The official summary adds rules on "connected apps" and multi-step tasks ("what's shared with a third party when you connect a service, and what we receive in return"), a "Verification Data" category (confirming age or identity), study participation, marketing personalization, and "more clarity around when data may be shared with third parties" and "our legal bases." According to press analyses of the full policy (ThePrint, CybersecurityNews), this identity verification may involve a government ID, a photo or video, and a facial geometry template, that is, biometrics.
+
+It is the same structure as the rest of this part. Anthropic holds a red line outward (refusal of state mass surveillance, Part 26) while expanding, inward, the collection on its own consumer users, biometrics included, at the precise moment Claude becomes agentic and reaches into their third-party apps. "We don't sell your data" stays true and says nothing about all that is collected and shared without being sold.
+
+Reflexive note: this dossier was written with that very instrument. The policy that widens the data surface is the policy of the model writing this critique. That is, literally, the subject of the [method note](./note-autorat-ia.md).
+
+*Sources: [Anthropic, Updates to our Privacy Policy](https://privacy.claude.com/en/articles/10301952-updates-to-our-privacy-policy) (effective 8 July 2026) · [ThePrint, govt IDs & facial scans](https://theprint.in/tech/claude-maker-anthropic-to-ask-some-users-for-govt-issued-ids-facial-scans-under-new-privacy-rules/2960516/) · [CybersecurityNews](https://cybersecuritynews.com/anthropic-updated-privacy-policy/)*
+
+---
+
 ## 9. Sources
 
 **The June 4 appeal and the IPO week**
