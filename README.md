@@ -59,6 +59,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 15. [Silicon Valley Ideologies: From Techno-Optimism to Techno-Fascism](15-ideologies-silicon-valley/)
 *June 2026.* Bilingual (French original, English version). 31 parts of sourced deep research on the ideologies, actors, and trajectories of radical tech: Andreessen's techno-optimist manifesto, Thiel and the PayPal mafia, Nick Land and the Dark Enlightenment, the fascist genealogy (Marinetti, Dugin, eugenics/TESCREAL) and its left counter-genealogy (the CCRU fork: Fisher, l/acc), the AI-safety debate, the material empire (NVIDIA/Huawei, Palantir/Anduril), and the anatomy of the word "techno-fascism." With four interactive maps, and a method note on writing about the AI industry with one of its own instruments.
 
+### 16. [Le robinet et la boucle / The Tap and the Loop](16-le-robinet-et-la-boucle/)
+*June 2026.* Bilingual (French original, English version). A close reading of Satya Nadella's essay on "human capital and token capital" (X, 14 June 2026), from the studio of an artist who owns his tools. Nadella's sovereignty test (swap the model, keep the veteran) is mine, and his "learning loop that compounds" is what I run at the scale of one person. But he preaches sovereignty from the tap: own the loop, rent the substrate. The anti-commoditization argument stops at the firm's boundary and never reaches the worker; the "stable equilibrium" is one where Microsoft stays indispensable. The artist as the firm's limit case, the only one who can own the tap too. With Varoufakis on technofeudalism and Chatonsky on calculated undecidability.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
