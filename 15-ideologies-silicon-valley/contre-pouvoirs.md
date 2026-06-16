@@ -55,6 +55,8 @@ L'UE s'est imposée comme **le seul bloc régulateur à l'échelle** face aux g�
 - **Yanis Varoufakis**, thèse du **« technoféodalisme »** : le capitalisme muterait en féodalisme de plateformes (rente, vassalité numérique).
 - **Shoshana Zuboff**, **« capitalisme de surveillance »** : la donnée comportementale comme matière première d'un pouvoir inédit.
 - **Mark Fisher** (héritage), accélérationnisme **de gauche**, antithèse de Land.
+- **Asma Mhalla**, *Cyberpunk. Le nouveau système totalitaire* (Seuil, 2025) : le **« Diléviathan »**, imbrication fonctionnelle de Big State et Big Tech en un régime hybride et mutant.
+- **Nastasia Hadjadji & Olivier Tesquet**, *Apocalypse Nerds : comment les technofascistes ont pris le pouvoir* (Divergences, 2025) : enquête sur les fantasmes sécessionnistes (network states, mort de l'État-nation) des oligarques tech trumpistes.
 
 ---
 
@@ -86,6 +88,7 @@ Un **accident majeur de l'IA** réarmerait instantanément le camp de la prudenc
 3. **Pression sur l'Europe** : menaces commerciales US, risque de fragmentation réglementaire.
 4. **Dépendance technologique** : difficile de réguler des infrastructures dont on dépend (cloud, IA, paiements).
 5. **Vitesse** : la technologie avance plus vite que le droit (le pari assumé de l'accélérationnisme).
+6. **La critique elle-même est partiellement captée.** Une part mesurable de la recherche critique sur l'IA entretient des liens financiers avec l'industrie qu'elle étudie : l'étude *The Grey Hoodie Project* (Abdalla & Abdalla, AIES 2021) relève qu'environ **58 %** des chercheurs travaillant sur l'éthique de l'IA dans plusieurs grandes universités avaient reçu, à un moment, un financement d'une grande entreprise du secteur. L'effet est structurel, une déformation des agendas par les incitations, pas une corruption individuelle, et une contre-tendance existe (financement public type NSF, instituts qui refusent l'argent de l'industrie). Mais il fragilise l'indépendance épistémique du contre-pouvoir intellectuel.
 
 > **Bilan :** le contre-pouvoir le plus tangible reste **l'Europe** (régulation) ; le plus puissant à terme serait un **alignement entre opinion publique défiante, antitrust et fractures internes**, déclenché par un choc (accident IA, krach crypto, scandale de surveillance).
 
@@ -98,6 +101,9 @@ Un **accident majeur de l'IA** réarmerait instantanément le camp de la prudenc
 - [Bruegel, « The case for an EU digital enforcement authority »](https://www.bruegel.org/policy-brief/case-european-union-digital-enforcement-authority)
 - [Cory Doctorow, interview « enshittification » (Renewable Matter)](https://www.renewablematter.eu/en/cory-doctorow-enshittification-interview)
 - [TESCREAL, Wikipedia (critique Gebru/Torres)](https://en.wikipedia.org/wiki/TESCREAL)
+- Asma Mhalla, *Cyberpunk. Le nouveau système totalitaire*, Seuil, 2025.
+- Nastasia Hadjadji & Olivier Tesquet, *Apocalypse Nerds : comment les technofascistes ont pris le pouvoir*, Éditions Divergences, 2025.
+- Mohamed Abdalla & Moustafa Abdalla, [« The Grey Hoodie Project: Big Tobacco, Big Tech, and the Threat on Academic Integrity »](https://arxiv.org/abs/2009.13676), AIES 2021.
 
 ### Voir aussi
 [Cartographie & prospective](./cartographie-prospective.md) · [Hiérarchie pouvoir/influence](./hierarchie-pouvoir-influence.md)

@@ -55,6 +55,8 @@ The EU has established itself as **the only regulatory bloc operating at scale**
 - **Yanis Varoufakis**, the **"technofeudalism"** thesis: capitalism would mutate into a feudalism of platforms (rent, digital vassalage).
 - **Shoshana Zuboff**, **"surveillance capitalism"**: behavioral data as the raw material of an unprecedented power.
 - **Mark Fisher** (legacy), **left** accelerationism, the antithesis of Land.
+- **Asma Mhalla**, *Cyberpunk. Le nouveau système totalitaire* (Seuil, 2025): the **"Diléviathan,"** the functional entanglement of Big State and Big Tech into a hybrid, mutating regime.
+- **Nastasia Hadjadji & Olivier Tesquet**, *Apocalypse Nerds: comment les technofascistes ont pris le pouvoir* (Divergences, 2025): an investigation into the secessionist fantasies (network states, the death of the nation-state) of Trump-aligned tech oligarchs.
 
 ---
 
@@ -86,6 +88,7 @@ A **major AI accident** would instantly rearm the camp of caution (scenario C of
 3. **Pressure on Europe**: US trade threats, the risk of regulatory fragmentation.
 4. **Technological dependence**: it is hard to regulate infrastructures one depends on (cloud, AI, payments).
 5. **Speed**: technology advances faster than the law (the wager openly made by accelerationism).
+6. **The critique itself is partly captured.** A measurable share of critical AI research has financial ties to the industry it studies: the study *The Grey Hoodie Project* (Abdalla & Abdalla, AIES 2021) finds that around **58%** of researchers working on AI ethics at several major universities had, at some point, received funding from a large company in the sector. The effect is structural, a distortion of agendas through incentives, not individual corruption, and a counter-tendency exists (public funding such as the NSF, institutes that refuse industry money). But it weakens the epistemic independence of the intellectual counter-power.
 
 > **Bottom line:** the most tangible counter-power remains **Europe** (regulation); the most powerful in the long run would be an **alignment between distrustful public opinion, antitrust, and internal fractures**, triggered by a shock (an AI accident, a crypto crash, a surveillance scandal).
 
@@ -98,6 +101,9 @@ A **major AI accident** would instantly rearm the camp of caution (scenario C of
 - [Bruegel, "The case for an EU digital enforcement authority"](https://www.bruegel.org/policy-brief/case-european-union-digital-enforcement-authority)
 - [Cory Doctorow, "enshittification" interview (Renewable Matter)](https://www.renewablematter.eu/en/cory-doctorow-enshittification-interview)
 - [TESCREAL, Wikipedia (Gebru/Torres critique)](https://en.wikipedia.org/wiki/TESCREAL)
+- Asma Mhalla, *Cyberpunk. Le nouveau système totalitaire*, Seuil, 2025.
+- Nastasia Hadjadji & Olivier Tesquet, *Apocalypse Nerds : comment les technofascistes ont pris le pouvoir*, Éditions Divergences, 2025.
+- Mohamed Abdalla & Moustafa Abdalla, ["The Grey Hoodie Project: Big Tobacco, Big Tech, and the Threat on Academic Integrity"](https://arxiv.org/abs/2009.13676), AIES 2021.
 
 ### See also
 [Cartography & foresight](./cartographie-prospective.md) · [Power/influence hierarchy](./hierarchie-pouvoir-influence.md)
