@@ -82,3 +82,5 @@ This repository exists because I believe artists should share their technical re
 Ismaël Joffroy Chandoutis, *deep-research*, 2026, https://github.com/12georgiadis/deep-research
 
 For commercial use, translation, or adaptation, please contact me.
+
+Par [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
