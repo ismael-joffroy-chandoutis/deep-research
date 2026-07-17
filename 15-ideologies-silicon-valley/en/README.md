@@ -5,7 +5,7 @@ A series of *deep research* reports (with cited, cross-checked sources) on the i
 By **Ismaël Joffroy Chandoutis**. Method: sourced deep research, adversarial verification by claims, writing directed with a language model as instrument (see the [method note](./note-autorat-ia.md)).
 
 > English translation of the French series. Last updated: 6 June 2026.
-> ⚠️ Disclaimer: analytical reports based on cited sources (press, official documents, essays), with adversarial verification by claims. To be cross-checked against the primary texts for any formal use.
+> Disclaimer: analytical reports based on cited sources (press, official documents, essays), with adversarial verification by claims. To be cross-checked against the primary texts for any formal use.
 
 ## ▶ Start here
 

@@ -5,7 +5,7 @@ Série de rapports de *deep research* (sources citées, recoupées) sur les idé
 Par **Ismaël Joffroy Chandoutis**. Méthode : deep research sourcé, vérification adversariale par claims, écriture dirigée avec un modèle de langage comme instrument (voir la [note de méthode](./note-autorat-ia.md)).
 
 > Rédigé en français. Dernière mise à jour : 6 juin 2026.
-> ⚠️ Avertissement : rapports d'analyse appuyés sur des sources citées (presse, documents officiels, essais), avec vérification adversariale par claims. À recouper avec les textes primaires pour tout usage formel.
+> Avertissement : rapports d'analyse appuyés sur des sources citées (presse, documents officiels, essais), avec vérification adversariale par claims. À recouper avec les textes primaires pour tout usage formel.
 
 ## ▶ Commencer ici
 
