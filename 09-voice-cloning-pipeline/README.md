@@ -160,4 +160,4 @@ What those 95 minutes produce: 42 cloning datasets (six target models × seven d
 
 ---
 
-*This essay is part of the [deep-research](https://github.com/12georgiadis/deep-research) series. It describes a pipeline built for a specific film project but written so the technique is portable. The specifics of that project, including the identity of the subject whose voice is being processed, are not part of this essay and will not be until the film is finished.*
+*This essay is part of the [deep-research](https://github.com/ismael-joffroy-chandoutis/deep-research) series. It describes a pipeline built for a specific film project but written so the technique is portable. The specifics of that project, including the identity of the subject whose voice is being processed, are not part of this essay and will not be until the film is finished.*

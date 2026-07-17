@@ -274,4 +274,4 @@ Even if that machine depends on NVIDIA's cobalt and TSMC's water. At least I can
 
 ---
 
-*This essay is part of [deep-research](https://github.com/12georgiadis/deep-research), a collection of investigations into the tools, systems, and ideas shaping AI-native creative practice.*
+*This essay is part of [deep-research](https://github.com/ismael-joffroy-chandoutis/deep-research), a collection of investigations into the tools, systems, and ideas shaping AI-native creative practice.*

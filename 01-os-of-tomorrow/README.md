@@ -257,4 +257,4 @@ The OS of tomorrow is not a brand. It might be a text file. But the question is 
 
 ---
 
-*This essay is part of [deep-research](https://github.com/12georgiadis/deep-research), a collection of investigations into the tools, systems, and ideas shaping AI-native creative practice.*
+*This essay is part of [deep-research](https://github.com/ismael-joffroy-chandoutis/deep-research), a collection of investigations into the tools, systems, and ideas shaping AI-native creative practice.*

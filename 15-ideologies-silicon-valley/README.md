@@ -74,6 +74,6 @@ Ce dossier a fait l'objet d'une passe de relecture (suppression des tirets cadra
 
 © Ismaël Joffroy Chandoutis. Sous licence [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr) : lecture et citation libres avec crédit, pas d'usage commercial, pas de réexploitation ou de version dérivée sans accord.
 
-**Comment citer :** Ismaël Joffroy Chandoutis, *Idéologies de la Silicon Valley : du techno-optimisme au techno-fascisme*, 2026, https://github.com/12georgiadis/deep-research/tree/main/15-ideologies-silicon-valley
+**Comment citer :** Ismaël Joffroy Chandoutis, *Idéologies de la Silicon Valley : du techno-optimisme au techno-fascisme*, 2026, https://github.com/ismael-joffroy-chandoutis/deep-research/tree/main/15-ideologies-silicon-valley
 
 Pour un usage commercial, une traduction ou une reprise : me contacter.

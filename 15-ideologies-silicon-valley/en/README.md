@@ -72,6 +72,6 @@ The French dossier underwent a copy-editing pass (removal of em-dashes used as p
 
 © Ismaël Joffroy Chandoutis. Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): free to read and cite with credit, no commercial use, no derivatives or repackaging without permission.
 
-**How to cite:** Ismaël Joffroy Chandoutis, *Silicon Valley Ideologies: From Techno-Optimism to Techno-Fascism*, 2026, https://github.com/12georgiadis/deep-research/tree/main/15-ideologies-silicon-valley
+**How to cite:** Ismaël Joffroy Chandoutis, *Silicon Valley Ideologies: From Techno-Optimism to Techno-Fascism*, 2026, https://github.com/ismael-joffroy-chandoutis/deep-research/tree/main/15-ideologies-silicon-valley
 
 For commercial use, translation, or reuse: contact me.

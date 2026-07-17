@@ -79,7 +79,7 @@ This repository exists because I believe artists should share their technical re
 © Ismaël Joffroy Chandoutis. Content is released under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/): free to read and to cite with credit, no commercial use, no derivatives or repackaging without permission. Quotation for research, commentary, criticism, and teaching remains permitted.
 
 **How to cite:** use GitHub's "Cite this repository" button (powered by [`CITATION.cff`](./CITATION.cff)), or:
-Ismaël Joffroy Chandoutis, *deep-research*, 2026, https://github.com/12georgiadis/deep-research
+Ismaël Joffroy Chandoutis, *deep-research*, 2026, https://github.com/ismael-joffroy-chandoutis/deep-research
 
 For commercial use, translation, or adaptation, please contact me.
 
