@@ -12,6 +12,8 @@ These essays are the research I do along the way. Not tutorials. Not product rev
 
 ---
 
+<img src="monde.jpg" alt="deep-research" width="100%">
+
 ## Essays
 
 ### 01. [The OS of Tomorrow: A Filmmaker's Investigation](01-os-of-tomorrow/)
