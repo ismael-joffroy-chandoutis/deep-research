@@ -98,4 +98,4 @@ Ismaël Joffroy Chandoutis, *deep-research*, 2026, https://github.com/ismael-jof
 
 For commercial use, translation, or adaptation, please contact me.
 
-Par [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
+By [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).
