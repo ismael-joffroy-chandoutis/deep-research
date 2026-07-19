@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use or cite this work, please credit it as below."
+title: "le-pari-lecun"
+abstract: "Le pari de LeCun. Réflexion spéculative sur la thèse des world models (Y. LeCun / AMI Labs) comme après-LLM, le sort des LLM, et le risque de bulle IA."
+type: dataset
+authors:
+  - given-names: "Ismaël"
+    family-names: "Joffroy Chandoutis"
+    website: "https://github.com/ismael-joffroy-chandoutis"
+repository-code: "https://github.com/ismael-joffroy-chandoutis/deep-research"
+url: "https://github.com/ismael-joffroy-chandoutis/deep-research/tree/main/12-le-pari-lecun"
+license: CC-BY-NC-ND-4.0
+keywords:
+  - world models
+  - JEPA
+  - LLM
+  - AI bubble
+  - AMI Labs
