@@ -48,10 +48,10 @@ By **Ismaël Joffroy Chandoutis**. Method: sourced deep research, adversarial ve
 | 31 | [**Left accelerationism: the counter-genealogy**](./accelerationnisme-de-gauche-contre-genealogie.md) | The left branch of the CCRU: Deleuze-Guattari, Mark Fisher (capitalist realism, hauntology, acid communism), Srnicek & Williams, xenofeminism, Bastani; Noys and degrowth; the 2026 bridge (concentrated compute). The genealogy is no longer one-sided |
 | 🧭 | [**Synthesis: the dossier's argument**](./00-SYNTHESE-argument.md) | The overall thesis after 31 parts. Entry point |
 | 🛠️ | [**Method note**](./note-autorat-ia.md) | How this dossier was written: deep research, adversarial verification, and the instrument in frame |
-| 🗺️ | [**Interactive cartography (HTML)**](./cartographie-en.html) | Clickable map of actors & ideas (labs, China, left/third ways) |
-| 🕸️ | [**Lombardi flow map (HTML)**](./lombardi-en.html) | "Capital, compute and power": money and power flows à la Mark Lombardi |
-| 📊 | [**Two-axes map (HTML)**](./deux-axes-en.html) | Each actor placed on accelerate↔slow / concentrate↔democratize: the thesis at a glance |
-| 🕰️ | [**Timeline 2021-2026 (HTML)**](./timeline-en.html) | The events gathered from a dozen parts |
+| 🗺️ | [**Interactive cartography (HTML)**](../cartographie-en.html) | Clickable map of actors & ideas (labs, China, left/third ways) |
+| 🕸️ | [**Lombardi flow map (HTML)**](../lombardi-en.html) | "Capital, compute and power": money and power flows à la Mark Lombardi |
+| 📊 | [**Two-axes map (HTML)**](../deux-axes-en.html) | Each actor placed on accelerate↔slow / concentrate↔democratize: the thesis at a glance |
+| 🕰️ | [**Timeline 2021-2026 (HTML)**](../timeline-en.html) | The events gathered from a dozen parts |
 
 *All HTML maps are self-contained and offline: double-click after downloading, no dependencies. (French versions of the maps are in the parent folder.)*
 

@@ -2,7 +2,7 @@
 
 **Function**: Control the spatial composition, character poses, and depth structure of AI-generated images by feeding data extracted from 3D scenes or reference photographs.
 
-**Used in**: [*Nemo*](../projects/nemo-biennale-2023.md), [*Virus*](../projects/virus-2024.md), [Ciclic Residency](../projects/vendome-residency-2024.md)
+**Used in**: *Nemo*, *Virus*, Ciclic Residency
 
 ---
 

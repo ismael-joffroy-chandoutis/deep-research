@@ -2,7 +2,7 @@
 
 **Function**: Reconstruct real locations as navigable, renderable 3D spaces from photographic capture.
 
-**Used in**: [*Virus*](../projects/virus-2024.md), [Ciclic Residency](../projects/vendome-residency-2024.md)
+**Used in**: *Virus*, Ciclic Residency
 
 ---
 

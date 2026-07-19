@@ -44,4 +44,4 @@ I believe in the world that comes next. I believe that models which build themse
 
 *Ismaël Joffroy Chandoutis*
 
-*In continuity with [souverainete-ia](https://github.com/ismael-joffroy-chandoutis/souverainete-ia) and [decentralized-compute-sota](https://github.com/ismael-joffroy-chandoutis/decentralized-compute-sota). License: [CC BY-NC-ND 4.0](LICENSE.md).*
+*In continuity with [souverainete-ia](https://github.com/ismael-joffroy-chandoutis/souverainete-ia) and [decentralized-compute-sota](https://github.com/ismael-joffroy-chandoutis/decentralized-compute-sota). License: [CC BY-NC-ND 4.0](../LICENSE.md).*

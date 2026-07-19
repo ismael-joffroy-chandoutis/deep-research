@@ -1,8 +1,10 @@
+**English. Version française : [README.fr.md](README.fr.md)**
+
 # deep-research
 
 Investigations into the tools, systems, and ideas shaping AI-native creative practice.
 
-By [Ismaël Joffroy Chandoutis](https://music.apple.com/artist/isma%C3%ABl-joffroy-chandoutis/1578091885) — filmmaker, digital artist, Paris.
+By [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com) — filmmaker, digital artist, Paris.
 
 ---
 
@@ -68,6 +70,14 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 *July 2026.* Bilingual (English original, French version). A close reading of Xi Jinping's keynote at the 2026 World AI Conference in Shanghai (17 July), the first ever delivered by a Chinese head of state, from the studio of an artist who runs Chinese open weights on American GPUs. What the text says (four proposals, WAICO, 5,000 trainings for the Global South), what it never names (the United States, chips), and the subtext layer by layer: open weights as foreign policy, the WAICO versus Pax Silica split with one shared member, the chip paradox of H200 licenses nobody uses, the domestic urgency behind the staged serenity. With an adversarial file: Beijing weighing export limits on its own "open" models, locked-in talent, censorship shipping with the weights, and the test that separates openness as principle from openness as tactic.
 
 *More essays in progress. Some will be published after the films are finished.*
+
+### Earlier pieces and interviews
+
+A few standalone texts that predate the numbered series, kept in [`articles-github/`](articles-github/):
+
+- [AI as Alteration, Not Augmentation](articles-github/01-ai-as-alteration.md). On working with machines for displacement rather than amplification.
+- [My Cinematheque is an AI: 32 Filmmakers and Thinkers as Claude Code Agents](articles-github/02-cinematheque-ai-agents.md). Rebuilding a personal cinematheque as a panel of AI agents.
+- [La fabrique d'un réel simulé](articles-github/03-fabrique-reel-simule.md) (in French). An interview with Antonio Somaini on the uses of deepfake.
 
 ---
 

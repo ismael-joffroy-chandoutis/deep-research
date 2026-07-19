@@ -2,7 +2,7 @@
 
 **Function**: Generate photographic-register stills — concept art, narrative visualizations, set previsualization — using Stable Diffusion-based models fine-tuned on cinematic imagery.
 
-**Used in**: [*Virus*](../projects/virus-2024.md), [*Nemo*](../projects/nemo-biennale-2023.md), [Ciclic Residency](../projects/vendome-residency-2024.md)
+**Used in**: *Virus*, *Nemo*, Ciclic Residency
 
 ---
 

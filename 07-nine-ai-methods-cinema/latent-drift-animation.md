@@ -2,7 +2,7 @@
 
 **Function**: Generate animated sequences by traversing diffusion model latent space — producing images that shift, morph, and transform without fixed temporal coherence. Used for oniric, psychic, or expressionist sequences where instability is the point.
 
-**Used in**: [*Virus*](../projects/virus-2024.md)
+**Used in**: *Virus*
 
 ---
 

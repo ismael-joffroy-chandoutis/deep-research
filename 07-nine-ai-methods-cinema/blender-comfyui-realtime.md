@@ -2,7 +2,7 @@
 
 **Function**: Drive diffusion image generation directly from live 3D animation data in Blender, enabling real-time preview of AI-generated frames as the animation plays.
 
-**Developed at**: [Ciclic Residency, Vendôme 2024](../projects/vendome-residency-2024.md)
+**Developed at**: Ciclic Residency, Vendôme 2024
 
 ---
 

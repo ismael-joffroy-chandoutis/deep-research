@@ -44,6 +44,6 @@ Je crois au monde d'après. Je crois que les modèles qui se construisent un mon
 
 *Ismaël Joffroy Chandoutis*
 
-*Dans la continuité de [souverainete-ia](https://github.com/ismael-joffroy-chandoutis/souverainete-ia) et [decentralized-compute-sota](https://github.com/ismael-joffroy-chandoutis/decentralized-compute-sota). Licence : [CC BY-NC-ND 4.0](LICENSE.md).*
+*Dans la continuité de [souverainete-ia](https://github.com/ismael-joffroy-chandoutis/souverainete-ia) et [decentralized-compute-sota](https://github.com/ismael-joffroy-chandoutis/decentralized-compute-sota). Licence : [CC BY-NC-ND 4.0](../LICENSE.md).*
 
 Par [Ismaël Joffroy Chandoutis](https://ismaeljoffroychandoutis.com).

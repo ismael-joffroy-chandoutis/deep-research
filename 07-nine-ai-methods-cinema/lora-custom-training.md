@@ -2,7 +2,7 @@
 
 **Function**: Train location- or character-specific image models from small datasets, making a base diffusion model capable of generating images with specific visual properties it would otherwise miss.
 
-**Used in**: [*Virus*](../projects/virus-2024.md), [Ciclic Residency](../projects/vendome-residency-2024.md)
+**Used in**: *Virus*, Ciclic Residency
 
 ---
 

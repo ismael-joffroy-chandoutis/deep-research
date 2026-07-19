@@ -76,7 +76,7 @@ Sources: *Magnifica humanitas*, encyclical of Leo XIV, May 25, 2026; Anne Alombe
 - **For the fascist genealogy**: Parts 6 (Marinetti), 7 (Land), 24 (vectofascism), 27 (Dugin), 28 (eugenics), 29 (gender and pronatalism).
 - **For the left counter-genealogy**: Part 31 (the CCRU fork, Mark Fisher, left accelerationism).
 - **To act**: Parts 10 (counter-powers), 21 (the global left), 25 (solutions).
-- **The maps**: the [interactive cartography](./cartographie.html) and the [Lombardi flow map](./lombardi.html).
+- **The maps**: the [interactive cartography](../cartographie-en.html) and the [Lombardi flow map](../lombardi-en.html).
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Function**: Bring AI-generated images from generation resolution (512–1024px) to exhibition or cinema resolution (4K+) while preserving — or enhancing — photographic quality.
 
-**Used in**: [*Nemo*](../projects/nemo-biennale-2023.md), [*Virus*](../projects/virus-2024.md)
+**Used in**: *Nemo*, *Virus*
 
 ---
 

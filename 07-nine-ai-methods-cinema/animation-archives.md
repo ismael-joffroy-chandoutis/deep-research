@@ -2,7 +2,7 @@
 
 **Function**: Give motion to archival photographs, internet screenshots, and static documentary material — making a frozen image into a living presence.
 
-**Used in**: [*Virus*](../projects/virus-2024.md)
+**Used in**: *Virus*
 
 ---
 

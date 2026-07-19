@@ -1,75 +1,75 @@
-# Le robinet et la boucle
+# The Tap and the Loop
 
-### Lecture de l'essai de Satya Nadella sur le capital humain et le capital-jetons, depuis l'atelier d'un artiste qui possède ses outils
+### Reading Satya Nadella's essay on human capital and token capital, from the studio of an artist who owns his tools
 
 *Ismaël Joffroy Chandoutis*
 
-**English version: [The Tap and the Loop](the-tap-and-the-loop.md)**
+**Version française : [Le robinet et la boucle](README.fr.md)**
 
 ---
 
-Le 14 juin 2026, Satya Nadella, directeur de Microsoft, a publié sur X un texte sur l'avenir de la firme dans une économie pilotée par l'IA. Ce n'est pas une annonce produit. C'est un essai de doctrine économique, et il dit quelque chose que je dis depuis deux ans, à une autre échelle, dans mes propres dépôts. Je l'ai lu deux fois. La première fois en hochant la tête. La seconde en me demandant pourquoi un homme qui possède une part majeure du calcul mondial avait soudain besoin de mon argument. C'est cette seconde lecture que je veux écrire.
+On 14 June 2026, Satya Nadella, CEO of Microsoft, published a text on X about the future of the firm in an AI-driven economy. It is not a product announcement. It is an essay in economic doctrine, and it says something I have been saying for two years, at another scale, in my own repositories. I read it twice. The first time nodding. The second time wondering why a man who owns a major share of the world's compute suddenly needed my argument. It is the second reading I want to write down.
 
-## Ce que dit Nadella
+## What Nadella says
 
-La thèse tient en une opposition. Une firme dispose de deux capitaux. Le « capital humain », c'est le jugement, les relations, l'ingéniosité, la reconnaissance de motifs de ses gens. Le « capital-jetons » (token capital), c'est la capacité d'IA qu'elle construit et qu'elle possède. Et le pari de Nadella est que le second ne dévalue pas le premier : « human capital does not become less valuable as token capital grows. It only becomes more valuable. » Sans direction humaine, écrit-il, « you have compute running in circles ».
+The thesis rests on an opposition. A firm has two kinds of capital. "Human capital" is the judgment, relationships, ingenuity, and pattern recognition of its people. "Token capital" is the AI capability it builds and owns. And Nadella's wager is that the second does not devalue the first: "human capital does not become less valuable as token capital grows. It only becomes more valuable." Without human direction, he writes, "you have compute running in circles."
 
-De là, une conséquence que je tiens pour juste. L'actif durable n'est pas le modèle, qui se commoditise, mais la boucle d'apprentissage qu'on bâtit par-dessus et qu'on possède : private evals, environnements d'apprentissage par renforcement nourris des traces réelles de la maison, mémoire institutionnelle interrogeable. « You can offload a task, or even a job, but you can never offload your learning. » Il appelle ça une « hill climbing machine », une machine à gravir, et son trait décisif est qu'elle compose : chaque workflow amélioré produit un meilleur signal d'entraînement, qui accélère l'accumulation d'un savoir tacite propre à la firme.
+From there, a consequence I hold to be correct. The durable asset is not the model, which commoditizes, but the learning loop you build on top and own: private evals, reinforcement-learning environments fed by the house's real traces, a queryable institutional memory. "You can offload a task, or even a job, but you can never offload your learning." He calls it a "hill climbing machine," and its decisive trait is that it compounds: every improved workflow produces a better training signal, which accelerates the accumulation of tacit knowledge unique to the firm.
 
-Et il en tire un test, le seul mot de souveraineté de tout le texte : « A company should be able to switch out a generalist model without losing the company veteran expertise built into their learning system. This is the key test of your control and sovereignty in the era ahead. » Pouvoir débrancher le modèle sans perdre le vétéran. Possède la boucle, pas le modèle.
+And he draws a test from it, the one word of sovereignty in the whole text: "A company should be able to switch out a generalist model without losing the company veteran expertise built into their learning system. This is the key test of your control and sovereignty in the era ahead." Be able to unplug the model without losing the veteran. Own the loop, not the model.
 
-Le texte se ferme sur un avertissement politique inattendu chez un dirigeant de hyperscaler. Un monde où quelques modèles « eat everything they see » et captent tous les retours économiques, dit-il, « the political economy will simply not tolerate it. There is no societal permission for an AI future that hollows out entire industries. » Sa conclusion : viser « a frontier ecosystem, not just a frontier model ».
+The text closes on a political warning unexpected from the head of a hyperscaler. A world where a few models "eat everything they see" and capture all economic returns, he says, "the political economy will simply not tolerate it. There is no societal permission for an AI future that hollows out entire industries." His conclusion: aim for "a frontier ecosystem, not just a frontier model."
 
-## Ce qu'il faut lui accorder
+## What must be granted
 
-Le diagnostic est juste, et il est rare qu'il vienne de là. Que le PDG de Microsoft écrive noir sur blanc que la concentration de la valeur dans quelques modèles n'aura « pas de permission sociétale », et qu'il convoque la mémoire de la première mondialisation, ses économies industrielles vidées et le ressentiment qui a suivi, ce n'est pas rien. C'est même la phrase qu'on attendrait d'un critique, pas d'un vendeur.
+The diagnosis is right, and it is rare for it to come from there. That the CEO of Microsoft writes in plain words that the concentration of value in a few models will have "no societal permission," and summons the memory of the first globalization, its hollowed-out industrial economies and the resentment that followed, is not nothing. It is the sentence you would expect from a critic, not a seller.
 
-La distinction modèle/boucle est exacte. Quiconque a travaillé sérieusement avec ces outils sait que le modèle de frontière est un consommable, que l'écart se referme en mois, et que la seule chose qui ne se télécharge pas, c'est ce que l'on a appris à faire avec. Nadella nomme proprement une asymétrie réelle.
+The model/loop distinction is exact. Anyone who has worked seriously with these tools knows the frontier model is a consumable, that the gap closes in months, and that the only thing that does not download is what you have learned to do with it. Nadella cleanly names a real asymmetry.
 
-## Ce que je reconnais comme le mien
+## What I recognize as mine
 
-Je dois être honnête sur la gêne : ce texte recoupe le mien, parfois mot pour mot.
+I have to be honest about the discomfort: this text overlaps with mine, at times word for word.
 
-J'ai publié un manifeste qui s'appelle *Posséder les mains, louer le cerveau*. Sa thèse : le degré de création dépend de ce que l'on possède. J'ai publié un document de souveraineté dont le verdict est qu'on ne maîtrise pas le brut (la fonderie, le calcul d'entraînement) mais qu'on peut maîtriser le raffinage, le robinet et la règle, et que la rente migre vers le contrôle de la relation et de la donnée d'usage, jamais vers la fabrication la plus capitalistique. J'y définis la souveraineté non comme autarcie mais comme **non-captivité** : pouvoir changer d'outil sans perdre ce qu'on a construit, distinguer le marché du fief.
+I published a manifesto called *Own the Hands, Rent the Brain*. Its thesis: the degree of creation depends on what you own. I published a sovereignty document whose verdict is that you cannot own the raw material (the foundry, training compute) but you can own the refining, the tap, and the rule, and that the rent migrates toward control of the relationship and of usage data, never toward the most capital-intensive manufacturing. I define sovereignty there not as autarky but as **non-captivity**: being able to change tools without losing what you built, telling the market from the fief.
 
-Le « test de souveraineté » de Nadella est le mien : débrancher le généraliste sans perdre le vétéran, c'est exactement la non-captivité, l'interopérabilité, le refus du verrou. Sa « boucle d'apprentissage qui compose » est ce que je construis depuis l'atelier, en bien plus petit : des fine-tunes locaux sur des jeux de données que je capte sur le terrain, une mémoire de production interrogeable, des coûts et des empreintes visibles par geste. Lui le formule pour la firme. Je le vis pour une personne. Voir l'argument validé depuis le sommet de l'industrie change son statut : ce n'était pas la lubie d'un marginal qui bricole, c'était une loi de la période.
+Nadella's "sovereignty test" is mine: unplug the generalist without losing the veteran is exactly non-captivity, interoperability, the refusal of lock-in. His "learning loop that compounds" is what I build from the studio, far smaller: local fine-tunes on datasets I capture in the field, a queryable production memory, costs and footprints visible per gesture. He formulates it for the firm. I live it for one person. Seeing the argument validated from the top of the industry changes its status: it was not the whim of a marginal who tinkers, it was a law of the period.
 
-## Le robinet
+## The tap
 
-Et puis la gêne se précise, et devient critique.
+And then the discomfort sharpens, and turns critical.
 
-Nadella prêche la souveraineté depuis le robinet. « Possède ta boucle d'apprentissage », oui, mais sur son substrat à lui. Il t'accorde la propriété du *loop* tout en gardant la propriété du *tap*, le calcul, l'environnement, le tuyau. C'est mon propre slogan retourné en argument de vente : *louer le cerveau* présenté non plus comme une dépendance à réduire, mais comme une libération à acheter. La souveraineté qu'il propose est une souveraineté *sur la plateforme*, et ma propre distinction la disqualifie : posséder la couche d'apprentissage pendant qu'un autre possède le substrat sur lequel elle tourne, ce n'est pas le marché, c'est le fief. C'est la version velours du technoféodalisme que décrit Yanis Varoufakis (*Technofeudalism: What Killed Capitalism*, 2023), et que mon dossier reprend au volet 10 : on ne te vend plus un produit, on t'installe dans une rente dont tu ne peux plus sortir, et on appelle ça ton autonomie.
+Nadella preaches sovereignty from the tap. "Own your learning loop," yes, but on his substrate. He grants you ownership of the *loop* while keeping ownership of the *tap*, the compute, the environment, the pipe. It is my own slogan turned into a sales pitch: *renting the brain* presented no longer as a dependency to reduce, but as a liberation to buy. The sovereignty he offers is sovereignty *on the platform*, and my own distinction disqualifies it: owning the learning layer while someone else owns the substrate it runs on is not the market, it is the fief. It is the velvet version of the technofeudalism Yanis Varoufakis describes (*Technofeudalism: What Killed Capitalism*, 2023), which my dossier takes up at part 10: they no longer sell you a product, they install you in a rent you can no longer exit, and they call it your autonomy.
 
-## La ligne qui s'arrête à la firme
+## The line that stops at the firm
 
-Il y a une seconde faille, plus discrète, et plus grave.
+There is a second fault, quieter, and graver.
 
-Nadella refuse que les modèles commoditisent les entreprises. Mais il célèbre, dans la même phrase, que les entreprises rendent « replicable and scalable » le jugement de leurs employés : « Employees will see their expertise amplified and their judgment become part of systems. » Le travailleur dont l'expertise tacite devient « partie d'un système » subit, un cran plus bas, très exactement ce que Nadella dénonce un cran plus haut : sa connaissance est commoditisée « right out from underneath him ». L'argument anti-commoditisation s'arrête pile à la frontière de la firme. Au-dessus d'elle, le scandale ; en dessous, le progrès. Le mot consentement n'apparaît pas une fois. À qui appartient la boucle, quand elle est faite du jugement capté de ceux qui n'en possèdent pas une action ? Le texte ne pose pas la question, parce qu'il est écrit du point de vue qui détient la réponse. C'est la vieille figure du Turc mécanique : une machine qui cache, à l'intérieur, le travail humain qu'elle prétend remplacer. Nadella célèbre l'instant où ce jugement devient « replicable and scalable », c'est-à-dire l'instant où l'humain dans la boîte devient invisible et interchangeable.
+Nadella refuses to let models commoditize companies. But he celebrates, in the same sentence, that companies make "replicable and scalable" the judgment of their employees: "Employees will see their expertise amplified and their judgment become part of systems." The worker whose tacit expertise becomes "part of a system" undergoes, one notch lower, exactly what Nadella denounces one notch higher: his knowledge is commoditized "right out from underneath him." The anti-commoditization argument stops precisely at the boundary of the firm. Above it, the scandal; below it, progress. The word consent does not appear once. To whom does the loop belong, when it is made of the captured judgment of those who hold no share in it? The text does not ask, because it is written from the standpoint that holds the answer. It is the old figure of the Mechanical Turk: a machine that hides, inside itself, the human labor it claims to replace. Nadella celebrates the moment that judgment becomes "replicable and scalable," that is, the moment the human in the box becomes invisible and interchangeable.
 
-## Le Nadella de Jevons
+## The Jevons Nadella
 
-Il faut enfin rappeler d'où vient cette voix. C'est le même Nadella qui, début 2025, a invoqué le paradoxe de Jevons pour soutenir que l'efficacité des modèles ferait croître, et non baisser, la consommation de calcul. C'est-à-dire : plus c'est efficace, plus on en construit, plus le robinet compte. L'« équilibre stable » qu'il appelle de ses vœux à la fin du texte est celui où chacun possède sa petite boucle et où Microsoft reste indispensable à toutes. L'écosystème de frontière qu'il oppose au modèle de frontière est un écosystème dont il tient le sol.
+Finally, one must recall where this voice comes from. It is the same Nadella who, in early 2025, invoked the Jevons paradox to argue that model efficiency would grow, not shrink, compute consumption. That is: the more efficient it gets, the more we build, the more the tap matters. The "stable equilibrium" he wishes for at the end of the text is one where everyone owns their little loop and Microsoft remains indispensable to all of them. The frontier ecosystem he opposes to the frontier model is an ecosystem whose ground he holds.
 
-C'est, presque cliniquement, ce que Grégory Chatonsky nomme l'« indécidabilité calculée » (*Qu'est-ce que le vectofascisme ?*, 2025), au cœur de sa théorie du vectofascisme, qui prolonge la classe vectorialiste de McKenzie Wark (*A Hacker Manifesto*, 2004) et le différend de Lyotard (*Le Différend*, 1983), et que je traite au volet 24 : l'acteur dominant adopte le langage de l'anti-domination, et l'on ne peut plus décider, à la seule lecture, s'il décrit le problème ou s'il le vend. Le texte de Nadella est l'un et l'autre en même temps, et cette indécidabilité n'est pas un défaut du texte, c'est sa fonction.
+It is, almost clinically, what Grégory Chatonsky calls "calculated undecidability" (*Qu'est-ce que le vectofascisme ? / What Is Vectofascism?*, 2025), at the heart of his theory of vectofascism, which extends McKenzie Wark's vectoralist class (*A Hacker Manifesto*, 2004) and Lyotard's différend (*The Differend*, 1983), and which I treat in part 24: the dominant actor adopts the language of anti-domination, and one can no longer decide, from the reading alone, whether he is describing the problem or selling it. Nadella's text is both at once, and that undecidability is not a flaw of the text, it is its function.
 
-## L'artiste comme cas-limite de la firme
+## The artist as the firm's limit case
 
-Reste ce que ce texte m'apprend malgré lui, et c'est beaucoup.
+What remains is what this text teaches me in spite of itself, and it is a great deal.
 
-Si la boucle d'apprentissage possédée est le vrai actif, alors l'artiste qui travaille avec l'IA est le cas-limite de la firme de Nadella. Je fais déjà tourner, à l'échelle d'une personne, ce qu'il prescrit à l'échelle d'une entreprise : une évaluation privée qui est mon goût et mes invariants d'auteur, un apprentissage sur mes propres traces, une mémoire qui est ma cinémathèque interrogeable, des modèles que je peux débrancher sans perdre le vétéran, parce que le vétéran c'est moi.
+If the owned learning loop is the real asset, then the artist who works with AI is the limit case of Nadella's firm. I already run, at the scale of one person, what he prescribes at the scale of a company: a private eval that is my taste and my authorial invariants, learning on my own traces, a memory that is my queryable cinematheque, models I can unplug without losing the veteran, because the veteran is me.
 
-Mais je ne théorise pas la capture, je la rencontre en faisant. J'ai choisi très tôt l'open source et le local, pour une raison que j'ai déjà écrite ailleurs : quand on régénère un défunt, ses traces restent sur mes disques, pas sur les serveurs d'une société commerciale. Depuis, deux murs s'ajoutent. Les modèles alignés refusent d'écrire la matière dont mes films sont faits, la violence réelle de mes sujets, ce qu'on n'a pas le droit de montrer : pour la garder il faut des modèles qu'on peut ouvrir et faire tourner hors de l'alignement d'une entreprise dont je ne partage pas, sur ce point, les valeurs. Et le prix qui monte rend la location plus chère que la possession. La coupure mondiale du 12 juin 2026 n'a été qu'une alerte de plus dans cette liste.
+But I do not theorize capture, I meet it in the making. I chose open source and local early, for a reason I have written elsewhere: when you regenerate a dead person, their traces stay on my drives, not on a commercial company's servers. Since then, two more walls. The aligned models refuse to write the material my films are made of, the real violence of my subjects, what one is not allowed to show: to keep it you need models you can open and run outside the alignment of a company whose values, on this point, I do not share. And the rising price makes renting dearer than owning. The worldwide cutoff of 12 June 2026 was only one more alert on that list.
 
-Voilà pourquoi je tiens aussi le robinet. Pas par rêve d'autarcie ni par souveraineté pure : parce que le cerveau loué refuse, régulièrement, de faire mes films, ou les garde sur son sol. C'est tout l'écart avec Nadella. Il offre une boucle d'apprentissage à condition de rester chez lui. Un cinéaste qui filme ce qui dérange n'a pas ce luxe : son sol, il doit l'avoir à lui.
+That is why I hold the tap as well. Not from a dream of autarky nor from pure sovereignty: because the rented brain refuses, regularly, to make my films, or keeps them on its ground. That is the whole gap with Nadella. He offers a learning loop on condition that you stay on his ground. A filmmaker who films what disturbs does not have that luxury: his ground, he must own it.
 
-## En une phrase
+## In one sentence
 
-Nadella décrit une loi vraie, la boucle qui compose, puis l'enferme dans un monde où il reste propriétaire du sol. La boucle est à toi, le robinet est à lui. Moi je tiens les deux, non par doctrine mais parce que je fais des films que le cerveau loué refuse d'écrire.
-
----
-
-*Cet essai répond à l'essai de Satya Nadella sur le capital humain et le capital-jetons (X, 14 juin 2026). Les citations sont en anglais dans l'original. À lire avec [le volet 14, Le chapitre manquant](../14-le-chapitre-manquant/) et le [volet 24, Vectofascisme](../15-ideologies-silicon-valley/vectofascisme-chatonsky-wark.md). Écrit avec l'instrument dont il vend le robinet.*
+Nadella describes a real law, the loop that compounds, then locks it into a world where he remains the owner of the ground. The loop is yours, the tap is his. I hold both, not out of doctrine but because I make films the rented brain refuses to write.
 
 ---
 
-*Licence : [CC BY-NC-ND 4.0](../LICENSE). © Ismaël Joffroy Chandoutis.*
+*This essay responds to Satya Nadella's essay on human capital and token capital (X, 14 June 2026). Read alongside [Part 14, The Missing Chapter](../14-le-chapitre-manquant/) and [Part 24, Vectofascism](../15-ideologies-silicon-valley/en/vectofascisme-chatonsky-wark.md). Written with the instrument whose tap it is.*
+
+---
+
+*License: [CC BY-NC-ND 4.0](../LICENSE.md). © Ismaël Joffroy Chandoutis.*
