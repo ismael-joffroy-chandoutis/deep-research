@@ -59,6 +59,9 @@ Spatial reconstruction, ControlNet-guided 3D, Blender-ComfyUI realtime, LoRA cus
 ### 16. [Le robinet et la boucle / The Tap and the Loop](16-le-robinet-et-la-boucle/)
 *June 2026.* Bilingual (French original, English version). A close reading of Satya Nadella's essay on "human capital and token capital" (X, 14 June 2026), from the studio of an artist who owns his tools. Nadella's sovereignty test (swap the model, keep the veteran) is mine, and his "learning loop that compounds" is what I run at the scale of one person. But he preaches sovereignty from the tap: own the loop, rent the substrate. The anti-commoditization argument stops at the firm's boundary and never reaches the worker; the "stable equilibrium" is one where Microsoft stays indispensable. The artist as the firm's limit case, the only one who can own the tap too. With Varoufakis on technofeudalism and Chatonsky on calculated undecidability.
 
+### 17. [The Symphony and the Fortress / La symphonie et la forteresse](17-xi-jinping-ai-geopolitics/)
+*July 2026.* Bilingual (English original, French version). A close reading of Xi Jinping's keynote at the 2026 World AI Conference in Shanghai (17 July), the first ever delivered by a Chinese head of state, from the studio of an artist who runs Chinese open weights on American GPUs. What the text says (four proposals, WAICO, 5,000 trainings for the Global South), what it never names (the United States, chips), and the subtext layer by layer: open weights as foreign policy, the WAICO versus Pax Silica split with one shared member, the chip paradox of H200 licenses nobody uses, the domestic urgency behind the staged serenity. With an adversarial file: Beijing weighing export limits on its own "open" models, locked-in talent, censorship shipping with the weights, and the test that separates openness as principle from openness as tactic.
+
 *More essays in progress. Some will be published after the films are finished.*
 
 ---
