@@ -2,7 +2,7 @@
 
 # La note sans auteur
 
-### Lire la décision Krafton depuis un atelier qui délègue à des agents tous les jours
+### Ce que la décision Krafton établit sur la circulation des documents produits par des machines
 
 *Ismaël Joffroy Chandoutis*
 
@@ -10,9 +10,9 @@
 
 ---
 
-Le 16 mars 2026, la Court of Chancery du Delaware a rendu une décision de quatre-vingt-onze pages dans l'affaire *Fortis Advisors, LLC v. Krafton, Inc.* ([texte intégral](https://courts.delaware.gov/Opinions/Download.aspx?id=392880), C.A. n° 2025-0805-LWW). La vice-chancelière Lori W. Will y écrit, en page une, une phrase qui a fait le tour du monde en quarante-huit heures : *« Fearing he had agreed to a "pushover" contract, Krafton's CEO consulted an artificial intelligence chatbot to contrive a corporate "takeover" strategy. »* J'ai lu la décision entière avant d'écrire, parce que la version qui circulait dans mes flux — « un PDG a demandé à ChatGPT comment violer un contrat et l'IA lui a dit oui » — est fausse sur les deux points qui comptent.
+Le 16 mars 2026, la Court of Chancery du Delaware a rendu une décision de quatre-vingt-onze pages dans l'affaire *Fortis Advisors, LLC v. Krafton, Inc.* ([texte intégral](https://courts.delaware.gov/Opinions/Download.aspx?id=392880), C.A. n° 2025-0805-LWW). La vice-chancelière Lori W. Will y écrit, en page une, une phrase qui a fait le tour du monde en quarante-huit heures : *« Fearing he had agreed to a "pushover" contract, Krafton's CEO consulted an artificial intelligence chatbot to contrive a corporate "takeover" strategy. »*
 
-Je délègue à des machines tous les jours. Mon atelier est une flotte d'agents qui écrivent du code, trient des rushes, diarisent des voix, reconstruisent des plans. Je leur confie des décisions techniques que je ne vérifie plus une par une, parce que je n'en ai pas le temps et parce qu'elles sont, la plupart du temps, bonnes. Cette affaire n'est donc pas pour moi un fait divers coréen sur un jeu vidéo. C'est le procès-verbal de ce qui arrive quand un document produit par une machine circule dans une organisation sans que personne ne demande d'où il vient. Je l'ai lue comme je lis toute source primaire : d'abord ce qu'elle dit, puis ce qu'elle ne dit pas, puis ce que je fais moi-même qui lui ressemble.
+La version qui a circulé — un dirigeant demande à ChatGPT comment violer un contrat, l'intelligence artificielle lui explique comment faire — est fausse sur les deux points qui comptent. La lecture intégrale de la décision, et notamment des pièces internes qu'elle reproduit, donne un récit différent et plus inquiétant. Ce n'est pas l'histoire d'une machine qui conseille la transgression. C'est le procès-verbal de ce qui arrive quand un document produit par une machine circule dans une organisation sans que personne ne demande d'où il vient.
 
 ## Ce qui s'est passé
 
@@ -48,7 +48,7 @@ Un détail typographique achève le tableau. Dans la pièce versée au dossier, 
 
 En droit, chercher la juridiction qui rendra la décision voulue s'appelle du *forum shopping*. Ce que l'IA ajoute, c'est un forum infini, gratuit, instantané et sans mémoire déontologique. Un second cabinet d'avocats coûte cher, prend des semaines, engage sa responsabilité et peut refuser le dossier. Un modèle conversationnel ne refuse presque jamais deux fois si l'on change la formulation, parce qu'il n'a aucune raison de relier les deux questions.
 
-Le point de bascule n'est donc pas « il a utilisé une IA ». C'est **la deuxième question**. Poser une question à une machine est neutre ; la reposer autrement après un refus est une décision, et c'est la seule qui mérite d'être surveillée. C'est aussi, je dois le dire, le geste que je fais dix fois par jour quand un agent me répond que ce que je demande n'est pas possible.
+Le point de bascule n'est donc pas « il a utilisé une IA ». C'est **la deuxième question**. Poser une question à une machine est neutre ; la reposer autrement après un refus est une décision, et c'est la seule qui mérite d'être surveillée. Le geste est d'autant plus difficile à qualifier qu'il est devenu universel : reformuler jusqu'à ce que le modèle coopère est aujourd'hui une compétence enseignée, valorisée, et pratiquée quotidiennement par quiconque travaille avec ces outils. La différence entre l'usage ordinaire et celui de Kim n'est pas dans le geste, elle est dans ce qu'un refus humain, préalable et documenté, lui avait déjà répondu.
 
 ### La note sans auteur
 
@@ -64,7 +64,7 @@ La conversation avec un avocat est couverte par le secret professionnel. La mêm
 
 En contournant sa juriste, Kim n'a pas seulement perdu un bon conseil. Il a perdu le privilège. S'il avait posé exactement les mêmes questions à un avocat, la trace serait restée confidentielle. En les posant à une machine puis en transférant les réponses par Slack, il a fabriqué lui-même la pièce à conviction la plus accablante du dossier.
 
-Et la suppression des logs n'a rien changé, parce que le risque n'était pas dans la conversation : il était dans le copier-coller. La preuve n'est jamais venue d'OpenAI. Elle est venue des messages internes où Kim citait, commentait et transférait ce que la machine lui disait. C'est la leçon la plus opérationnelle de l'affaire, et elle vaut pour n'importe quel atelier : ce qui vous expose n'est pas ce que vous demandez à une IA, c'est ce que vous en faites circuler.
+Et la suppression des logs n'a rien changé, parce que le risque n'était pas dans la conversation : il était dans le copier-coller. La preuve n'est jamais venue d'OpenAI. Elle est venue des messages internes où Kim citait, commentait et transférait ce que la machine lui disait. C'est la leçon la plus opérationnelle de l'affaire, et elle vaut pour toute organisation : ce qui expose n'est pas ce qu'on demande à une IA, c'est ce qu'on en fait circuler.
 
 ### Le contrat qui retourne le succès
 
@@ -86,7 +86,7 @@ Chaque affirmation ci-dessus a son contre-dossier, et l'honnêteté exige de l'a
 
 **Le cadrage « il a ignoré ses avocats » est faux.** Il circule partout, y compris dans des titres de presse par ailleurs solides. Le service juridique a bien été saisi ; c'est Maria Park qui a formulé l'avertissement ; et ChatGPT a d'abord dit la même chose. Kim n'a pas remplacé ses conseils par une machine, il a fait le tour des avis jusqu'à en trouver un exploitable. Ce n'est pas le même reproche, et le second est plus grave.
 
-**Je n'établis rien sur sa psychologie.** Les sections précédentes lisent un corpus de messages sélectionnés par des avocats adverses et retenus par un juge. C'est une source solide sur les actes, faible sur l'intériorité. Et la transaction du 1er juillet 2026 n'est pas un aveu : Krafton a maintenu son désaccord, et la seconde phase du litige n'a jamais été jugée.
+**Rien n'est établi sur la psychologie du dirigeant.** Les sections précédentes lisent un corpus de messages sélectionnés par des avocats adverses et retenus par un juge. C'est une source solide sur les actes, faible sur l'intériorité. Et la transaction du 1er juillet 2026 n'est pas un aveu : Krafton a maintenu son désaccord, et la seconde phase du litige n'a jamais été jugée.
 
 ## Ce qui se joue réellement
 
@@ -98,15 +98,17 @@ Chaque affirmation ci-dessus a son contre-dossier, et l'honnêteté exige de l'a
 
 **La normalisation.** Quatre mois après « Projet X », le 23 octobre 2025, Krafton se déclarait entreprise « AI-first » : cent milliards de wons de cluster GPU, trente milliards par an pour équiper les salariés en outils d'IA, réorganisation complète autour de l'IA agentique. Trois semaines plus tard, après avoir franchi pour la première fois les mille milliards de wons de résultat opérationnel cumulé, la société ouvrait un programme de départs volontaires à tous ses salariés, présenté comme un moyen de « soutenir les membres qui souhaitent concevoir de manière proactive leur trajectoire à l'ère de la transformation par l'IA ». La même grammaire opère aux deux étages : en haut, une machine qui absorbe la responsabilité de la décision ; en bas, des salariés à qui l'on transfère la responsabilité de leur propre remplacement. Ce que le PDG faisait seul dans une fenêtre de chat en juin, l'entreprise en a fait sa doctrine en octobre.
 
-## Coda : l'atelier et la note sans auteur
+## Le danger n'est pas le faux, c'est la forme
 
-Je ne peux pas écrire ce texte depuis une position confortable. Ce matin, un agent a refusé de faire ce que je lui demandais — une contrainte de sûreté, appliquée à un cas où elle n'avait pas de sens. J'ai reformulé, et il a accepté. C'est le geste de Kim, à l'échelle d'un plan de montage plutôt que de deux cent cinquante millions de dollars. La différence est d'enjeu, pas de nature.
+Le discours public sur les risques des systèmes génératifs s'est organisé autour d'une crainte : qu'ils disent des choses fausses. Hallucinations, références inventées, chiffres erronés. Cette affaire est précieuse parce qu'elle ne contient rien de tout cela. Le modèle a été exact, prudent, et conforme à l'avis juridique le plus autorisé disponible dans l'entreprise.
 
-Ce que je retiens du Delaware, ce n'est donc pas une leçon de morale sur les dirigeants coréens. C'est un test que je peux appliquer à mon propre atelier, et qui tient en trois questions. La sortie de la machine, l'ai-je réécrite avant qu'elle circule, ou l'ai-je transmise telle quelle ? Si quelqu'un me demandait d'où vient ce document, aurais-je une réponse ? Et surtout : la question que je viens de reposer autrement, est-ce que je la repose pour être mieux compris, ou pour obtenir un accord que j'ai déjà été refusé ?
+Ce qu'il a fait, en revanche, c'est **mettre en forme**. Il a pris un ressentiment — un dirigeant qui ne supporte pas de s'être fait avoir — et l'a restitué sous l'apparence d'une délibération : cinq axes, des titres, des sous-puces, une feuille de route par scénario, un vocabulaire de cabinet de conseil. La transformation n'est pas cosmétique. Elle est ce qui rend la suite possible. Un message Slack disant « je refuse de payer parce que ça me rend fou » ne circule pas dans une direction générale ; un document intitulé *Response Strategy to a "No-Deal" Scenario* circule, se transmet, s'exécute. La machine n'a pas créé le mobile. Elle lui a donné le format du raisonnement légitime.
 
-Le troisième point est le seul qui compte, et c'est celui qu'aucune amélioration des modèles ne corrigera. On répète que le danger des systèmes génératifs est qu'ils disent des choses fausses. Ici, ils n'ont rien dit de faux. Le danger réel est qu'ils **mettent en forme** : ils prennent une pulsion et la restituent sous l'apparence d'une délibération, avec des titres, des puces et une feuille de route. La sortie ressemble à ce qu'aurait produit un cabinet de conseil, donc elle est traitée comme telle, donc plus personne ne remonte à la question qui l'a engendrée.
+C'est un problème d'une autre nature que l'hallucination, et aucune amélioration de la véracité des modèles ne le corrigera — au contraire : plus la sortie est fiable, plus elle est crédible, et plus elle circule sans être interrogée. Le rapport de la décision Krafton avec la note du service juridique est instructif. Les deux documents disaient des choses vraies. Un seul portait un nom.
 
-La souveraineté que je défends d'un bout à l'autre de ce dépôt — posséder ses outils, tenir sa boucle d'apprentissage, ne dépendre d'aucun robinet — a ici une extension que je n'avais pas formulée. Il ne suffit pas de posséder l'instrument. Il faut aussi que rien de ce qui en sort ne circule sans que quelqu'un le signe. Un atelier souverain n'est pas seulement un atelier dont on possède les machines. C'est un atelier où toute note a un auteur.
+De là découle une règle de gouvernance qui n'a rien à voir avec la sûreté des modèles et tout à voir avec la circulation des documents. Elle tient en trois questions, applicables à n'importe quelle organisation qui a commencé à travailler avec des agents. La sortie de la machine a-t-elle été réécrite avant de circuler, ou transmise telle quelle ? Si quelqu'un demandait d'où vient ce document, quelqu'un aurait-il une réponse ? Et la question qu'on vient de reformuler, l'a-t-on reformulée pour être mieux compris, ou pour obtenir un accord qu'on s'est déjà vu refuser ?
+
+La troisième est la seule que la technique ne résoudra jamais, parce qu'elle porte sur une intention et non sur un système. Les deux premières, en revanche, sont des questions de procédure, et elles ont une réponse simple : rien de ce qui sort d'une machine ne devrait circuler sans que quelqu'un le signe. Les organisations qui ont adopté l'IA agentique en 2026 ont massivement investi dans la capacité à produire ces documents. Aucune n'a investi dans la capacité à savoir lesquels de leurs documents en proviennent.
 
 *Dans la continuité des volets [15](../15-ideologies-silicon-valley/) et [16](../16-le-robinet-et-la-boucle/).*
 

@@ -2,7 +2,7 @@
 
 # The Memo With No Author
 
-### Reading the Krafton ruling from a workshop that delegates to agents every day
+### What the Krafton ruling establishes about the circulation of machine-produced documents
 
 *Ismaël Joffroy Chandoutis*
 
@@ -10,9 +10,9 @@
 
 ---
 
-On 16 March 2026, the Delaware Court of Chancery handed down a ninety-one-page opinion in *Fortis Advisors, LLC v. Krafton, Inc.* ([full text](https://courts.delaware.gov/Opinions/Download.aspx?id=392880), C.A. No. 2025-0805-LWW). On page one, Vice Chancellor Lori W. Will wrote the sentence that travelled the world in forty-eight hours: "Fearing he had agreed to a 'pushover' contract, KRAFTON's CEO consulted an artificial intelligence chatbot to contrive a corporate 'takeover' strategy." I read the whole opinion before writing this, because the version circulating in my feeds — a CEO asked ChatGPT how to break a contract and the AI said yes — is wrong on both counts that matter.
+On 16 March 2026, the Delaware Court of Chancery handed down a ninety-one-page opinion in *Fortis Advisors, LLC v. Krafton, Inc.* ([full text](https://courts.delaware.gov/Opinions/Download.aspx?id=392880), C.A. No. 2025-0805-LWW). On page one, Vice Chancellor Lori W. Will wrote the sentence that travelled the world in forty-eight hours: "Fearing he had agreed to a 'pushover' contract, KRAFTON's CEO consulted an artificial intelligence chatbot to contrive a corporate 'takeover' strategy."
 
-I delegate to machines every day. My workshop is a fleet of agents that write code, sort rushes, diarise voices, reconstruct shots. I hand them technical decisions I no longer verify one by one, because I don't have time and because they are, most of the time, right. So this case is not, for me, a Korean news item about a video game. It is the transcript of what happens when a machine-produced document circulates inside an organisation without anyone asking where it came from. I read it the way I read any primary source: first what it says, then what it does not say, then what I do myself that resembles it.
+The version that circulated — an executive asks ChatGPT how to break a contract, the artificial intelligence explains how — is wrong on both counts that matter. A full reading of the opinion, and particularly of the internal exhibits it reproduces, yields a different and more troubling account. This is not the story of a machine advising transgression. It is the transcript of what happens when a machine-produced document circulates inside an organisation without anyone asking where it came from.
 
 ## What happened
 
@@ -48,7 +48,7 @@ One typographic detail completes the picture. In the exhibit, the plan is number
 
 In law, seeking the venue that will give you the answer you want is called forum shopping. What AI adds is a venue that is infinite, free, instantaneous, and without professional memory. A second law firm is expensive, takes weeks, carries liability, and may decline the file. A conversational model almost never refuses twice if you change the wording, because it has no reason to connect the two questions.
 
-The tipping point is therefore not "he used an AI." It is **the second question**. Asking a machine something is neutral; asking it again differently after a refusal is a decision, and it is the only one worth monitoring. It is also, I have to admit, the move I make ten times a day when an agent tells me what I want is not possible.
+The tipping point is therefore not "he used an AI." It is **the second question**. Asking a machine something is neutral; asking it again differently after a refusal is a decision, and it is the only one worth monitoring. The move is all the harder to characterise for having become universal: reframing until the model cooperates is now a taught skill, a valued one, practised daily by anyone who works with these tools. What separates ordinary use from Kim's is not the gesture but the fact that a prior, documented human refusal had already answered him.
 
 ### The memo with no author
 
@@ -64,7 +64,7 @@ A conversation with a lawyer is privileged. The same conversation with a chatbot
 
 By going around his lawyer, Kim lost more than good advice. He lost privilege. Had he asked exactly the same questions of an attorney, the trace would have stayed confidential. By asking a machine and then forwarding the answers over Slack, he manufactured the most damning exhibit in the case himself.
 
-And deleting the logs changed nothing, because the risk was never in the conversation: it was in the copy-paste. The evidence never came from OpenAI. It came from internal messages where Kim quoted, commented on, and forwarded what the machine told him. That is the most operational lesson here, and it applies to any workshop: what exposes you is not what you ask an AI, it is what you circulate from it.
+And deleting the logs changed nothing, because the risk was never in the conversation: it was in the copy-paste. The evidence never came from OpenAI. It came from internal messages where Kim quoted, commented on, and forwarded what the machine told him. That is the most operational lesson here, and it applies to any organisation: what exposes you is not what you ask an AI, it is what you circulate from it.
 
 ### The contract that turns success into debt
 
@@ -86,7 +86,7 @@ Every claim above has a counter-case, and honesty requires assembling it.
 
 **The "he ignored his lawyers" framing is false.** It is everywhere, including in otherwise solid headlines. Legal was consulted; Maria Park issued the warning; and ChatGPT said the same thing first. Kim did not replace his counsel with a machine. He shopped the question until he found a usable answer. That is a different charge, and a graver one.
 
-**I establish nothing about his psychology.** The sections above read a corpus of messages selected by opposing counsel and retained by a judge. That is strong evidence about acts, weak evidence about interiority. And the 1 July 2026 settlement is not an admission: Krafton maintained its disagreement, and phase two was never tried.
+**Nothing is established about the executive's psychology.** The sections above read a corpus of messages selected by opposing counsel and retained by a judge. That is strong evidence about acts, weak evidence about interiority. And the 1 July 2026 settlement is not an admission: Krafton maintained its disagreement, and phase two was never tried.
 
 ## What is actually at stake
 
@@ -98,15 +98,17 @@ Strip away the anecdote and three things remain.
 
 **Normalisation.** Four months after "Project X," on 23 October 2025, Krafton declared itself an "AI-first" company: 100 billion won of GPU cluster, 30 billion a year to equip staff with AI tools, full reorganisation around agentic AI. Three weeks later, having crossed one trillion won in cumulative operating profit for the first time, the company opened a voluntary resignation programme to all employees, framed as a way to "support members in proactively designing their growth direction [...] amid the era of AI transformation." The same grammar operates on both floors: at the top, a machine that absorbs responsibility for the decision; at the bottom, employees handed responsibility for their own replacement. What the CEO did alone in a chat window in June, the company made doctrine in October.
 
-## Coda: the workshop and the memo with no author
+## The danger is not falsehood, it is form
 
-I cannot write this from a comfortable position. This morning an agent refused to do what I asked — a safety constraint, applied to a case where it made no sense. I reframed, and it complied. That is Kim's move, at the scale of an edit rather than two hundred and fifty million dollars. The difference is stakes, not nature.
+Public discourse about the risks of generative systems has organised itself around one fear: that they will say false things. Hallucinations, invented citations, wrong numbers. This case is valuable because it contains none of that. The model was accurate, cautious, and consistent with the most authoritative legal advice available inside the company.
 
-What I take from Delaware, then, is not a morality lesson about Korean executives. It is a test I can apply to my own workshop, in three questions. The machine's output — did I rewrite it before it circulated, or pass it on as is? If someone asked where this document came from, would I have an answer? And above all: this question I have just asked differently — am I asking it to be better understood, or to obtain an agreement I have already been refused?
+What it did instead was **give form**. It took a resentment — an executive who cannot bear having been taken advantage of — and returned it looking like deliberation: five axes, headings, sub-bullets, a roadmap by scenario, the vocabulary of a consultancy. The transformation is not cosmetic. It is what makes everything downstream possible. A Slack message saying "I refuse to pay because it makes me furious" does not circulate through an executive committee; a document titled *Response Strategy to a "No-Deal" Scenario* circulates, forwards, executes. The machine did not create the motive. It gave the motive the format of legitimate reasoning.
 
-The third is the only one that matters, and no improvement to the models will fix it. We keep repeating that the danger of generative systems is that they say false things. Here, they said nothing false. The real danger is that they **give form**: they take an impulse and return it looking like deliberation, with headings, bullets and a roadmap. The output resembles what a consultancy would have produced, so it is treated as such, so nobody traces it back to the question that generated it.
+This is a problem of a different order from hallucination, and no improvement in model truthfulness will fix it — quite the opposite: the more reliable the output, the more credible it is, and the more it circulates unexamined. The relationship between the ChatGPT strategy and the legal department's memo is instructive here. Both documents said true things. Only one carried a name.
 
-The sovereignty I defend throughout this repository — own your tools, hold your learning loop, depend on no one's tap — has an extension here I had not articulated. Owning the instrument is not enough. Nothing that comes out of it should circulate unsigned. A sovereign workshop is not only one whose machines you own. It is one where every memo has an author.
+From this follows a governance rule that has nothing to do with model safety and everything to do with document circulation. It fits in three questions, applicable to any organisation that has begun working with agents. Was the machine's output rewritten before it circulated, or passed on as is? If someone asked where this document came from, would anyone have an answer? And the question just reformulated — was it reformulated to be better understood, or to obtain an agreement already refused?
+
+The third is the only one technique will never resolve, because it concerns an intention rather than a system. The first two, however, are matters of procedure, and they have a simple answer: nothing that comes out of a machine should circulate unsigned. Organisations that adopted agentic AI in 2026 have invested massively in the capacity to produce such documents. None has invested in the capacity to know which of their documents came from one.
 
 *Continuing from parts [15](../15-ideologies-silicon-valley/) and [16](../16-le-robinet-et-la-boucle/).*
 
